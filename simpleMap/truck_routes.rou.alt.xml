@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Mon Mar 22 13:04:59 2021 by Eclipse SUMO duarouter Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="simpleMap.net.xml"/>
+        <route-files value="truck_trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="truck_routes.rou.xml"/>
+        <alternatives-output value="truck_routes.rou.alt.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="50"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="truck" vClass="truck" color="179,253,183"/>
+    <vehicle id="0" type="truck" depart="0.00">
+        <routeDistribution last="0">
+            <route cost="36.35" probability="1.00000000" edges="-gneE5 -gneE0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="1" type="truck" depart="15.00">
+        <routeDistribution last="0">
+            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="2" type="truck" depart="30.00">
+        <routeDistribution last="0">
+            <route cost="36.00" probability="1.00000000" edges="-gneE5 gneE3"/>
+        </routeDistribution>
+    </vehicle>
+</routes>

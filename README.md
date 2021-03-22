@@ -1,21 +1,27 @@
 # mini-proj-traffic
 
-## Steps (our reference; to delete later) to convert OSM to sumo net.xml
+## Use Makefile to create trips and routes
 
 1. Convert osm to net.xml
 
-```shell
-netconvert --osm-files sarakkiSmall.osm --lefthand -o sarakkiSmall.net.xml
-```
+    ```shell
+    make osm
+    ```
 
-2. Create polygons
+2. Create trips
 
-```shell
-polyconvert --osm-files sarakkiSmall.osm --net-file sarakkiSmall.net.xml --type-file osmPolyconvert.typ.xml -o sarakkiSmall.poly.xml
-```
+    ```shell
+    make trips
+    ```
 
-3. Generate trips and routes
+3. Run simulation in sumo-gui
 
-```shell
-python randomTrips.py -n sarakkiSmall.net.xml -r sarakkiSmall.rou.xml -e 50 -l
-```
+    ```shell
+    make sim
+    ```
+
+4. Clean
+
+    ```shell
+    make clean
+    ```
