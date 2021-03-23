@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue 23 Mar 20:35:16 2021 by Eclipse SUMO GUI Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="simpleMap.net.xml"/>
+        <route-files value="passenger_routes.rou.xml,bus_routes.rou.xml,truck_routes.rou.xml,delivery_routes.rou.xml"/>
+        <additional-files value="det.add.xml"/>
+    </input>
+
+    <traci_server>
+        <remote-port value="55869"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<e3Detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e3_file.xsd">
+   <interval begin="0.00" end="100.00" id="e3Detector_0" meanTravelTime="-1.00" meanOverlapTravelTime="-1.00" meanSpeed="-1.00" meanHaltsPerVehicle="-1.00" meanTimeLoss="-1.00" vehicleSum="0" meanSpeedWithin="0.16" meanHaltsPerVehicleWithin="1.00" meanDurationWithin="80.07" vehicleSumWithin="1" meanIntervalSpeedWithin="0.16" meanIntervalHaltsPerVehicleWithin="1.00" meanIntervalDurationWithin="80.07" meanTimeLossWithin="78.73"/>
+   <interval begin="100.00" end="200.00" id="e3Detector_0" meanTravelTime="8.03" meanOverlapTravelTime="9.01" meanSpeed="5.62" meanHaltsPerVehicle="0.09" meanTimeLoss="7.72" vehicleSum="11" meanSpeedWithin="0.17" meanHaltsPerVehicleWithin="1.00" meanDurationWithin="71.23" vehicleSumWithin="1" meanIntervalSpeedWithin="0.17" meanIntervalHaltsPerVehicleWithin="1.00" meanIntervalDurationWithin="71.23" meanTimeLossWithin="69.78"/>
+   <interval begin="200.00" end="300.00" id="e3Detector_0" meanTravelTime="51.85" meanOverlapTravelTime="52.96" meanSpeed="2.04" meanHaltsPerVehicle="0.50" meanTimeLoss="51.75" vehicleSum="2" meanSpeedWithin="-1.00" meanHaltsPerVehicleWithin="-1.00" meanDurationWithin="-1.00" vehicleSumWithin="0" meanIntervalSpeedWithin="-1.00" meanIntervalHaltsPerVehicleWithin="-1.00" meanIntervalDurationWithin="-1.00" meanTimeLossWithin="-1.00"/>
+</e3Detector>

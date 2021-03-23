@@ -21,8 +21,26 @@ yellowDur = 3
 cycle = 0
 traci.start(sumoCmd)
 
-while step < 250:
+# print(traci.getIDList())
+# print(dir(traci.inductionloop))
+
+e3Detector_0 = 0
+e3Detector_1 = 0
+e3Detector_2 = 0
+e3Detector_3 = 0
+
+while step < 300:
     traci.simulationStep()
+
+    # The four variables increment by the number of vehicles that passed through 
+    # in the last step, and reset every cycle
+    # NOTE: TODO: it is incrementing too fast; fix tomorrow
+    # Keep a check for when to increment
+    e3Detector_0 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_0')
+    e3Detector_1 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_1')
+    e3Detector_2 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_2')
+    e3Detector_3 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_3')
+    
 
     #The below section of code can be commented if traffic light control to be done by states already defines in netedit
     #If below section left uncommented the traffic signal control done through TraCi
@@ -52,11 +70,21 @@ while step < 250:
         traci.trafficlight.setRedYellowGreenState("t0", "yyyrrrrrrrrr")
         traci.trafficlight.setPhaseDuration("t0", yellowDur) 
     else:
+        # The print statements run after every cycle of RR (throughput)
+        print('Cycle:', cycle)
+        print('e3Detector_0', e3Detector_0)
+        print('e3Detector_1', e3Detector_1)
+        print('e3Detector_2', e3Detector_2)
+        print('e3Detector_3', e3Detector_3)
+        print()
+
+        # Reset cycle and detector values
+        e3Detector_0, e3Detector_1, e3Detector_2, e3Detector_3 = 0, 0, 0, 0
         cycle = 0
 
     cycle += 1
-    #END OF SECTION FOR CONTROLLING TRAFFIIC SIGNAL WITH TRACI
-
+    #END OF SECTION FOR CONTROLLING TRAFFIC SIGNAL WITH TRACI
+    
     step += 1
 
 traci.close()
