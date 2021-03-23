@@ -31,6 +31,9 @@ osm:
 sim:
 	sumo-gui $(MAP_NAME).sumocfg
 
+rr:
+	python trafficlights.py
+
 clean:
 	rm -f *.rou.xml *.rou.alt.xml *trips.xml
 	rm -f $(MAP_NAME).poly.xml

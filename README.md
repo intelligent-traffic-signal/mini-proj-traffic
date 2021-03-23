@@ -20,7 +20,13 @@
     make sim
     ```
 
-4. Clean
+4. Run python Round Robin script
+
+   ```shell
+   make rr
+   ```
+
+5. Clean
 
     ```shell
     make clean
