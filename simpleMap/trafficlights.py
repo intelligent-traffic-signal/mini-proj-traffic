@@ -24,23 +24,53 @@ traci.start(sumoCmd)
 # print(traci.getIDList())
 # print(dir(traci.inductionloop))
 
-e3Detector_0 = 0
-e3Detector_1 = 0
-e3Detector_2 = 0
-e3Detector_3 = 0
+class SensorData:
+    def __init__(self, id):
+        self.id = id
+        self.prev_veh = ''      # Previous vehicle sensed (ID)
+        self.cur_veh = ''       # Current vehicle sensed (ID)
+        self.throughput = 0     # Throughput every cycle
 
-while step < 300:
+    def update(self):
+        self.cur_veh = traci.multientryexit.getLastStepVehicleIDs(self.id)
+        if self.cur_veh:
+            self.cur_veh = self.cur_veh[0]
+        else:
+            self.cur_veh = ''
+
+        if self.prev_veh != self.cur_veh:
+            self.prev_veh = self.cur_veh
+            self.throughput += traci.multientryexit.getLastStepVehicleNumber(self.id)
+
+    def reset(self):
+        self.throughput = 0     # Throughput every cycle
+
+    def __str__(self):
+        return str(self.id) + ', ' + str(self.throughput)
+
+    def getThroughput(self):
+        return self.throughput
+
+
+e3Detector_0 = SensorData('e3Detector_0')
+e3Detector_1 = SensorData('e3Detector_1')
+e3Detector_2 = SensorData('e3Detector_2')
+e3Detector_3 = SensorData('e3Detector_3')
+
+
+while step < 600:
     traci.simulationStep()
+
 
     # The four variables increment by the number of vehicles that passed through 
     # in the last step, and reset every cycle
     # NOTE: TODO: it is incrementing too fast; fix tomorrow
     # Keep a check for when to increment
-    e3Detector_0 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_0')
-    e3Detector_1 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_1')
-    e3Detector_2 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_2')
-    e3Detector_3 += traci.multientryexit.getLastStepVehicleNumber('e3Detector_3')
     
+    e3Detector_0.update()
+    e3Detector_1.update()
+    e3Detector_2.update()
+    e3Detector_3.update()
 
     #The below section of code can be commented if traffic light control to be done by states already defines in netedit
     #If below section left uncommented the traffic signal control done through TraCi
@@ -72,14 +102,19 @@ while step < 300:
     else:
         # The print statements run after every cycle of RR (throughput)
         print('Cycle:', cycle)
-        print('e3Detector_0', e3Detector_0)
-        print('e3Detector_1', e3Detector_1)
-        print('e3Detector_2', e3Detector_2)
-        print('e3Detector_3', e3Detector_3)
+        print(e3Detector_0)
+        print(e3Detector_1)
+        print(e3Detector_2)
+        print(e3Detector_3)
+        
         print()
 
         # Reset cycle and detector values
-        e3Detector_0, e3Detector_1, e3Detector_2, e3Detector_3 = 0, 0, 0, 0
+        e3Detector_0.reset()
+        e3Detector_1.reset()
+        e3Detector_2.reset()
+        e3Detector_3.reset()
+
         cycle = 0
 
     cycle += 1
