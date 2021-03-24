@@ -13,7 +13,7 @@ import traci  # noqa
 
 
 sumoBinary = checkBinary('sumo-gui')
-sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg']
+sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'additional.xml']
 
 step = 0
 greenDur = 30
