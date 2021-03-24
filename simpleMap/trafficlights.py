@@ -61,11 +61,8 @@ e3Detector_3 = SensorData('e3Detector_3')
 while step < 600:
     traci.simulationStep()
 
-
-    # The four variables increment by the number of vehicles that passed through 
-    # in the last step, and reset every cycle
-    # NOTE: TODO: it is incrementing too fast; fix tomorrow
-    # Keep a check for when to increment
+    # The four variables store sensor data and update 
+    # every step, reset every cycle
     
     e3Detector_0.update()
     e3Detector_1.update()
