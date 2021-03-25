@@ -14,9 +14,10 @@ import traci  # noqa
 import random
 
 class TrafficAgent:
+    """Defines individual traffic signal behaviour."""
+
     def __init__(self, lane, gss, yss):
-        """Defining a set of actions as the time the signal should be on in terms of discrete time intervals."""
-        self._strategySet = list(range(5, 31, 2))
+        self._strategySet = list(range(5, 31, 2)) # Action space defined as discrete time intervals; base idea can be tweaked. 
         self._strategyCount = len(self._strategySet)
 
         self._probabilitySet = [1 / self._strategyCount for i in range(self._strategyCount)]
@@ -27,23 +28,20 @@ class TrafficAgent:
         self._yellowSignalString = yss
 
     def updateProbabilitySet(self):
+        """Defines feedback mechanism. Probability space updated according to backlog in lane."""
         queueLength = traci.lane.getLastStepVehicleNumber(self._lane)
         avgSpeed = 13.89 # Arbitrary set based on simpleMap.net.xml
 
-        rewardSet = [(queueLength - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
-        
-        if min(rewardSet) < 0:
-            minRwd = min(rewardSet)
-            for i in range(self._strategyCount):
-                rewardSet[i] -= minRwd
+        rewardSet = [(queueLength * 5 - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
         
         totalRwd = sum(rewardSet)
         for i in range(self._strategyCount):
             rewardSet[i] /= totalRwd
-        
+
         self._probabilitySet = rewardSet
 
     def getSignalLength(self):
+        """Update probability space to allow uncertainty."""
         return random.choices(self._strategySet, weights=self._probabilitySet, k=1)[0]
 
     def getGreenSignalString(self):
@@ -61,7 +59,7 @@ lanes = [lane0, lane1, lane2, lane3]
 laneIndex = 0
 
 sumoBinary = checkBinary('sumo-gui')
-sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'additional.xml']
+sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml']
 
 step = 0
 greenDur = 30
@@ -80,43 +78,12 @@ traci.start(sumoCmd)
 while step < 250:
     traci.simulationStep()
 
-    #The below section of code can be commented if traffic light control to be done by states already defines in netedit
-    #If below section left uncommented the traffic signal control done through TraCi
-    #Alternatively, all the setRedYellowGreenState calls could be replaced by setPhase("t0", index) where index is 0,1,2,3,4 to produce same functionality
-    """
-    if cycle in range(greenDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "rrrGGgrrrrrr")
-        traci.trafficlight.setPhaseDuration("t0", greenDur)
-    elif cycle in range(greenDur+yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "rrryyyrrrrrr")
-        traci.trafficlight.setPhaseDuration("t0", yellowDur)  
-    elif cycle in range(2*greenDur+yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "rrrrrrGGgrrr")
-        traci.trafficlight.setPhaseDuration("t0", greenDur)
-    elif cycle in range(2*greenDur+2*yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "rrrrrryyyrrr")
-        traci.trafficlight.setPhaseDuration("t0", yellowDur)  
-    elif cycle in range(3*greenDur+2*yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "rrrrrrrrrGGg")
-        traci.trafficlight.setPhaseDuration("t0", greenDur)
-    elif cycle in range(3*greenDur+3*yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "rrrrrrrrryyy")
-        traci.trafficlight.setPhaseDuration("t0", yellowDur) 
-    elif cycle in range(4*greenDur+3*yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "GGgrrrrrrrrr")
-        traci.trafficlight.setPhaseDuration("t0", greenDur)
-    elif cycle in range(4*greenDur+4*yellowDur):
-        traci.trafficlight.setRedYellowGreenState("t0", "yyyrrrrrrrrr")
-        traci.trafficlight.setPhaseDuration("t0", yellowDur) 
-    else:
-        cycle = 0
-    """
-
     if changeState:
+        # Defines behaviour whenever signals have to be changed.
         signalDuration = nextSignal.getSignalLength()
         print('SIGNAL : ', signalDuration)
 
-        deadline += signalDuration
+        deadline += signalDuration # deadline recorded in terms of total steps.
 
         print('DEADLINE : ', deadline)
 
@@ -125,9 +92,10 @@ while step < 250:
         traci.trafficlight.setPhaseDuration("t0", signalDuration - 3)
         print(signalString)
         
-        changeState = False
+        changeState = False # prevent calls to setRedYellowGreenState
     
     elif (cycle == deadline - 3):
+        # set yellow phase for three steps before deadline
         signalString = nextSignal.getYellowSignalString()
         traci.trafficlight.setRedYellowGreenState("t0", signalString)
         traci.trafficlight.setPhaseDuration("t0", 3)
@@ -137,6 +105,9 @@ while step < 250:
         changeState = True
         laneIndex =  (laneIndex + 1) % 4
         nextSignal = lanes[laneIndex]
+
+        # update the next signal agent with current information
+        nextSignal.updateProbabilitySet()
     
     cycle += 1
     # print(cycle)
