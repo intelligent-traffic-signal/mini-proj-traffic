@@ -20,14 +20,34 @@
     make sim
     ```
 
-4. Run python Round Robin script
-
-   ```shell
-   make rr
-   ```
-
-5. Clean
+4. Clean
 
     ```shell
     make clean
+    ```
+
+## Create env for tensorforce
+
+1. Create conda env from requirements
+
+    ```shell
+    conda create --name <env> --file conda_requirements.txt
+    ```
+
+2. Activate the environment
+
+    ```shell
+    source activate <env>
+    ```
+
+3. Install pip inside the conda environment
+
+    ```shell
+    conda install pip
+    ```
+
+4. Install pip requirements inside the env
+
+    ```shell
+    pip install -r pip_requirements.txt
     ```
