@@ -36,9 +36,9 @@ AVAILABLE PARAMETERS
     laneChangedTo : The number of vehicles that changed to this lane.
 """
 
-def getTrafData(edge_id, parameter):
+def getTrafData(filename, edge_id, parameter):
     # NOTE: Although './trafficinfo_detailed.xml' has been used, in case of macroscopic parameters, change file to './trafficinfo.xml'
-    with open('trafficinfo_detailed.xml', 'r') as traf:
+    with open(filename, 'r') as traf:
         data = traf.read()
 
     traf_data = BeautifulSoup(data, 'xml')

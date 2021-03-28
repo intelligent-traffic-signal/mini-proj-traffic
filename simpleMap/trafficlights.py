@@ -17,7 +17,7 @@ class TrafficAgent:
     """Defines individual traffic signal behaviour."""
 
     def __init__(self, lane, gss, yss):
-        self._strategySet = list(range(5, 31, 2)) # Action space defined as discrete time intervals; base idea can be tweaked. 
+        self._strategySet = list(range(5, 31)) # Action space defined as discrete time intervals; base idea can be tweaked. 
         self._strategyCount = len(self._strategySet)
 
         self._probabilitySet = [1 / self._strategyCount for i in range(self._strategyCount)]
@@ -27,22 +27,29 @@ class TrafficAgent:
         self._greenSignalString = gss
         self._yellowSignalString = yss
 
-    def updateProbabilitySet(self):
+    def updateProbabilitySet(self, prevLane):
         """Defines feedback mechanism. Probability space updated according to backlog in lane."""
-        queueLength = traci.lane.getLastStepVehicleNumber(self._lane)
-        avgSpeed = 13.89 # Arbitrary set based on simpleMap.net.xml
-
-        rewardSet = [(queueLength * 5 - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
         
-        totalRwd = sum(rewardSet)
-        for i in range(self._strategyCount):
-            rewardSet[i] /= totalRwd
+        queueLength = traci.lane.getLastStepVehicleNumber(self._lane)
+        vehicleLength = traci.lane.getLastStepLength(self._lane)
 
-        self._probabilitySet = rewardSet
+        queueLength = queueLength * vehicleLength
+        avgSpeed = traci.lane.getLastStepMeanSpeed(prevLane._lane) 
+
+        print("QUEUE LENGTH : ", queueLength)
+        print("AVG SPEED : ", avgSpeed)
+
+        rewardSet = [abs(queueLength - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
+        print(rewardSet)
+
+        reward = min(rewardSet)
+        self._probabilitySet = [1 if rewardSet[i] == reward else 0 for i in range(self._strategyCount)]
+        print(self._probabilitySet)
 
     def getSignalLength(self):
-        """Update probability space to allow uncertainty."""
-        return random.choices(self._strategySet, weights=self._probabilitySet, k=1)[0]
+        for i in range(self._strategyCount):
+            if self._probabilitySet[i]:
+                return self._strategySet[i]
 
     def getGreenSignalString(self):
         return self._greenSignalString
@@ -59,7 +66,7 @@ lanes = [lane0, lane1, lane2, lane3]
 laneIndex = 0
 
 sumoBinary = checkBinary('sumo-gui')
-sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml']
+sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml', '--queue-output', 'queuedata.xml']
 
 step = 0
 greenDur = 30
@@ -103,11 +110,12 @@ while step < 250:
     
     elif (cycle == deadline - 1):
         changeState = True
-        laneIndex =  (laneIndex + 1) % 4
-        nextSignal = lanes[laneIndex]
 
         # update the next signal agent with current information
-        nextSignal.updateProbabilitySet()
+        nextSignal.updateProbabilitySet(lanes[(laneIndex - 1) % 4])
+        
+        laneIndex =  (laneIndex + 1) % 4
+        nextSignal = lanes[laneIndex]
     
     cycle += 1
     # print(cycle)
