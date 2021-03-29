@@ -57,10 +57,10 @@ def run():
     greenDur = 30
     yellowDur = 3
 
-    lane0 = TrafficAgent('-gneE1_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr', greenDur, yellowDur)
-    lane1 = TrafficAgent('-gneE3_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr', greenDur, yellowDur)
-    lane2 = TrafficAgent('gneE0_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy', greenDur, yellowDur)
-    lane3 = TrafficAgent('-gneE5_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr', greenDur, yellowDur)
+    lane0 = TrafficAgent('-gneE1_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr', greenDur, yellowDur)   # east to west
+    lane1 = TrafficAgent('-gneE3_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr', greenDur, yellowDur)   # north to south
+    lane2 = TrafficAgent('gneE0_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy', greenDur, yellowDur)    # west to east
+    lane3 = TrafficAgent('-gneE5_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr', greenDur, yellowDur)   # south to north 
 
     lanes = [lane0, lane1, lane2, lane3]
     laneIndex = 0
