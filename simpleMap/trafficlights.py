@@ -11,24 +11,24 @@ else:
 from sumolib import checkBinary  # noqa
 import traci  # noqa
 
-import random
+
+
+sumoBinary = checkBinary('sumo-gui')
+sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg']
 
 class TrafficAgent:
     """Defines individual traffic signal behaviour."""
 
-    def __init__(self, lane, gss, yss):
-        self._strategySet = list(range(5, 31)) # Action space defined as discrete time intervals; base idea can be tweaked. 
-        self._strategyCount = len(self._strategySet)
-
-        self._probabilitySet = [1 / self._strategyCount for i in range(self._strategyCount)]
-        
+    def __init__(self, lane, gss, yss, gd, yd):
         self._lane = lane
+        self._greenDur = gd
+        self._yellowDur = yd
 
         self._greenSignalString = gss
         self._yellowSignalString = yss
 
-    def updateProbabilitySet(self, prevLane):
-        """Defines feedback mechanism. Probability space updated according to backlog in lane."""
+    def printQueueStats(self, prevLane):
+        """Prints queue data"""
         
         queueLength = traci.lane.getLastStepVehicleNumber(self._lane)
         vehicleLength = traci.lane.getLastStepLength(self._lane)
@@ -39,17 +39,12 @@ class TrafficAgent:
         print("QUEUE LENGTH : ", queueLength)
         print("AVG SPEED : ", avgSpeed)
 
-        rewardSet = [abs(queueLength - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
-        print(rewardSet)
+        reward = queueLength - avgSpeed * (self._greenDur + self._yellowDur)
+        print("REWARD : ", reward)
 
-        reward = min(rewardSet)
-        self._probabilitySet = [1 if rewardSet[i] == reward else 0 for i in range(self._strategyCount)]
-        print(self._probabilitySet)
 
     def getSignalLength(self):
-        for i in range(self._strategyCount):
-            if self._probabilitySet[i]:
-                return self._strategySet[i]
+        return self._greenDur + self._yellowDur
 
     def getGreenSignalString(self):
         return self._greenSignalString
@@ -57,70 +52,73 @@ class TrafficAgent:
     def getYellowSignalString(self):
         return self._yellowSignalString
 
-lane0 = TrafficAgent('-gneE1_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr')
-lane1 = TrafficAgent('-gneE3_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr')
-lane2 = TrafficAgent('gneE0_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy')
-lane3 = TrafficAgent('-gneE5_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')
 
-lanes = [lane0, lane1, lane2, lane3]
-laneIndex = 0
+def run():
+    greenDur = 30
+    yellowDur = 3
 
-sumoBinary = checkBinary('sumo-gui')
-sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml', '--queue-output', 'queuedata.xml']
+    lane0 = TrafficAgent('-gneE1_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr', greenDur, yellowDur)
+    lane1 = TrafficAgent('-gneE3_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr', greenDur, yellowDur)
+    lane2 = TrafficAgent('gneE0_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy', greenDur, yellowDur)
+    lane3 = TrafficAgent('-gneE5_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr', greenDur, yellowDur)
 
-step = 0
-greenDur = 30
-yellowDur = 3
-cycle = 0
+    lanes = [lane0, lane1, lane2, lane3]
+    laneIndex = 0
 
-currentCycle = 0
-changeState = True
-nextSignal = lane0
+    step = 0
 
-signalDuration = 0
-deadline = 0
+    cycle = 0
 
-traci.start(sumoCmd)
+    currentCycle = 0
+    changeState = True
+    nextSignal = lane0
 
-while step < 250:
-    traci.simulationStep()
+    signalDuration = 0
+    deadline = 0
 
-    if changeState:
-        # Defines behaviour whenever signals have to be changed.
-        signalDuration = nextSignal.getSignalLength()
-        print('SIGNAL : ', signalDuration)
 
-        deadline += signalDuration # deadline recorded in terms of total steps.
 
-        print('DEADLINE : ', deadline)
+    while step < 250:
+        traci.simulationStep()
 
-        signalString = nextSignal.getGreenSignalString()
-        traci.trafficlight.setRedYellowGreenState("t0", signalString)
-        traci.trafficlight.setPhaseDuration("t0", signalDuration - 3)
-        print(signalString)
+        if changeState:
+            # Defines behaviour whenever signals have to be changed.
+            signalDuration = greenDur + yellowDur
+            print('SIGNAL : ', signalDuration)
+
+            deadline += signalDuration # deadline recorded in terms of total steps.
+
+            print('DEADLINE : ', deadline)
+
+            signalString = nextSignal.getGreenSignalString()
+            traci.trafficlight.setRedYellowGreenState("t0", signalString)
+            traci.trafficlight.setPhaseDuration("t0", signalDuration - yellowDur)
+            print(signalString)
+            
+            changeState = False # prevent calls to setRedYellowGreenState
         
-        changeState = False # prevent calls to setRedYellowGreenState
-    
-    elif (cycle == deadline - 3):
-        # set yellow phase for three steps before deadline
-        signalString = nextSignal.getYellowSignalString()
-        traci.trafficlight.setRedYellowGreenState("t0", signalString)
-        traci.trafficlight.setPhaseDuration("t0", 3)
-        print(signalString)
-    
-    elif (cycle == deadline - 1):
-        changeState = True
-
-        # update the next signal agent with current information
-        nextSignal.updateProbabilitySet(lanes[(laneIndex - 1) % 4])
+        elif (cycle == deadline - yellowDur):
+            # set yellow phase for three steps before deadline
+            signalString = nextSignal.getYellowSignalString()
+            traci.trafficlight.setRedYellowGreenState("t0", signalString)
+            traci.trafficlight.setPhaseDuration("t0", 3)
+            print(signalString)
         
-        laneIndex =  (laneIndex + 1) % 4
-        nextSignal = lanes[laneIndex]
-    
-    cycle += 1
-    # print(cycle)
-    #END OF SECTION FOR CONTROLLING TRAFFIIC SIGNAL WITH TRACI
+        elif (cycle == deadline - 1):
+            changeState = True        
+            nextSignal.printQueueStats(lanes[(laneIndex - 1) % 4])
+            laneIndex =  (laneIndex + 1) % 4
+            nextSignal = lanes[laneIndex]
+            print()
+        
+        cycle += 1
+        # print(cycle)
+        #END OF SECTION FOR CONTROLLING TRAFFIIC SIGNAL WITH TRACI
 
-    step += 1
+        step += 1
 
-traci.close()
+    traci.close()
+
+if __name__ == '__main__':
+    traci.start(sumoCmd)
+    run()
