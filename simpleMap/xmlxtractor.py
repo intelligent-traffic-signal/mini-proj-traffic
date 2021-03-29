@@ -36,14 +36,14 @@ AVAILABLE PARAMETERS
     laneChangedTo : The number of vehicles that changed to this lane.
 """
 
-def getTrafData(filename, edge_id, parameter):
+def getTrafData(filename, identifier, identifier_id, parameter):
     # NOTE: Although './trafficinfo_detailed.xml' has been used, in case of macroscopic parameters, change file to './trafficinfo.xml'
     with open(filename, 'r') as traf:
         data = traf.read()
 
     traf_data = BeautifulSoup(data, 'xml')
 
-    lane_data = traf_data.find_all("edge", {'id' : edge_id})
+    lane_data = traf_data.find_all(identifier, {'id' : identifier_id})
 
     desired_data = []
 
@@ -51,3 +51,84 @@ def getTrafData(filename, edge_id, parameter):
         desired_data.append(float(lane_data[i].find("lane").get(parameter)))
 
     return desired_data
+
+with open("queuedata.xml", 'r') as qd:
+    data = qd.read()
+
+queue_data = BeautifulSoup(data, 'xml')
+
+lane_data = queue_data.find_all('lanes')
+
+dsd_0 = []
+
+for i in range(1, len(lane_data)):
+    dat = lane_data[i].find("lane", {'id' : '-gneE3_0'})
+    if dat:
+        dsd_0.append(float(dat.get("queueing_time")))
+    else:
+        dsd_0.append(0.0)
+
+ticks = [_ for _ in range(1, len(lane_data))]
+
+plt.plot(ticks, dsd_0)
+plt.title("FC1 N->S QT Data")
+plt.xlabel("Timestep")
+plt.ylabel("Queueing Time")
+plt.savefig('./plots/fc1_ntos_qt.png')
+plt.close()
+
+
+dsd_1 = []
+
+for i in range(1, len(lane_data)):
+    dat = lane_data[i].find("lane", {'id' : '-gneE1_0'})
+    if dat:
+        dsd_1.append(float(dat.get("queueing_time")))
+    else:
+        dsd_1.append(0.0)
+
+ticks = [_ for _ in range(1, len(lane_data))]
+
+plt.plot(ticks, dsd_1)
+plt.title("FC1 W->E QT Data")
+plt.xlabel("Timestep")
+plt.ylabel("Queueing Time")
+plt.savefig('./plots/fc1_wtoe_qt.png')
+plt.close()
+
+
+dsd_2 = []
+
+for i in range(1, len(lane_data)):
+    dat = lane_data[i].find("lane", {'id' : '-gneE5_0'})
+    if dat:
+        dsd_2.append(float(dat.get("queueing_time")))
+    else:
+        dsd_2.append(0.0)
+
+ticks = [_ for _ in range(1, len(lane_data))]
+
+plt.plot(ticks, dsd_2)
+plt.title("FC1 S->N QT Data")
+plt.xlabel("Timestep")
+plt.ylabel("Queueing Time")
+plt.savefig('./plots/fc1_ston_qt.png')
+plt.close()
+
+dsd_3 = []
+
+for i in range(1, len(lane_data)):
+    dat = lane_data[i].find("lane", {'id' : 'gneE0_0'})
+    if dat:
+        dsd_3.append(float(dat.get("queueing_time")))
+    else:
+        dsd_3.append(0.0)
+
+ticks = [_ for _ in range(1, len(lane_data))]
+
+plt.plot(ticks, dsd_3)
+plt.title("FC1 E->W QT Data")
+plt.xlabel("Timestep")
+plt.ylabel("Queueing Time")
+plt.savefig('./plots/fc1_etow_qt.png')
+plt.close()
