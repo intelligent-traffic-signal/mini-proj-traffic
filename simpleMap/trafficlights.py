@@ -57,10 +57,10 @@ class TrafficAgent:
     def getYellowSignalString(self):
         return self._yellowSignalString
 
-lane0 = TrafficAgent('-gneE1_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr')    # east to west
-lane1 = TrafficAgent('-gneE3_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr')    # north to south
-lane2 = TrafficAgent('gneE0_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy')     # west to east
-lane3 = TrafficAgent('-gneE5_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')    # south to north
+lane0 = TrafficAgent('E2T_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr')     # east to west
+lane1 = TrafficAgent('N2T_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr')     # north to south
+lane2 = TrafficAgent('W2T_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy')     # west to east
+lane3 = TrafficAgent('S2T_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')     # south to north
 
 lanes = [lane0, lane1, lane2, lane3]
 laneIndex = 0

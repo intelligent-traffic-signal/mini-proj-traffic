@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 03/28/21 11:57:45 by Eclipse SUMO GUI Version 1.8.0
+<!-- generated on Fri  2 Apr 12:46:34 2021 by Eclipse SUMO GUI Version 1.8.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="simpleMap.net.xml"/>
-        <route-files value="passenger_routes.rou.xml,bus_routes.rou.xml,truck_routes.rou.xml,delivery_routes.rou.xml"/>
+        <route-files value="routes.rou.xml"/>
         <additional-files value="add_macro.xml"/>
     </input>
 
@@ -14,7 +14,7 @@
     </output>
 
     <traci_server>
-        <remote-port value="60372"/>
+        <remote-port value="54368"/>
     </traci_server>
 
 </configuration>
@@ -89,1453 +89,1444 @@
     </data>
     <data timestep="22.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.03"/>
+            <lane id="S2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.26"/>
         </lanes>
     </data>
     <data timestep="23.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="1.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
+            <lane id="S2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.10"/>
         </lanes>
     </data>
     <data timestep="24.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="S2T_0" queueing_time="1.00" queueing_length="6.04" queueing_length_experimental="6.04"/>
         </lanes>
     </data>
     <data timestep="25.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.05"/>
-            <lane id="-gneE5_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="N2T_0" queueing_time="1.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
+            <lane id="S2T_0" queueing_time="2.00" queueing_length="6.02" queueing_length_experimental="6.02"/>
         </lanes>
     </data>
     <data timestep="26.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="14.17"/>
+            <lane id="S2T_0" queueing_time="3.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
+            <lane id="W2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.16"/>
         </lanes>
     </data>
     <data timestep="27.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="5.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="S2T_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="1.00" queueing_length="6.08" queueing_length_experimental="6.08"/>
         </lanes>
     </data>
     <data timestep="28.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="6.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="E2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.18"/>
+            <lane id="S2T_0" queueing_time="5.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="2.00" queueing_length="6.02" queueing_length_experimental="6.02"/>
         </lanes>
     </data>
     <data timestep="29.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.04"/>
-            <lane id="-gneE5_0" queueing_time="7.00" queueing_length="6.00" queueing_length_experimental="20.56"/>
+            <lane id="E2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.07"/>
+            <lane id="S2T_0" queueing_time="6.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
         </lanes>
     </data>
     <data timestep="30.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="1.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.29"/>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="20.52" queueing_length_experimental="20.52"/>
+            <lane id="E2T_0" queueing_time="1.00" queueing_length="6.03" queueing_length_experimental="6.03"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.28"/>
+            <lane id="S2T_0" queueing_time="7.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="13.51"/>
         </lanes>
     </data>
     <data timestep="31.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.01"/>
-            <lane id="-gneE5_0" queueing_time="9.00" queueing_length="20.51" queueing_length_experimental="30.22"/>
+            <lane id="E2T_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.04"/>
+            <lane id="S2T_0" queueing_time="8.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="1.00" queueing_length="13.51" queueing_length_experimental="13.51"/>
         </lanes>
     </data>
     <data timestep="32.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
-            <lane id="-gneE3_0" queueing_time="1.00" queueing_length="6.00" queueing_length_experimental="13.67"/>
-            <lane id="-gneE5_0" queueing_time="10.00" queueing_length="30.15" queueing_length_experimental="39.85"/>
+            <lane id="E2T_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="N2T_0" queueing_time="1.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="S2T_0" queueing_time="9.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
         </lanes>
     </data>
     <data timestep="33.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="13.58"/>
-            <lane id="-gneE3_0" queueing_time="2.00" queueing_length="13.58" queueing_length_experimental="13.58"/>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="30.13" queueing_length_experimental="39.29"/>
+            <lane id="E2T_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="13.70"/>
+            <lane id="N2T_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="S2T_0" queueing_time="10.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
         </lanes>
     </data>
     <data timestep="34.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="5.00" queueing_length="13.53" queueing_length_experimental="21.27"/>
-            <lane id="-gneE3_0" queueing_time="3.00" queueing_length="13.54" queueing_length_experimental="13.54"/>
-            <lane id="-gneE5_0" queueing_time="12.00" queueing_length="30.11" queueing_length_experimental="47.16"/>
+            <lane id="E2T_0" queueing_time="5.00" queueing_length="6.00" queueing_length_experimental="13.52"/>
+            <lane id="N2T_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="S2T_0" queueing_time="11.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
         </lanes>
     </data>
     <data timestep="35.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="6.00" queueing_length="13.50" queueing_length_experimental="21.12"/>
-            <lane id="-gneE3_0" queueing_time="4.00" queueing_length="13.51" queueing_length_experimental="13.51"/>
-            <lane id="-gneE5_0" queueing_time="13.00" queueing_length="39.13" queueing_length_experimental="46.85"/>
+            <lane id="E2T_0" queueing_time="6.00" queueing_length="13.51" queueing_length_experimental="13.51"/>
+            <lane id="N2T_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="13.73"/>
+            <lane id="S2T_0" queueing_time="12.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.14"/>
         </lanes>
     </data>
     <data timestep="36.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="7.00" queueing_length="21.05" queueing_length_experimental="28.80"/>
-            <lane id="-gneE3_0" queueing_time="5.00" queueing_length="13.51" queueing_length_experimental="13.51"/>
-            <lane id="-gneE5_0" queueing_time="7.00" queueing_length="39.11" queueing_length_experimental="54.40"/>
+            <lane id="E2T_0" queueing_time="7.00" queueing_length="13.51" queueing_length_experimental="13.51"/>
+            <lane id="N2T_0" queueing_time="5.00" queueing_length="6.00" queueing_length_experimental="13.57"/>
+            <lane id="W2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="13.94"/>
         </lanes>
     </data>
     <data timestep="37.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="8.00" queueing_length="21.01" queueing_length_experimental="28.57"/>
-            <lane id="-gneE3_0" queueing_time="6.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
-            <lane id="-gneE5_0" queueing_time="6.00" queueing_length="54.30" queueing_length_experimental="54.30"/>
-            <lane id="gneE0_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.22"/>
+            <lane id="E2T_0" queueing_time="8.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
+            <lane id="N2T_0" queueing_time="6.00" queueing_length="13.51" queueing_length_experimental="21.21"/>
+            <lane id="W2T_0" queueing_time="1.00" queueing_length="6.01" queueing_length_experimental="13.65"/>
         </lanes>
     </data>
     <data timestep="38.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="9.00" queueing_length="28.54" queueing_length_experimental="28.54"/>
-            <lane id="-gneE3_0" queueing_time="7.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
-            <lane id="-gneE5_0" queueing_time="4.00" queueing_length="46.62" queueing_length_experimental="54.17"/>
-            <lane id="gneE0_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.01"/>
+            <lane id="E2T_0" queueing_time="9.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
+            <lane id="N2T_0" queueing_time="7.00" queueing_length="13.51" queueing_length_experimental="21.04"/>
+            <lane id="W2T_0" queueing_time="2.00" queueing_length="13.55" queueing_length_experimental="13.55"/>
         </lanes>
     </data>
     <data timestep="39.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="10.00" queueing_length="28.51" queueing_length_experimental="28.51"/>
-            <lane id="-gneE3_0" queueing_time="8.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
-            <lane id="-gneE5_0" queueing_time="3.00" queueing_length="54.14" queueing_length_experimental="61.68"/>
-            <lane id="gneE0_0" queueing_time="1.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="E2T_0" queueing_time="10.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
+            <lane id="N2T_0" queueing_time="8.00" queueing_length="21.02" queueing_length_experimental="21.02"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="13.52" queueing_length_experimental="21.49"/>
         </lanes>
     </data>
     <data timestep="40.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="11.00" queueing_length="28.51" queueing_length_experimental="28.51"/>
-            <lane id="-gneE3_0" queueing_time="9.00" queueing_length="13.50" queueing_length_experimental="23.26"/>
-            <lane id="-gneE5_0" queueing_time="2.00" queueing_length="61.65" queueing_length_experimental="61.65"/>
-            <lane id="gneE0_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="13.52"/>
+            <lane id="E2T_0" queueing_time="11.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
+            <lane id="N2T_0" queueing_time="9.00" queueing_length="21.01" queueing_length_experimental="21.01"/>
+            <lane id="S2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.06"/>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="13.51" queueing_length_experimental="21.04"/>
         </lanes>
     </data>
     <data timestep="41.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="8.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
-            <lane id="-gneE3_0" queueing_time="10.00" queueing_length="13.50" queueing_length_experimental="23.15"/>
-            <lane id="-gneE5_0" queueing_time="2.00" queueing_length="61.62" queueing_length_experimental="61.62"/>
-            <lane id="gneE0_0" queueing_time="3.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
+            <lane id="E2T_0" queueing_time="7.00" queueing_length="13.50" queueing_length_experimental="13.50"/>
+            <lane id="N2T_0" queueing_time="10.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="S2T_0" queueing_time="1.00" queueing_length="6.02" queueing_length_experimental="6.02"/>
+            <lane id="W2T_0" queueing_time="5.00" queueing_length="21.02" queueing_length_experimental="21.02"/>
         </lanes>
     </data>
     <data timestep="42.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="7.00" queueing_length="28.50" queueing_length_experimental="36.10"/>
-            <lane id="-gneE3_0" queueing_time="11.00" queueing_length="23.11" queueing_length_experimental="23.11"/>
-            <lane id="-gneE5_0" queueing_time="2.00" queueing_length="13.00" queueing_length_experimental="61.44"/>
-            <lane id="gneE0_0" queueing_time="4.00" queueing_length="13.50" queueing_length_experimental="21.06"/>
+            <lane id="N2T_0" queueing_time="11.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="S2T_0" queueing_time="2.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
+            <lane id="W2T_0" queueing_time="6.00" queueing_length="21.01" queueing_length_experimental="28.68"/>
         </lanes>
     </data>
     <data timestep="43.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="6.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
-            <lane id="-gneE3_0" queueing_time="12.00" queueing_length="23.10" queueing_length_experimental="23.10"/>
-            <lane id="-gneE5_0" queueing_time="3.00" queueing_length="22.64" queueing_length_experimental="68.94"/>
-            <lane id="gneE0_0" queueing_time="5.00" queueing_length="21.02" queueing_length_experimental="21.02"/>
+            <lane id="N2T_0" queueing_time="12.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="S2T_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="7.00" queueing_length="21.00" queueing_length_experimental="36.22"/>
         </lanes>
     </data>
     <data timestep="44.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="2.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
-            <lane id="-gneE3_0" queueing_time="13.00" queueing_length="23.10" queueing_length_experimental="23.10"/>
-            <lane id="-gneE5_0" queueing_time="4.00" queueing_length="31.66" queueing_length_experimental="67.87"/>
-            <lane id="gneE0_0" queueing_time="6.00" queueing_length="21.01" queueing_length_experimental="21.01"/>
+            <lane id="N2T_0" queueing_time="13.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="S2T_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="28.52" queueing_length_experimental="36.06"/>
         </lanes>
     </data>
     <data timestep="45.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="35.58"/>
-            <lane id="-gneE3_0" queueing_time="14.00" queueing_length="23.10" queueing_length_experimental="23.10"/>
-            <lane id="-gneE5_0" queueing_time="5.00" queueing_length="31.61" queueing_length_experimental="56.27"/>
-            <lane id="gneE0_0" queueing_time="7.00" queueing_length="21.00" queueing_length_experimental="37.14"/>
+            <lane id="E2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.01"/>
+            <lane id="N2T_0" queueing_time="14.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="S2T_0" queueing_time="5.00" queueing_length="6.00" queueing_length_experimental="13.70"/>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="36.03" queueing_length_experimental="43.65"/>
         </lanes>
     </data>
     <data timestep="46.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="1.00" queueing_length="6.00" queueing_length_experimental="34.43"/>
-            <lane id="-gneE3_0" queueing_time="14.00" queueing_length="23.10" queueing_length_experimental="23.10"/>
-            <lane id="-gneE5_0" queueing_time="6.00" queueing_length="39.12" queueing_length_experimental="55.33"/>
-            <lane id="gneE0_0" queueing_time="8.00" queueing_length="28.51" queueing_length_experimental="36.12"/>
+            <lane id="E2T_0" queueing_time="1.00" queueing_length="6.00" queueing_length_experimental="13.88"/>
+            <lane id="N2T_0" queueing_time="10.00" queueing_length="21.00" queueing_length_experimental="28.82"/>
+            <lane id="S2T_0" queueing_time="6.00" queueing_length="6.00" queueing_length_experimental="13.53"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="36.01" queueing_length_experimental="43.53"/>
         </lanes>
     </data>
     <data timestep="47.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="13.52"/>
-            <lane id="-gneE3_0" queueing_time="6.00" queueing_length="23.10" queueing_length_experimental="23.10"/>
-            <lane id="-gneE5_0" queueing_time="7.00" queueing_length="46.67" queueing_length_experimental="63.19"/>
-            <lane id="gneE0_0" queueing_time="9.00" queueing_length="28.50" queueing_length_experimental="36.02"/>
+            <lane id="E2T_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="21.98"/>
+            <lane id="N2T_0" queueing_time="9.00" queueing_length="21.00" queueing_length_experimental="28.61"/>
+            <lane id="S2T_0" queueing_time="7.00" queueing_length="13.51" queueing_length_experimental="21.06"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="43.51" queueing_length_experimental="51.13"/>
         </lanes>
     </data>
     <data timestep="48.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="3.00" queueing_length="13.51" queueing_length_experimental="21.14"/>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="30.74"/>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="46.63" queueing_length_experimental="71.02"/>
-            <lane id="gneE0_0" queueing_time="10.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="E2T_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="21.52"/>
+            <lane id="N2T_0" queueing_time="1.00" queueing_length="28.53" queueing_length_experimental="28.53"/>
+            <lane id="S2T_0" queueing_time="8.00" queueing_length="21.02" queueing_length_experimental="21.02"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="43.51" queueing_length_experimental="51.02"/>
         </lanes>
     </data>
     <data timestep="49.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="4.00" queueing_length="21.07" queueing_length_experimental="28.69"/>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="29.88"/>
-            <lane id="-gneE5_0" queueing_time="9.00" queueing_length="54.14" queueing_length_experimental="70.19"/>
-            <lane id="gneE0_0" queueing_time="11.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="E2T_0" queueing_time="4.00" queueing_length="13.52" queueing_length_experimental="21.28"/>
+            <lane id="N2T_0" queueing_time="1.00" queueing_length="36.07" queueing_length_experimental="36.07"/>
+            <lane id="S2T_0" queueing_time="9.00" queueing_length="21.01" queueing_length_experimental="21.01"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="50.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="5.00" queueing_length="21.01" queueing_length_experimental="28.58"/>
-            <lane id="-gneE3_0" queueing_time="1.00" queueing_length="6.01" queueing_length_experimental="6.01"/>
-            <lane id="-gneE5_0" queueing_time="10.00" queueing_length="54.12" queueing_length_experimental="69.77"/>
-            <lane id="gneE0_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="E2T_0" queueing_time="5.00" queueing_length="13.51" queueing_length_experimental="28.81"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="34.73"/>
+            <lane id="S2T_0" queueing_time="10.00" queueing_length="21.01" queueing_length_experimental="21.01"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="51.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="6.00" queueing_length="28.52" queueing_length_experimental="36.62"/>
-            <lane id="-gneE3_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="61.68" queueing_length_experimental="79.48"/>
-            <lane id="gneE0_0" queueing_time="11.00" queueing_length="36.01" queueing_length_experimental="43.68"/>
+            <lane id="E2T_0" queueing_time="6.00" queueing_length="21.03" queueing_length_experimental="28.64"/>
+            <lane id="N2T_0" queueing_time="1.00" queueing_length="6.02" queueing_length_experimental="22.80"/>
+            <lane id="S2T_0" queueing_time="11.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="52.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="7.00" queueing_length="28.51" queueing_length_experimental="36.28"/>
-            <lane id="-gneE3_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="15.66"/>
-            <lane id="-gneE5_0" queueing_time="12.00" queueing_length="61.65" queueing_length_experimental="79.04"/>
-            <lane id="gneE0_0" queueing_time="10.00" queueing_length="36.01" queueing_length_experimental="43.58"/>
+            <lane id="E2T_0" queueing_time="7.00" queueing_length="21.01" queueing_length_experimental="28.54"/>
+            <lane id="N2T_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="30.52"/>
+            <lane id="S2T_0" queueing_time="12.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="51.01" queueing_length_experimental="58.69"/>
         </lanes>
     </data>
     <data timestep="53.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="8.00" queueing_length="28.50" queueing_length_experimental="43.80"/>
-            <lane id="-gneE3_0" queueing_time="4.00" queueing_length="15.63" queueing_length_experimental="23.20"/>
-            <lane id="-gneE5_0" queueing_time="13.00" queueing_length="69.17" queueing_length_experimental="86.70"/>
-            <lane id="gneE0_0" queueing_time="8.00" queueing_length="43.52" queueing_length_experimental="51.40"/>
+            <lane id="E2T_0" queueing_time="8.00" queueing_length="28.52" queueing_length_experimental="36.08"/>
+            <lane id="N2T_0" queueing_time="3.00" queueing_length="13.52" queueing_length_experimental="21.10"/>
+            <lane id="S2T_0" queueing_time="13.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="51.01" queueing_length_experimental="58.54"/>
         </lanes>
     </data>
     <data timestep="54.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="9.00" queueing_length="36.01" queueing_length_experimental="43.56"/>
-            <lane id="-gneE3_0" queueing_time="5.00" queueing_length="23.15" queueing_length_experimental="30.82"/>
-            <lane id="-gneE5_0" queueing_time="14.00" queueing_length="78.79" queueing_length_experimental="94.81"/>
-            <lane id="gneE0_0" queueing_time="7.00" queueing_length="43.51" queueing_length_experimental="51.17"/>
+            <lane id="E2T_0" queueing_time="9.00" queueing_length="36.04" queueing_length_experimental="36.04"/>
+            <lane id="N2T_0" queueing_time="4.00" queueing_length="21.03" queueing_length_experimental="28.71"/>
+            <lane id="S2T_0" queueing_time="14.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="58.51" queueing_length_experimental="58.51"/>
         </lanes>
     </data>
     <data timestep="55.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="10.00" queueing_length="43.52" queueing_length_experimental="51.94"/>
-            <lane id="-gneE3_0" queueing_time="6.00" queueing_length="23.11" queueing_length_experimental="30.68"/>
-            <lane id="-gneE5_0" queueing_time="15.00" queueing_length="78.75" queueing_length_experimental="94.36"/>
-            <lane id="gneE0_0" queueing_time="3.00" queueing_length="43.51" queueing_length_experimental="58.82"/>
+            <lane id="E2T_0" queueing_time="10.00" queueing_length="36.02" queueing_length_experimental="36.02"/>
+            <lane id="N2T_0" queueing_time="5.00" queueing_length="21.01" queueing_length_experimental="28.55"/>
+            <lane id="S2T_0" queueing_time="15.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="58.51" queueing_length_experimental="66.04"/>
         </lanes>
     </data>
     <data timestep="56.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="11.00" queueing_length="43.51" queueing_length_experimental="51.37"/>
-            <lane id="-gneE3_0" queueing_time="7.00" queueing_length="30.64" queueing_length_experimental="45.19"/>
-            <lane id="-gneE5_0" queueing_time="16.00" queueing_length="86.28" queueing_length_experimental="102.13"/>
-            <lane id="gneE0_0" queueing_time="2.00" queueing_length="51.01" queueing_length_experimental="58.64"/>
+            <lane id="E2T_0" queueing_time="11.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="N2T_0" queueing_time="6.00" queueing_length="28.53" queueing_length_experimental="28.53"/>
+            <lane id="S2T_0" queueing_time="10.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="66.02" queueing_length_experimental="73.66"/>
         </lanes>
     </data>
     <data timestep="57.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="12.00" queueing_length="43.51" queueing_length_experimental="51.19"/>
-            <lane id="-gneE3_0" queueing_time="8.00" queueing_length="45.15" queueing_length_experimental="54.28"/>
-            <lane id="-gneE5_0" queueing_time="15.00" queueing_length="86.24" queueing_length_experimental="101.84"/>
-            <lane id="gneE0_0" queueing_time="3.00" queueing_length="58.56" queueing_length_experimental="66.68"/>
+            <lane id="E2T_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="43.96"/>
+            <lane id="N2T_0" queueing_time="7.00" queueing_length="28.51" queueing_length_experimental="28.51"/>
+            <lane id="S2T_0" queueing_time="10.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="66.01" queueing_length_experimental="73.53"/>
         </lanes>
     </data>
     <data timestep="58.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="13.00" queueing_length="43.51" queueing_length_experimental="51.04"/>
-            <lane id="-gneE3_0" queueing_time="9.00" queueing_length="45.12" queueing_length_experimental="54.16"/>
-            <lane id="-gneE5_0" queueing_time="15.00" queueing_length="86.23" queueing_length_experimental="101.54"/>
-            <lane id="gneE0_0" queueing_time="4.00" queueing_length="58.47" queueing_length_experimental="66.22"/>
+            <lane id="E2T_0" queueing_time="13.00" queueing_length="36.01" queueing_length_experimental="43.57"/>
+            <lane id="N2T_0" queueing_time="8.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="19.70"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="73.52" queueing_length_experimental="73.52"/>
         </lanes>
     </data>
     <data timestep="59.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="14.00" queueing_length="51.02" queueing_length_experimental="51.02"/>
-            <lane id="-gneE3_0" queueing_time="10.00" queueing_length="54.13" queueing_length_experimental="61.72"/>
-            <lane id="-gneE5_0" queueing_time="14.00" queueing_length="93.74" queueing_length_experimental="101.35"/>
-            <lane id="gneE0_0" queueing_time="5.00" queueing_length="21.02" queueing_length_experimental="66.06"/>
+            <lane id="E2T_0" queueing_time="14.00" queueing_length="43.53" queueing_length_experimental="43.53"/>
+            <lane id="N2T_0" queueing_time="9.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="73.51" queueing_length_experimental="81.13"/>
         </lanes>
     </data>
     <data timestep="60.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="15.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="11.00" queueing_length="61.66" queueing_length_experimental="69.31"/>
-            <lane id="-gneE5_0" queueing_time="14.00" queueing_length="101.28" queueing_length_experimental="101.28"/>
-            <lane id="gneE0_0" queueing_time="6.00" queueing_length="21.01" queueing_length_experimental="65.37"/>
+            <lane id="E2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="N2T_0" queueing_time="10.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="1.00" queueing_length="6.04" queueing_length_experimental="6.04"/>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="81.04" queueing_length_experimental="81.04"/>
         </lanes>
     </data>
     <data timestep="61.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="16.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="12.00" queueing_length="61.63" queueing_length_experimental="69.18"/>
-            <lane id="-gneE5_0" queueing_time="13.00" queueing_length="101.23" queueing_length_experimental="101.23"/>
-            <lane id="gneE0_0" queueing_time="7.00" queueing_length="28.51" queueing_length_experimental="44.52"/>
+            <lane id="E2T_0" queueing_time="13.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="N2T_0" queueing_time="11.00" queueing_length="28.50" queueing_length_experimental="36.05"/>
+            <lane id="S2T_0" queueing_time="2.00" queueing_length="6.02" queueing_length_experimental="13.70"/>
+            <lane id="W2T_0" queueing_time="5.00" queueing_length="21.03" queueing_length_experimental="80.92"/>
         </lanes>
     </data>
     <data timestep="62.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="17.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="13.00" queueing_length="69.15" queueing_length_experimental="76.73"/>
-            <lane id="-gneE5_0" queueing_time="12.00" queueing_length="101.22" queueing_length_experimental="101.22"/>
-            <lane id="gneE0_0" queueing_time="8.00" queueing_length="28.51" queueing_length_experimental="52.10"/>
+            <lane id="E2T_0" queueing_time="12.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="N2T_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="43.62"/>
+            <lane id="S2T_0" queueing_time="3.00" queueing_length="13.61" queueing_length_experimental="21.23"/>
+            <lane id="W2T_0" queueing_time="6.00" queueing_length="28.54" queueing_length_experimental="80.38"/>
         </lanes>
     </data>
     <data timestep="63.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="18.00" queueing_length="51.01" queueing_length_experimental="58.57"/>
-            <lane id="-gneE3_0" queueing_time="14.00" queueing_length="76.66" queueing_length_experimental="76.66"/>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="101.22" queueing_length_experimental="101.22"/>
-            <lane id="gneE0_0" queueing_time="9.00" queueing_length="36.01" queueing_length_experimental="69.94"/>
+            <lane id="E2T_0" queueing_time="11.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="N2T_0" queueing_time="13.00" queueing_length="43.55" queueing_length_experimental="43.55"/>
+            <lane id="S2T_0" queueing_time="4.00" queueing_length="21.15" queueing_length_experimental="21.15"/>
+            <lane id="W2T_0" queueing_time="7.00" queueing_length="36.08" queueing_length_experimental="87.89"/>
         </lanes>
     </data>
     <data timestep="64.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="19.00" queueing_length="58.54" queueing_length_experimental="58.54"/>
-            <lane id="-gneE3_0" queueing_time="15.00" queueing_length="76.63" queueing_length_experimental="76.63"/>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="101.21" queueing_length_experimental="101.21"/>
-            <lane id="gneE0_0" queueing_time="10.00" queueing_length="36.01" queueing_length_experimental="59.60"/>
+            <lane id="E2T_0" queueing_time="11.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="N2T_0" queueing_time="14.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="5.00" queueing_length="13.51" queueing_length_experimental="28.74"/>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="36.03" queueing_length_experimental="86.76"/>
         </lanes>
     </data>
     <data timestep="65.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="20.00" queueing_length="58.51" queueing_length_experimental="58.51"/>
-            <lane id="-gneE3_0" queueing_time="16.00" queueing_length="76.62" queueing_length_experimental="76.62"/>
-            <lane id="-gneE5_0" queueing_time="10.00" queueing_length="101.21" queueing_length_experimental="101.21"/>
-            <lane id="gneE0_0" queueing_time="11.00" queueing_length="43.51" queueing_length_experimental="67.43"/>
+            <lane id="E2T_0" queueing_time="7.00" queueing_length="43.51" queueing_length_experimental="51.18"/>
+            <lane id="N2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="6.00" queueing_length="21.01" queueing_length_experimental="36.41"/>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="43.60" queueing_length_experimental="94.76"/>
         </lanes>
     </data>
     <data timestep="66.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="19.00" queueing_length="58.51" queueing_length_experimental="66.11"/>
-            <lane id="-gneE3_0" queueing_time="17.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="101.21" queueing_length_experimental="101.21"/>
-            <lane id="gneE0_0" queueing_time="12.00" queueing_length="51.03" queueing_length_experimental="75.22"/>
+            <lane id="E2T_0" queueing_time="1.00" queueing_length="6.02" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="16.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="7.00" queueing_length="28.51" queueing_length_experimental="36.23"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="43.55" queueing_length_experimental="84.23"/>
         </lanes>
     </data>
     <data timestep="67.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="19.00" queueing_length="66.02" queueing_length_experimental="66.02"/>
-            <lane id="-gneE3_0" queueing_time="18.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="101.21" queueing_length_experimental="101.21"/>
-            <lane id="gneE0_0" queueing_time="13.00" queueing_length="58.57" queueing_length_experimental="83.40"/>
+            <lane id="E2T_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="59.11"/>
+            <lane id="N2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="8.00" queueing_length="28.51" queueing_length_experimental="36.03"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="51.08" queueing_length_experimental="92.08"/>
         </lanes>
     </data>
     <data timestep="68.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="18.00" queueing_length="66.02" queueing_length_experimental="66.02"/>
-            <lane id="-gneE3_0" queueing_time="19.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="9.00" queueing_length="101.12" queueing_length_experimental="101.12"/>
-            <lane id="gneE0_0" queueing_time="14.00" queueing_length="58.53" queueing_length_experimental="82.37"/>
+            <lane id="E2T_0" queueing_time="3.00" queueing_length="13.52" queueing_length_experimental="58.54"/>
+            <lane id="N2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="9.00" queueing_length="36.02" queueing_length_experimental="36.02"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="51.03" queueing_length_experimental="91.41"/>
         </lanes>
     </data>
     <data timestep="69.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="16.00" queueing_length="66.01" queueing_length_experimental="66.01"/>
-            <lane id="-gneE3_0" queueing_time="20.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="3.00" queueing_length="15.07" queueing_length_experimental="100.80"/>
-            <lane id="gneE0_0" queueing_time="15.00" queueing_length="58.51" queueing_length_experimental="90.50"/>
+            <lane id="E2T_0" queueing_time="4.00" queueing_length="21.03" queueing_length_experimental="57.51"/>
+            <lane id="N2T_0" queueing_time="14.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="10.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="58.54" queueing_length_experimental="90.24"/>
         </lanes>
     </data>
     <data timestep="70.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="16.00" queueing_length="66.01" queueing_length_experimental="66.01"/>
-            <lane id="-gneE3_0" queueing_time="21.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="4.00" queueing_length="15.01" queueing_length_experimental="100.32"/>
-            <lane id="gneE0_0" queueing_time="16.00" queueing_length="66.02" queueing_length_experimental="89.42"/>
+            <lane id="E2T_0" queueing_time="5.00" queueing_length="21.02" queueing_length_experimental="37.13"/>
+            <lane id="N2T_0" queueing_time="9.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="11.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="66.06" queueing_length_experimental="89.75"/>
         </lanes>
     </data>
     <data timestep="71.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="13.00" queueing_length="66.01" queueing_length_experimental="66.01"/>
-            <lane id="-gneE3_0" queueing_time="22.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="5.00" queueing_length="22.52" queueing_length_experimental="38.94"/>
-            <lane id="gneE0_0" queueing_time="17.00" queueing_length="66.02" queueing_length_experimental="89.22"/>
+            <lane id="E2T_0" queueing_time="6.00" queueing_length="21.00" queueing_length_experimental="44.98"/>
+            <lane id="N2T_0" queueing_time="9.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
+            <lane id="S2T_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="66.03" queueing_length_experimental="89.21"/>
         </lanes>
     </data>
     <data timestep="72.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="9.00" queueing_length="66.01" queueing_length_experimental="66.01"/>
-            <lane id="-gneE3_0" queueing_time="23.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="6.00" queueing_length="22.51" queueing_length_experimental="38.25"/>
-            <lane id="gneE0_0" queueing_time="18.00" queueing_length="73.52" queueing_length_experimental="88.91"/>
+            <lane id="E2T_0" queueing_time="7.00" queueing_length="28.51" queueing_length_experimental="44.01"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="42.99"/>
+            <lane id="S2T_0" queueing_time="13.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="16.00" queueing_length="73.54" queueing_length_experimental="88.96"/>
         </lanes>
     </data>
     <data timestep="73.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="7.00" queueing_length="66.01" queueing_length_experimental="66.01"/>
-            <lane id="-gneE3_0" queueing_time="24.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="7.00" queueing_length="30.04" queueing_length_experimental="45.79"/>
-            <lane id="gneE0_0" queueing_time="19.00" queueing_length="73.51" queueing_length_experimental="88.72"/>
+            <lane id="E2T_0" queueing_time="8.00" queueing_length="36.04" queueing_length_experimental="51.58"/>
+            <lane id="S2T_0" queueing_time="14.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="17.00" queueing_length="81.05" queueing_length_experimental="88.63"/>
         </lanes>
     </data>
     <data timestep="74.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="65.89"/>
-            <lane id="-gneE3_0" queueing_time="22.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="30.01" queueing_length_experimental="55.52"/>
-            <lane id="gneE0_0" queueing_time="20.00" queueing_length="81.02" queueing_length_experimental="88.55"/>
+            <lane id="E2T_0" queueing_time="9.00" queueing_length="43.58" queueing_length_experimental="51.21"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.11"/>
+            <lane id="S2T_0" queueing_time="15.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="17.00" queueing_length="88.59" queueing_length_experimental="88.59"/>
         </lanes>
     </data>
     <data timestep="75.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="65.13"/>
-            <lane id="-gneE3_0" queueing_time="22.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="9.00" queueing_length="37.53" queueing_length_experimental="63.17"/>
-            <lane id="gneE0_0" queueing_time="21.00" queueing_length="88.53" queueing_length_experimental="88.53"/>
+            <lane id="E2T_0" queueing_time="10.00" queueing_length="51.13" queueing_length_experimental="51.13"/>
+            <lane id="N2T_0" queueing_time="1.00" queueing_length="6.05" queueing_length_experimental="13.62"/>
+            <lane id="S2T_0" queueing_time="16.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="88.56" queueing_length_experimental="88.56"/>
         </lanes>
     </data>
     <data timestep="76.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="4.00" queueing_length="13.53" queueing_length_experimental="29.98"/>
-            <lane id="-gneE3_0" queueing_time="21.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="10.00" queueing_length="45.07" queueing_length_experimental="71.58"/>
-            <lane id="gneE0_0" queueing_time="22.00" queueing_length="88.52" queueing_length_experimental="88.52"/>
+            <lane id="E2T_0" queueing_time="11.00" queueing_length="51.06" queueing_length_experimental="51.06"/>
+            <lane id="N2T_0" queueing_time="2.00" queueing_length="13.56" queueing_length_experimental="13.56"/>
+            <lane id="S2T_0" queueing_time="17.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="88.54" queueing_length_experimental="88.54"/>
         </lanes>
     </data>
     <data timestep="77.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="5.00" queueing_length="13.51" queueing_length_experimental="37.75"/>
-            <lane id="-gneE3_0" queueing_time="21.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="45.02" queueing_length_experimental="70.44"/>
-            <lane id="gneE0_0" queueing_time="23.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="12.00" queueing_length="51.03" queueing_length_experimental="51.03"/>
+            <lane id="N2T_0" queueing_time="3.00" queueing_length="13.51" queueing_length_experimental="21.22"/>
+            <lane id="S2T_0" queueing_time="18.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="88.53" queueing_length_experimental="88.53"/>
         </lanes>
     </data>
     <data timestep="78.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="6.00" queueing_length="21.02" queueing_length_experimental="45.69"/>
-            <lane id="-gneE3_0" queueing_time="20.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="12.00" queueing_length="54.65" queueing_length_experimental="78.42"/>
-            <lane id="gneE0_0" queueing_time="24.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="13.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="4.00" queueing_length="13.50" queueing_length_experimental="28.85"/>
+            <lane id="S2T_0" queueing_time="19.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="88.52" queueing_length_experimental="88.52"/>
         </lanes>
     </data>
     <data timestep="79.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="7.00" queueing_length="21.01" queueing_length_experimental="44.78"/>
-            <lane id="-gneE3_0" queueing_time="20.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="13.00" queueing_length="62.16" queueing_length_experimental="77.71"/>
-            <lane id="gneE0_0" queueing_time="25.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="14.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="5.00" queueing_length="21.01" queueing_length_experimental="28.67"/>
+            <lane id="S2T_0" queueing_time="20.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
         </lanes>
     </data>
     <data timestep="80.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="8.00" queueing_length="28.52" queueing_length_experimental="52.43"/>
-            <lane id="-gneE3_0" queueing_time="19.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="14.00" queueing_length="62.13" queueing_length_experimental="77.44"/>
-            <lane id="gneE0_0" queueing_time="26.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="15.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="6.00" queueing_length="21.01" queueing_length_experimental="28.52"/>
+            <lane id="S2T_0" queueing_time="21.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
         </lanes>
     </data>
     <data timestep="81.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="9.00" queueing_length="36.03" queueing_length_experimental="51.70"/>
-            <lane id="-gneE3_0" queueing_time="19.00" queueing_length="76.61" queueing_length_experimental="76.61"/>
-            <lane id="-gneE5_0" queueing_time="15.00" queueing_length="69.64" queueing_length_experimental="77.28"/>
-            <lane id="gneE0_0" queueing_time="27.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="16.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="7.00" queueing_length="28.51" queueing_length_experimental="28.51"/>
+            <lane id="S2T_0" queueing_time="22.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
         </lanes>
     </data>
     <data timestep="82.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="10.00" queueing_length="36.02" queueing_length_experimental="51.45"/>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="76.48"/>
-            <lane id="-gneE5_0" queueing_time="16.00" queueing_length="77.21" queueing_length_experimental="77.21"/>
-            <lane id="gneE0_0" queueing_time="28.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="17.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="8.00" queueing_length="28.51" queueing_length_experimental="28.51"/>
+            <lane id="S2T_0" queueing_time="23.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
         </lanes>
     </data>
     <data timestep="83.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="11.00" queueing_length="43.53" queueing_length_experimental="51.09"/>
-            <lane id="-gneE3_0" queueing_time="1.00" queueing_length="5.72" queueing_length_experimental="76.10"/>
-            <lane id="-gneE5_0" queueing_time="17.00" queueing_length="77.13" queueing_length_experimental="77.13"/>
-            <lane id="gneE0_0" queueing_time="29.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="18.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="9.00" queueing_length="28.51" queueing_length_experimental="28.51"/>
+            <lane id="S2T_0" queueing_time="24.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
         </lanes>
     </data>
     <data timestep="84.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="12.00" queueing_length="51.06" queueing_length_experimental="51.06"/>
-            <lane id="-gneE3_0" queueing_time="2.00" queueing_length="5.72" queueing_length_experimental="75.26"/>
-            <lane id="-gneE5_0" queueing_time="18.00" queueing_length="77.12" queueing_length_experimental="77.12"/>
-            <lane id="gneE0_0" queueing_time="30.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="19.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="10.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="25.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
         </lanes>
     </data>
     <data timestep="85.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="13.00" queueing_length="51.03" queueing_length_experimental="51.03"/>
-            <lane id="-gneE3_0" queueing_time="3.00" queueing_length="13.23" queueing_length_experimental="27.79"/>
-            <lane id="-gneE5_0" queueing_time="19.00" queueing_length="77.12" queueing_length_experimental="77.12"/>
-            <lane id="gneE0_0" queueing_time="29.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="20.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="11.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="26.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="1.00" queueing_length="5.44" queueing_length_experimental="88.38"/>
         </lanes>
     </data>
     <data timestep="86.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="14.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="4.00" queueing_length="27.74" queueing_length_experimental="27.74"/>
-            <lane id="-gneE5_0" queueing_time="20.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="28.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="21.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="12.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="27.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="2.00" queueing_length="5.44" queueing_length_experimental="87.94"/>
         </lanes>
     </data>
     <data timestep="87.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="15.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="5.00" queueing_length="36.74" queueing_length_experimental="45.06"/>
-            <lane id="-gneE5_0" queueing_time="21.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="27.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="22.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="13.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="28.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="5.44" queueing_length_experimental="21.67"/>
         </lanes>
     </data>
     <data timestep="88.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="16.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="6.00" queueing_length="36.73" queueing_length_experimental="44.38"/>
-            <lane id="-gneE5_0" queueing_time="22.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="26.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="23.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="14.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="27.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="12.94" queueing_length_experimental="20.73"/>
         </lanes>
     </data>
     <data timestep="89.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="17.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="7.00" queueing_length="44.30" queueing_length_experimental="52.10"/>
-            <lane id="-gneE5_0" queueing_time="23.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="25.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="24.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="15.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="25.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="5.00" queueing_length="12.94" queueing_length_experimental="28.40"/>
         </lanes>
     </data>
     <data timestep="90.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="18.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="8.00" queueing_length="44.25" queueing_length_experimental="59.79"/>
-            <lane id="-gneE5_0" queueing_time="24.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="25.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="25.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="16.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="25.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="6.00" queueing_length="20.45" queueing_length_experimental="28.14"/>
         </lanes>
     </data>
     <data timestep="91.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="19.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="9.00" queueing_length="44.24" queueing_length_experimental="59.43"/>
-            <lane id="-gneE5_0" queueing_time="25.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="25.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="26.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="17.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="24.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+            <lane id="W2T_0" queueing_time="7.00" queueing_length="20.44" queueing_length_experimental="35.76"/>
         </lanes>
     </data>
     <data timestep="92.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="20.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="10.00" queueing_length="51.74" queueing_length_experimental="59.31"/>
-            <lane id="-gneE5_0" queueing_time="26.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="23.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="18.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="35.63"/>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="27.97" queueing_length_experimental="43.42"/>
         </lanes>
     </data>
     <data timestep="93.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="21.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="11.00" queueing_length="59.24" queueing_length_experimental="59.24"/>
-            <lane id="-gneE5_0" queueing_time="27.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="22.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="28.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="19.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="35.52" queueing_length_experimental="51.84"/>
         </lanes>
     </data>
     <data timestep="94.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="22.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="12.00" queueing_length="59.24" queueing_length_experimental="59.24"/>
-            <lane id="-gneE5_0" queueing_time="28.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="21.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="29.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="20.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="35.45" queueing_length_experimental="60.03"/>
         </lanes>
     </data>
     <data timestep="95.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="23.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="13.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="29.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="21.00" queueing_length="88.51" queueing_length_experimental="88.51"/>
+            <lane id="E2T_0" queueing_time="30.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="21.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="1.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="35.45" queueing_length_experimental="58.67"/>
         </lanes>
     </data>
     <data timestep="96.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="24.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="14.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="30.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="22.00" queueing_length="88.42" queueing_length_experimental="88.42"/>
+            <lane id="E2T_0" queueing_time="29.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="22.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="14.22"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="42.95" queueing_length_experimental="58.47"/>
         </lanes>
     </data>
     <data timestep="97.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="25.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="15.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="31.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="87.88"/>
+            <lane id="E2T_0" queueing_time="29.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="23.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="13.75"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="50.47" queueing_length_experimental="58.04"/>
         </lanes>
     </data>
     <data timestep="98.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="26.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="16.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="32.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
+            <lane id="E2T_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="24.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="21.28"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="57.98" queueing_length_experimental="57.98"/>
         </lanes>
     </data>
     <data timestep="99.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="17.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="33.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.66"/>
+            <lane id="E2T_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="25.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="5.00" queueing_length="13.52" queueing_length_experimental="21.11"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="57.96" queueing_length_experimental="57.96"/>
         </lanes>
     </data>
     <data timestep="100.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="28.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="18.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="32.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.26"/>
+            <lane id="E2T_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="26.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="6.00" queueing_length="21.04" queueing_length_experimental="21.04"/>
+            <lane id="W2T_0" queueing_time="16.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="101.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="29.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="19.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="31.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="1.00" queueing_length="6.03" queueing_length_experimental="6.03"/>
+            <lane id="E2T_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="27.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="7.00" queueing_length="21.02" queueing_length_experimental="21.02"/>
+            <lane id="W2T_0" queueing_time="17.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="102.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="30.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="20.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="30.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="2.00" queueing_length="13.59" queueing_length_experimental="21.94"/>
+            <lane id="E2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="50.07"/>
+            <lane id="N2T_0" queueing_time="28.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="8.00" queueing_length="21.01" queueing_length_experimental="21.01"/>
+            <lane id="W2T_0" queueing_time="18.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="103.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="31.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="21.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="29.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="3.00" queueing_length="13.55" queueing_length_experimental="30.22"/>
+            <lane id="E2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="49.08"/>
+            <lane id="N2T_0" queueing_time="29.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="9.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="19.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="104.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="32.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="22.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="29.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="4.00" queueing_length="21.10" queueing_length_experimental="38.01"/>
+            <lane id="N2T_0" queueing_time="30.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="10.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="20.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="105.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="33.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="23.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="28.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="5.00" queueing_length="21.03" queueing_length_experimental="46.49"/>
+            <lane id="N2T_0" queueing_time="31.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="11.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="21.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="106.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="34.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="24.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="28.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="6.00" queueing_length="28.57" queueing_length_experimental="36.19"/>
+            <lane id="N2T_0" queueing_time="32.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="12.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="22.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="107.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="35.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="25.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="27.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="7.00" queueing_length="36.13" queueing_length_experimental="43.80"/>
+            <lane id="N2T_0" queueing_time="33.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="13.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="23.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="108.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="36.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="26.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="27.00" queueing_length="77.11" queueing_length_experimental="77.11"/>
-            <lane id="gneE0_0" queueing_time="8.00" queueing_length="36.05" queueing_length_experimental="51.32"/>
+            <lane id="N2T_0" queueing_time="34.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="14.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="24.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="109.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="37.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="27.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="76.94"/>
-            <lane id="gneE0_0" queueing_time="9.00" queueing_length="43.58" queueing_length_experimental="51.21"/>
+            <lane id="N2T_0" queueing_time="35.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="15.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="25.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="110.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="38.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="28.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="76.43"/>
-            <lane id="gneE0_0" queueing_time="10.00" queueing_length="51.14" queueing_length_experimental="51.14"/>
+            <lane id="N2T_0" queueing_time="36.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="16.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="26.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="111.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="39.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="29.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="75.46"/>
-            <lane id="gneE0_0" queueing_time="11.00" queueing_length="43.52" queueing_length_experimental="51.03"/>
+            <lane id="N2T_0" queueing_time="37.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="17.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="27.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="112.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="40.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="30.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="74.23"/>
-            <lane id="gneE0_0" queueing_time="12.00" queueing_length="51.02" queueing_length_experimental="51.02"/>
+            <lane id="N2T_0" queueing_time="38.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="18.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="28.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="113.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="41.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="31.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="13.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="39.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="19.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="29.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="114.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="42.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="32.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="14.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="40.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="20.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="30.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="115.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="43.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="33.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="15.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="41.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="21.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="31.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="116.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="44.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="34.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="16.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="42.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="22.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="32.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="117.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="45.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="35.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="17.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="43.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="23.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="33.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="118.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="46.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="36.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="18.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="44.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="24.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="34.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="119.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="47.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="37.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="19.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="45.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="25.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="35.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="120.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="48.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="38.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="gneE0_0" queueing_time="20.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="46.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="26.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="36.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="121.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="49.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="39.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="1.00" queueing_length="5.17" queueing_length_experimental="5.17"/>
-            <lane id="gneE0_0" queueing_time="21.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="47.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="27.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="37.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="122.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="50.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="40.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="2.00" queueing_length="5.17" queueing_length_experimental="12.94"/>
-            <lane id="gneE0_0" queueing_time="22.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="48.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="28.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="38.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="123.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="48.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="41.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="3.00" queueing_length="5.17" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="23.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="49.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="29.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="39.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="124.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="47.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="42.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="4.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="24.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="50.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="30.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="40.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="125.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="46.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="43.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="5.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="25.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="51.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="31.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="41.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="126.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="46.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="44.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="6.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="26.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="51.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="32.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="42.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="127.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="45.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="45.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="7.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="49.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="33.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="43.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="128.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="45.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
-            <lane id="-gneE3_0" queueing_time="46.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="28.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="48.00" queueing_length="28.50" queueing_length_experimental="28.50"/>
+            <lane id="S2T_0" queueing_time="34.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="44.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="129.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="50.44"/>
-            <lane id="-gneE3_0" queueing_time="47.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="9.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="29.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="N2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.41"/>
+            <lane id="S2T_0" queueing_time="35.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="45.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="130.00">
         <lanes>
-            <lane id="-gneE1_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="49.33"/>
-            <lane id="-gneE3_0" queueing_time="48.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="10.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="30.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="36.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="46.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="131.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="49.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="31.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="37.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="47.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="132.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="50.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="12.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="32.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="38.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="48.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="133.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="51.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="13.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="33.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="39.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="49.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="134.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="52.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="14.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="34.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="40.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="50.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="135.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="53.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="15.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="35.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="41.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="51.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="136.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="54.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="16.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="36.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="42.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="52.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="137.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="55.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="17.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="37.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="43.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="53.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="138.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="56.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="18.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="38.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="44.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="54.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="139.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="57.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="19.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="39.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="45.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="55.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="140.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="58.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="20.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="40.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="46.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="56.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="141.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="59.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="21.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="41.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="47.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="57.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="142.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="60.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="22.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="42.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="48.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="58.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="143.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="61.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="23.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="43.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="49.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="59.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="144.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="62.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="24.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="44.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="50.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="60.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="145.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="63.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="25.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="45.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="51.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="61.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="146.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="62.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="26.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="46.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="52.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="62.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="147.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="62.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="27.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="47.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="53.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="63.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="148.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="62.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="28.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="48.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="54.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="64.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="149.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="61.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="29.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="49.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="55.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="65.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="150.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="59.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="30.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="50.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="56.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="66.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="151.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="59.00" queueing_length="59.23" queueing_length_experimental="59.23"/>
-            <lane id="-gneE5_0" queueing_time="31.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="51.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="57.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="67.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="152.00">
         <lanes>
-            <lane id="-gneE3_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="59.06"/>
-            <lane id="-gneE5_0" queueing_time="32.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="52.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="58.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="68.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="153.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="33.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="53.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="59.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="69.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="154.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="34.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="54.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="60.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="70.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="155.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="35.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="55.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="61.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="71.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="156.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="36.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="56.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="62.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="69.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="157.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="37.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="57.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="63.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="68.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="158.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="38.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="58.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="64.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="67.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="159.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="39.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="59.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="65.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="67.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="160.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="40.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="60.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="66.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="65.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="161.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="41.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="61.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="63.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="65.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="162.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="42.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="62.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="63.00" queueing_length="21.00" queueing_length_experimental="21.00"/>
+            <lane id="W2T_0" queueing_time="65.00" queueing_length="57.95" queueing_length_experimental="57.95"/>
         </lanes>
     </data>
     <data timestep="163.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="43.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="63.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="S2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="20.31"/>
+            <lane id="W2T_0" queueing_time="66.00" queueing_length="57.85" queueing_length_experimental="57.85"/>
         </lanes>
     </data>
     <data timestep="164.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="44.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="64.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="13.50" queueing_length_experimental="57.04"/>
         </lanes>
     </data>
     <data timestep="165.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="45.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="65.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="21.02" queueing_length_experimental="45.95"/>
         </lanes>
     </data>
     <data timestep="166.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="46.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="66.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="5.00" queueing_length="21.01" queueing_length_experimental="54.23"/>
         </lanes>
     </data>
     <data timestep="167.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="47.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="67.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="6.00" queueing_length="28.51" queueing_length_experimental="53.19"/>
         </lanes>
     </data>
     <data timestep="168.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="48.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="68.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="7.00" queueing_length="36.05" queueing_length_experimental="52.03"/>
         </lanes>
     </data>
     <data timestep="169.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="49.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="69.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="36.02" queueing_length_experimental="51.36"/>
         </lanes>
     </data>
     <data timestep="170.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="50.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="70.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="43.57" queueing_length_experimental="51.18"/>
         </lanes>
     </data>
     <data timestep="171.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="51.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="71.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="51.11" queueing_length_experimental="51.11"/>
         </lanes>
     </data>
     <data timestep="172.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="52.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="72.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="51.04" queueing_length_experimental="51.04"/>
         </lanes>
     </data>
     <data timestep="173.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="53.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="73.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="174.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="54.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="74.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="175.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="55.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="75.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="176.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="56.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="75.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="177.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="57.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="74.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="16.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="178.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="58.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="73.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="17.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="179.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="59.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="73.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="18.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="180.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="60.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="72.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="19.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="181.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="61.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="70.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
+            <lane id="W2T_0" queueing_time="20.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="182.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="62.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
-            <lane id="gneE0_0" queueing_time="71.00" queueing_length="50.93" queueing_length_experimental="50.93"/>
+            <lane id="W2T_0" queueing_time="21.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="183.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="63.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="22.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="184.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="64.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="23.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="185.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="65.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="24.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="186.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="66.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="25.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="187.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="67.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="26.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="188.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="68.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="27.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="189.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="69.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="28.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="190.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="70.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="29.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="191.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="71.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="30.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="192.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="72.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="31.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="193.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="73.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="32.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="194.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="74.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="33.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="195.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="75.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="34.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="196.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="76.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="35.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="197.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="77.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="36.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="198.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="78.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="37.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="199.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="79.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="38.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="200.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="80.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="39.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="201.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="81.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="38.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="202.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="82.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="38.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="203.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="83.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="37.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="204.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="84.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="37.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="205.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="85.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="36.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="206.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="83.00" queueing_length="12.67" queueing_length_experimental="12.67"/>
+            <lane id="W2T_0" queueing_time="36.00" queueing_length="51.01" queueing_length_experimental="51.01"/>
         </lanes>
     </data>
     <data timestep="207.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="11.79"/>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="13.51" queueing_length_experimental="50.70"/>
         </lanes>
     </data>
     <data timestep="208.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="21.05" queueing_length_experimental="29.13"/>
+        </lanes>
     </data>
     <data timestep="209.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="5.00" queueing_length="21.01" queueing_length_experimental="28.68"/>
+        </lanes>
     </data>
     <data timestep="210.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="6.10"/>
+            <lane id="W2T_0" queueing_time="6.00" queueing_length="21.01" queueing_length_experimental="36.23"/>
         </lanes>
     </data>
     <data timestep="211.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="1.00" queueing_length="6.02" queueing_length_experimental="6.02"/>
+            <lane id="W2T_0" queueing_time="7.00" queueing_length="28.53" queueing_length_experimental="44.26"/>
         </lanes>
     </data>
     <data timestep="212.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="2.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="36.05" queueing_length_experimental="43.70"/>
         </lanes>
     </data>
     <data timestep="213.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="3.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="43.60" queueing_length_experimental="43.60"/>
         </lanes>
     </data>
     <data timestep="214.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="4.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="43.55" queueing_length_experimental="43.55"/>
         </lanes>
     </data>
     <data timestep="215.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="5.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="43.52" queueing_length_experimental="43.52"/>
         </lanes>
     </data>
     <data timestep="216.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="6.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="217.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="7.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="218.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="8.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="219.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="9.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="220.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="10.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="16.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="221.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="11.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="222.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="12.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="223.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="13.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="224.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="14.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="225.00">
         <lanes>
-            <lane id="-gneE5_0" queueing_time="15.00" queueing_length="6.00" queueing_length_experimental="6.00"/>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="43.51" queueing_length_experimental="43.51"/>
         </lanes>
     </data>
     <data timestep="226.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="1.00" queueing_length="6.02" queueing_length_experimental="43.26"/>
+        </lanes>
     </data>
     <data timestep="227.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="2.00" queueing_length="6.01" queueing_length_experimental="42.10"/>
+        </lanes>
     </data>
     <data timestep="228.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="13.56" queueing_length_experimental="21.34"/>
+        </lanes>
     </data>
     <data timestep="229.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="13.52" queueing_length_experimental="29.08"/>
+        </lanes>
     </data>
     <data timestep="230.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="5.00" queueing_length="21.06" queueing_length_experimental="36.63"/>
+        </lanes>
     </data>
     <data timestep="231.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="6.00" queueing_length="21.03" queueing_length_experimental="36.37"/>
+        </lanes>
     </data>
     <data timestep="232.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="7.00" queueing_length="28.55" queueing_length_experimental="36.12"/>
+        </lanes>
     </data>
     <data timestep="233.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="8.00" queueing_length="36.07" queueing_length_experimental="36.07"/>
+        </lanes>
     </data>
     <data timestep="234.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="9.00" queueing_length="36.03" queueing_length_experimental="36.03"/>
+        </lanes>
     </data>
     <data timestep="235.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="10.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="236.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="11.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="237.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="238.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="239.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="240.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="15.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="241.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="14.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="242.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="13.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="243.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="244.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="12.00" queueing_length="36.01" queueing_length_experimental="36.01"/>
+        </lanes>
     </data>
     <data timestep="245.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="34.96"/>
+        </lanes>
     </data>
     <data timestep="246.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="1.00" queueing_length="6.02" queueing_length_experimental="22.84"/>
+        </lanes>
     </data>
     <data timestep="247.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="2.00" queueing_length="6.01" queueing_length_experimental="21.93"/>
+        </lanes>
     </data>
     <data timestep="248.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="3.00" queueing_length="13.53" queueing_length_experimental="29.66"/>
+        </lanes>
     </data>
     <data timestep="249.00">
-        <lanes/>
+        <lanes>
+            <lane id="W2T_0" queueing_time="4.00" queueing_length="21.05" queueing_length_experimental="29.00"/>
+        </lanes>
     </data>
 </queue-export>
