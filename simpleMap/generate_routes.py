@@ -1,4 +1,4 @@
-# Taken from https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control
+# Taken and modified from https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control
 
 import numpy as np
 import math
@@ -30,25 +30,25 @@ class TrafficGenerator:
         car_gen_steps = np.rint(car_gen_steps)  # round every value to int -> effective steps when a car will be generated
 
         # produce the file for cars generation, one car per line
-        with open("intersection/episode_routes.rou.xml", "w") as routes:
+        with open("routes.rou.xml", "w") as routes:
             print("""<routes>
             <vType accel="1.0" decel="4.5" id="standard_car" length="5.0" minGap="2.5" maxSpeed="25" sigma="0.5" />
 
-            <route id="W_N" edges="W2TL TL2N"/>
-            <route id="W_E" edges="W2TL TL2E"/>
-            <route id="W_S" edges="W2TL TL2S"/>
-            <route id="N_W" edges="N2TL TL2W"/>
-            <route id="N_E" edges="N2TL TL2E"/>
-            <route id="N_S" edges="N2TL TL2S"/>
-            <route id="E_W" edges="E2TL TL2W"/>
-            <route id="E_N" edges="E2TL TL2N"/>
-            <route id="E_S" edges="E2TL TL2S"/>
-            <route id="S_W" edges="S2TL TL2W"/>
-            <route id="S_N" edges="S2TL TL2N"/>
-            <route id="S_E" edges="S2TL TL2E"/>""", file=routes)
+            <route id="W_N" edges="W2T T2N"/>
+            <route id="W_E" edges="W2T T2E"/>
+            <route id="W_S" edges="W2T T2S"/>
+            <route id="N_W" edges="N2T T2W"/>
+            <route id="N_E" edges="N2T T2E"/>
+            <route id="N_S" edges="N2T T2S"/>
+            <route id="E_W" edges="E2T T2W"/>
+            <route id="E_N" edges="E2T T2N"/>
+            <route id="E_S" edges="E2T T2S"/>
+            <route id="S_W" edges="S2T T2W"/>
+            <route id="S_N" edges="S2T T2N"/>
+            <route id="S_E" edges="S2T T2E"/>""", file=routes)
 
             for car_counter, step in enumerate(car_gen_steps):
-                straight_or_turn = np.random.uniform()
+                straight_or_turn = np.random.uniform()  # samples from uniform dist [0, 1)
                 if straight_or_turn < 0.75:  # choose direction: straight or turn - 75% of times the car goes straight
                     route_straight = np.random.randint(1, 5)  # choose a random source & destination
                     if route_straight == 1:
