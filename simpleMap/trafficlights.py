@@ -66,7 +66,7 @@ lanes = [lane0, lane1, lane2, lane3]
 laneIndex = 0
 
 sumoBinary = checkBinary('sumo-gui')
-sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml', '--queue-output', 'queuedata.xml']
+sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg']
 
 step = 0
 greenDur = 30
