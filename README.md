@@ -1,5 +1,28 @@
 # mini-proj-traffic
 
+## Env for training and testing
+
+Make sure sumo and sumo-gui are installed
+
+1. Enter conda env
+
+    ```shell
+    conda activate base
+    ```
+
+2. Install pip in conda env
+
+    ```shell
+    conda install pip
+    ```
+
+3. Install TraCI and Pydot
+
+    ```shell
+    pip install traci
+    pip install pydot
+    ```
+
 ## Use Makefile to create trips and routes
 
 1. Convert osm to net.xml
