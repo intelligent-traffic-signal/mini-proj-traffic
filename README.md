@@ -23,6 +23,10 @@ Make sure sumo and sumo-gui are installed
     pip install pydot
     ```
 
+4. Make sure Graphviz is installed
+
+    <https://graphviz.gitlab.io/download/>
+
 ## Use Makefile to create trips and routes
 
 1. Convert osm to net.xml
