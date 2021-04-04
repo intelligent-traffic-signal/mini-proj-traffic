@@ -2,7 +2,7 @@
 	<input>
 		<net-file value="simpleMap.net.xml" />
 		<route-files value="routes.rou.xml" />
-		<additional-files value="add_macro.xml" />
-		<queue-output value="queuedata.xml" />
+		<!-- <additional-files value="add_macro.xml" />
+		<queue-output value="queuedata.xml" /> -->
     </input>
 </configuration>

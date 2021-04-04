@@ -5,12 +5,12 @@ import tensorflow as tf
 import numpy as np
 import sys
 
-from tf import keras
-from tf.keras import layers
-from tf.keras import losses
-from tf.keras.optimizers import Adam
-from tf.keras.utils import plot_model
-from tf.keras.models import load_model
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras import losses
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.utils import plot_model
+from tensorflow.keras.models import load_model
 
 
 class TrainModel:
