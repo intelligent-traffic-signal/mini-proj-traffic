@@ -47,6 +47,8 @@ class Simulation:
         self._avg_queue_length_store = []
         self._training_epochs = training_epochs
 
+    def _reward(self, old_total_wait, current_total_wait):
+        return 0.9*old_total_wait - current_total_wait
 
     def run(self, episode, epsilon):
         """
@@ -78,8 +80,8 @@ class Simulation:
             # calculate reward of previous action: (change in cumulative waiting time between actions)
             # waiting time = seconds waited by a car since the spawn in the environment, cumulated for every car in incoming lanes
             current_total_wait = self._collect_waiting_times()
-            # TODO: change reward function
-            reward = old_total_wait - current_total_wait
+    
+            reward = self._reward(old_total_wait, current_total_wait)
 
             # saving the data into the memory
             if self._step != 0:
@@ -261,6 +263,7 @@ class Simulation:
         batch = self._Memory.get_samples(self._Model.batch_size)
 
         if len(batch) > 0:  # if the memory is full enough
+            # state, action, q value, next state
             states = np.array([val[0] for val in batch])  # extract states from the batch
             next_states = np.array([val[3] for val in batch])  # extract next states from the batch
 

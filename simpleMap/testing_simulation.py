@@ -39,6 +39,8 @@ class Simulation:
         self._reward_episode = []
         self._queue_length_episode = []
 
+    def _reward(self, old_total_wait, current_total_wait):
+        return 0.9*old_total_wait - current_total_wait
 
     def run(self, episode):
         """
@@ -65,8 +67,8 @@ class Simulation:
             # calculate reward of previous action: (change in cumulative waiting time between actions)
             # waiting time = seconds waited by a car since the spawn in the environment, cumulated for every car in incoming lanes
             current_total_wait = self._collect_waiting_times()
-            # TODO: change reward function
-            reward = old_total_wait - current_total_wait
+            
+            reward = self._reward(old_total_wait, current_total_wait)
 
             # choose the light phase to activate, based on the current state of the intersection
             action = self._choose_action(current_state)
