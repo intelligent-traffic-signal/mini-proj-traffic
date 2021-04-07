@@ -175,53 +175,14 @@ class Simulation:
         Retrieve the state of the intersection from sumo, in the form of cell occupancy
         """
         state = np.zeros(self._num_states)
-        car_list = traci.vehicle.getIDList()
+    
 
-        for car_id in car_list:
-            lane_pos = traci.vehicle.getLanePosition(car_id)
-            lane_id = traci.vehicle.getLaneID(car_id)
-            lane_pos = ROAD_LEN - lane_pos  # inversion of lane pos, so if the car is close to the traffic light -> lane_pos = 0 --- ROAD_LEN = max len of a road
+        lane_S = traci.lane.getLastStepVehicleNumber('S2T_0')
+        lane_E = traci.lane.getLastStepVehicleNumber('E2T_0')
+        lane_N = traci.lane.getLastStepVehicleNumber('N2T_0')
+        lane_W = traci.lane.getLastStepVehicleNumber('W2T_0')
 
-            # distance in meters from the traffic light -> mapping into cells
-            if lane_pos < CELL_1:
-                lane_cell = 0
-            elif lane_pos < CELL_2:
-                lane_cell = 1
-            elif lane_pos < CELL_3:
-                lane_cell = 2
-            elif lane_pos < CELL_4:
-                lane_cell = 3
-            elif lane_pos < CELL_5:
-                lane_cell = 4
-            elif lane_pos < CELL_6:
-                lane_cell = 5
-            elif lane_pos < CELL_7:
-                lane_cell = 6
-            elif lane_pos < CELL_8:
-                lane_cell = 7
-            elif lane_pos < CELL_9:
-                lane_cell = 8
-
-            # finding the lane (edge) where the car is located 
-            if lane_id == "S2T_0":
-                lane_group = 0
-            elif lane_id == "E2T_0":
-                lane_group = 1
-            elif lane_id == "N2T_0":
-                lane_group = 2
-            elif lane_id == "W2T_0":
-                lane_group = 3
-            else:
-                lane_group = -1
-
-            if lane_group >= 0 and lane_group < 4:
-                car_position = lane_group * 9 + lane_cell  # composition of the two postion ID to create a number in interval 0-35
-                valid_car = True
-            else:
-                valid_car = False  # flag for not detecting cars crossing the intersection or driving away from it
-
-            if valid_car:
-                state[car_position] = 1  # write the position of the car car_id in the state array in the form of "cell occupied"
+        state = [lane_S, lane_E, lane_N, lane_W]
 
         return state
 
