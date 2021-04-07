@@ -50,10 +50,14 @@ def import_test_configuration(config_file):
     config['sumocfg_file_name'] = content['dir']['sumocfg_file_name']
     config['models_path_name'] = content['dir']['models_path_name']
     config['model_to_test'] = content['dir'].getint('model_to_test') 
+    config['dumps'] = content['simulation'].getboolean('dumps')
+    config['add_file_name'] = content['dir']['add_file_name']
+    config['queue_file_name'] = content['dir']['queue_file_name']
+
     return config
 
 
-def set_sumo(gui, sumocfg_file_name, max_steps):
+def set_sumo(gui, sumocfg_file_name, max_steps, dumps=False, add_file_name='', queue_file_name=''):
     """
     Configure various parameters of SUMO
     """
@@ -71,7 +75,10 @@ def set_sumo(gui, sumocfg_file_name, max_steps):
         sumoBinary = checkBinary('sumo-gui')
  
     # setting the cmd command to run sumo at simulation time
-    sumo_cmd = [sumoBinary, "-c", os.path.join('network', sumocfg_file_name), "--no-step-log", "true", "--waiting-time-memory", str(max_steps)]
+    sumo_cmd = [sumoBinary, "-c", os.path.join('network', sumocfg_file_name), "--no-step-log", "true", "--waiting-time-memory", str(max_steps), '--time-to-teleport', '-1']
+
+    if dumps:
+        sumo_cmd += ['--additional-files', os.path.join('network', add_file_name), '--queue-output', os.path.join('network', queue_file_name)]
 
     return sumo_cmd
 
