@@ -1,5 +1,9 @@
 # mini-proj-traffic
 
+## Note
+
+For RL, switch to branch RL_1
+
 ## Use Makefile to create trips and routes
 
 1. Convert osm to net.xml
