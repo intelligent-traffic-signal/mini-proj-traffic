@@ -22,9 +22,10 @@ sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg']
 MAX_STEPS = 5400
 SEED = 10000
 NO_CARS = 1000
+UNIFORM = False
 
 TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)
-TrafficGen.generate_routefile(seed=SEED)
+TrafficGen.generate_routefile(seed=SEED, uniform=UNIFORM)
 
 class TrafficAgent:
     """Defines individual traffic signal behaviour."""
@@ -106,7 +107,10 @@ def run():
     old_total_wait = 0
     rewards = []
 
-    visualizer = Visualization('./macro_plots', dpi=96)
+    if UNIFORM:
+        visualizer = Visualization('./macro_plots', dpi=96)
+    else:
+        visualizer = Visualization('./macro_plots_ns', dpi=96)
 
     while step < MAX_STEPS:
         traci.simulationStep()
