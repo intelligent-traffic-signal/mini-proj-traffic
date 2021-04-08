@@ -2,7 +2,6 @@
 
 import traci
 import numpy as np
-from math import sqrt
 import random
 import timeit
 
@@ -149,12 +148,12 @@ class Simulation:
             wait_time = traci.vehicle.getAccumulatedWaitingTime(car_id)
             road_id = traci.vehicle.getRoadID(car_id)  # get the road id where the car is located
             if road_id in incoming_roads:  # consider only the waiting times of cars in incoming roads
-                # TODO:make 2^x
-                self._waiting_times[car_id] = wait_time*wait_time
+                self._waiting_times[car_id] = wait_time
             else:   # not in incoming road
                 if car_id in self._waiting_times: # a car that was tracked has cleared the intersection
                     del self._waiting_times[car_id] 
-        total_waiting_time = sum([sqrt(i) for i in self._waiting_times.values()])
+        # Root 
+        total_waiting_time = sum(self._waiting_times.values())
         return total_waiting_time
 
 
