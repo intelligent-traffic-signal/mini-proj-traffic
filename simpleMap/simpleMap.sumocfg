@@ -1,7 +1,7 @@
 <configuration>
 	<input>
 		<net-file value="simpleMap.net.xml" />
-		<route-files value="passenger_routes.rou.xml, bus_routes.rou.xml, truck_routes.rou.xml, delivery_routes.rou.xml" />
+		<route-files value="routes.rou.xml" />
 		<additional-files value="add_macro.xml" />
 		<queue-output value="queuedata.xml" />
     </input>

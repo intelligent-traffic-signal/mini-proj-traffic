@@ -10,6 +10,9 @@ MAP_NAME=simpleMap
 
 all: osm trips
 
+car_trips:
+	python randomTrips.py -n $(MAP_NAME).net.xml -r routes.rou.xml -o trips.xml $(PASS_PARAMS)
+
 trips:
 	# Generate random trips for all vehicle types
 	python randomTrips.py -n $(MAP_NAME).net.xml -r passenger_routes.rou.xml -o passenger_trips.xml $(PASS_PARAMS)
