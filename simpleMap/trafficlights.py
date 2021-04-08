@@ -2,6 +2,7 @@ import os
 import sys
 
 from generate_routes import TrafficGenerator
+from visualization import Visualization
 
 
 # we need to import python modules from the $SUMO_HOME/tools directory
@@ -105,6 +106,8 @@ def run():
     old_total_wait = 0
     rewards = []
 
+    visualizer = Visualization('./macro_plots', dpi=96)
+
     while step < MAX_STEPS:
         traci.simulationStep()
 
@@ -159,6 +162,9 @@ def run():
         old_total_wait = current_total_wait
 
     # PLOT FILES
+    visualizer.save_data_and_plot(data=rewards, filename='reward', xlabel='Action step', ylabel='Reward')
+    visualizer.save_data_and_plot(data=queue_lengths, filename='queue', xlabel='Step', ylabel='Queue length (vehicles)')
+
 
     traci.close()
 
