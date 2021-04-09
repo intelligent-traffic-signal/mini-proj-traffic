@@ -3,12 +3,10 @@
 import numpy as np
 import math
 
-HIGH_TRAFFIC = 0
-LOW_TRAFFIC = 1
-NS_TRAFFIC = 2
-EW_TRAFFIC = 3
+UNIFORM_TRAFFIC = 0
+NS_TRAFFIC = 1
+EW_TRAFFIC = 2
 
-LOW_FACTOR = 10
 
 class TrafficGenerator:
     def __init__(self, max_steps, n_cars_generated):
@@ -21,24 +19,17 @@ class TrafficGenerator:
 
         uniform u = indicates flow of traffic
 
-        0: high traffic scenario
-        1: low traffic scenario
-        2: NS traffic 90%
-        3: EW traffic 90%
+        0: uniform traffic scenario
+        1: NS traffic 90%
+        2: EW traffic 90%
         """
         np.random.seed(seed)  # make tests reproducible
 
         # use seed for uniformity     
-        uniform = seed % 4
-        
-        if seed == LOW_TRAFFIC:
-            # low traffic scenario
-            n_cars_generated = self._n_cars_generated // LOW_FACTOR
-        else:
-            n_cars_generated = self._n_cars_generated
+        uniform = seed % 3
 
         # the generation of cars is distributed according to a weibull distribution
-        timings = np.random.weibull(2, n_cars_generated)
+        timings = np.random.weibull(2, self._n_cars_generated)
         timings = np.sort(timings)
 
         # reshape the distribution to fit the interval 0:max_steps
@@ -75,7 +66,7 @@ class TrafficGenerator:
                 if straight_or_turn < 0.75:  
                     # choose direction: straight or turn - 75% of times the car goes straight
                     # if uniform == NS or EW, 90% of the time the  car is generated at NS or EW respenctively
-                    if uniform == HIGH_TRAFFIC or uniform == LOW_TRAFFIC:
+                    if uniform == UNIFORM_TRAFFIC:
                         route_straight = np.random.randint(1, 5)  # choose a random source & destination
                         if route_straight == 1:
                             print('    <vehicle id="W_E_%i" type="standard_car" route="W_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
@@ -104,7 +95,7 @@ class TrafficGenerator:
                                                 
                 else:  # car that turn -25% of the time the car turns
                     # uniform traffic
-                    if uniform == HIGH_TRAFFIC or uniform == LOW_TRAFFIC:
+                    if uniform == UNIFORM_TRAFFIC:
                         route_turn = np.random.randint(1, 9)  # choose random source source & destination
                         if route_turn == 1:
                             print('    <vehicle id="W_N_%i" type="standard_car" route="W_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
