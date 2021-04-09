@@ -40,6 +40,7 @@ class Simulation:
         self._queue_length_episode = []
 
     def _reward(self, old_total_wait, current_total_wait):
+        # average reward per car
         return 0.9*old_total_wait - current_total_wait
 
     def run(self, episode):

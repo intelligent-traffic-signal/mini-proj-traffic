@@ -46,18 +46,24 @@ class Simulation:
         self._cumulative_wait_store = []
         self._avg_queue_length_store = []
         self._training_epochs = training_epochs
+        self._present_cars = 0
 
     def _reward(self, old_total_wait, current_total_wait):
-        return 0.9*old_total_wait - current_total_wait
+        # average reward per car
+        if self._present_cars:
+            return (0.9*old_total_wait - current_total_wait)/self._present_cars
+        else:
+            return 0
 
     def run(self, episode, epsilon):
         """
         Runs an episode of simulation, then starts a training session
         """
         start_time = timeit.default_timer()
-
         # first, generate the route file for this simulation and set up sumo
         self._TrafficGen.generate_routefile(seed=episode)
+
+
         traci.start(self._sumo_cmd)
         print("Simulating...")
 
@@ -70,12 +76,13 @@ class Simulation:
         old_total_wait = 0
         old_state = -1
         old_action = -1
+        self._present_cars = 0
 
         while self._step < self._max_steps:
 
             # get current state of the intersection
-            # TODO: change representation maybe
             current_state = self._get_state()
+
 
             # calculate reward of previous action: (change in cumulative waiting time between actions)
             # waiting time = seconds waited by a car since the spawn in the environment, cumulated for every car in incoming lanes
@@ -153,7 +160,9 @@ class Simulation:
                 if car_id in self._waiting_times: # a car that was tracked has cleared the intersection
                     del self._waiting_times[car_id] 
         # Root 
+
         total_waiting_time = sum(self._waiting_times.values())
+        self._present_cars = len(self._waiting_times)
         return total_waiting_time
 
 
