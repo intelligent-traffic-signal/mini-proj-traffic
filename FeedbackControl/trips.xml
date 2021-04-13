@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated on 2021-03-22 13:04:59.604865 by $Id$ UNKNOWN
-  options: -n simpleMap.net.xml -r passenger_routes.rou.xml -o passenger_trips.xml -e 50 -l -p 1 <doubleminus>vehicle-class passenger <doubleminus>trip-attributes=color="255,255,255"
+<!-- generated on 2021-04-13 09:52:28.477339 by $Id$ UNKNOWN
+  options: -n simpleMap.net.xml -r routes.rou.xml -o trips.xml -e 50 -l -p 1 <doubleminus>vehicle-class passenger <doubleminus>trip-attributes=color="255,255,255"
 -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <vType id="passenger" vClass="passenger" color="255,255,255"/>

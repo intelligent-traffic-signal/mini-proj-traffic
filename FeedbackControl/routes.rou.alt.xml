@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on Mon Mar 22 13:04:59 2021 by Eclipse SUMO duarouter Version 1.8.0
+<!-- generated on Tue Apr 13 09:52:28 2021 by Eclipse SUMO duarouter Version 1.8.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
 
     <input>
         <net-file value="simpleMap.net.xml"/>
-        <route-files value="passenger_trips.xml"/>
+        <route-files value="trips.xml"/>
     </input>
 
     <output>
-        <output-file value="passenger_routes.rou.xml"/>
-        <alternatives-output value="passenger_routes.rou.alt.xml"/>
+        <output-file value="routes.rou.xml"/>
+        <alternatives-output value="routes.rou.alt.xml"/>
     </output>
 
     <time>
@@ -36,7 +36,7 @@
     </vehicle>
     <vehicle id="1" type="passenger" depart="1.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE3 -gneE0"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="2" type="passenger" depart="2.00">
@@ -46,12 +46,12 @@
     </vehicle>
     <vehicle id="4" type="passenger" depart="4.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE3 -gneE0"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="5" type="passenger" depart="5.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE1 gneE3"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE1 gneE3"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="6" type="passenger" depart="6.00">
@@ -66,7 +66,7 @@
     </vehicle>
     <vehicle id="8" type="passenger" depart="8.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE1 gneE3"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE1 gneE3"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="10" type="passenger" depart="10.00">
@@ -76,7 +76,7 @@
     </vehicle>
     <vehicle id="11" type="passenger" depart="11.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE3 -gneE0"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="12" type="passenger" depart="12.00">
@@ -121,12 +121,12 @@
     </vehicle>
     <vehicle id="24" type="passenger" depart="24.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE5 gneE1"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE5 gneE1"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="25" type="passenger" depart="25.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE3 -gneE0"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="26" type="passenger" depart="26.00">
@@ -141,7 +141,7 @@
     </vehicle>
     <vehicle id="28" type="passenger" depart="28.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE1 gneE3"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE1 gneE3"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="30" type="passenger" depart="30.00">
@@ -156,7 +156,7 @@
     </vehicle>
     <vehicle id="32" type="passenger" depart="32.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="gneE0 gneE5"/>
+            <route cost="36.73" probability="1.00000000" edges="gneE0 gneE5"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="33" type="passenger" depart="33.00">
@@ -181,7 +181,7 @@
     </vehicle>
     <vehicle id="37" type="passenger" depart="37.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE5 gneE1"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE5 gneE1"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="38" type="passenger" depart="38.00">
@@ -191,17 +191,17 @@
     </vehicle>
     <vehicle id="39" type="passenger" depart="39.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE3 -gneE0"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="40" type="passenger" depart="40.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE5 gneE1"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE5 gneE1"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="42" type="passenger" depart="42.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE3 -gneE0"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE3 -gneE0"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="43" type="passenger" depart="43.00">
@@ -216,7 +216,7 @@
     </vehicle>
     <vehicle id="45" type="passenger" depart="45.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="-gneE1 gneE3"/>
+            <route cost="36.73" probability="1.00000000" edges="-gneE1 gneE3"/>
         </routeDistribution>
     </vehicle>
     <vehicle id="46" type="passenger" depart="46.00">
@@ -231,7 +231,7 @@
     </vehicle>
     <vehicle id="49" type="passenger" depart="49.00">
         <routeDistribution last="0">
-            <route cost="38.23" probability="1.00000000" edges="gneE0 gneE5"/>
+            <route cost="36.73" probability="1.00000000" edges="gneE0 gneE5"/>
         </routeDistribution>
     </vehicle>
 </routes>

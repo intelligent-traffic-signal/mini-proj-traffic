@@ -1,6 +1,0 @@
-<configuration>
-	<input>
-		<net-file value="simpleMap.net.xml" />
-		<route-files value="passenger_routes.rou.xml, bus_routes.rou.xml, truck_routes.rou.xml, delivery_routes.rou.xml" />
-    </input>
-</configuration>

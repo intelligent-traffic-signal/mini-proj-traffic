@@ -1,5 +1,6 @@
 import os
 import sys
+from generate_routes import TrafficGenerator
 
 # we need to import python modules from the $SUMO_HOME/tools directory
 if 'SUMO_HOME' in os.environ:
@@ -11,7 +12,15 @@ else:
 from sumolib import checkBinary  # noqa
 import traci  # noqa
 
-import random
+
+MAX_STEPS = 5400
+SEED = 9999
+NO_CARS = 1000
+
+# Generate route file
+TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)
+TrafficGen.generate_routefile(seed=SEED)
+
 
 class TrafficAgent:
     """Defines individual traffic signal behaviour."""
@@ -57,10 +66,10 @@ class TrafficAgent:
     def getYellowSignalString(self):
         return self._yellowSignalString
 
-lane0 = TrafficAgent('-gneE1_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr')    # east to west
-lane1 = TrafficAgent('-gneE3_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr')    # north to south
-lane2 = TrafficAgent('gneE0_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy')     # west to east
-lane3 = TrafficAgent('-gneE5_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')    # south to north
+lane0 = TrafficAgent('E2T_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr')   # east to west
+lane1 = TrafficAgent('N2T_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr')   # north to south
+lane2 = TrafficAgent('W2T_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy')   # west to east
+lane3 = TrafficAgent('S2T_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')   # south to north
 
 lanes = [lane0, lane1, lane2, lane3]
 laneIndex = 0
@@ -82,7 +91,7 @@ deadline = 0
 
 traci.start(sumoCmd)
 
-while step < 250:
+while step < MAX_STEPS:
     traci.simulationStep()
 
     if changeState:
