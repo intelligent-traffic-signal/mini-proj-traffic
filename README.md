@@ -38,7 +38,7 @@ Make sure sumo and sumo-gui are installed
 2. Create trips
 
     ```shell
-    make trips
+    make car_trips
     ```
 
 3. Run simulation in sumo-gui
