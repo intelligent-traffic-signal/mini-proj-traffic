@@ -15,7 +15,7 @@ For RL, switch to branch RL_1
 2. Create trips
 
     ```shell
-    make trips
+    make car_trips
     ```
 
 3. Run simulation in sumo-gui
