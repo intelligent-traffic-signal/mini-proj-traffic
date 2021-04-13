@@ -1,0 +1,12 @@
+<configuration>
+	<input>
+		<net-file value="sarakkiSmall.net.xml" />
+		<route-files value="sarakkiSmall.rou.xml" />
+		<additional-files value="sarakkiSmall.poly.xml" />	
+</input>
+	<time>
+		<begin value="0" />
+		<end value="100" />
+		<step-length value="0.1" />
+	</time>
+</configuration>
