@@ -1,8 +1,31 @@
 # mini-proj-traffic
 
-## Note
+## Env for training and testing
 
-For RL, switch to branch RL_1
+Make sure sumo and sumo-gui are installed
+
+1. Enter conda env
+
+    ```shell
+    conda activate base
+    ```
+
+2. Install pip in conda env
+
+    ```shell
+    conda install pip
+    ```
+
+3. Install TraCI and Pydot
+
+    ```shell
+    pip install traci
+    pip install pydot
+    ```
+
+4. Make sure Graphviz is installed
+
+    <https://graphviz.gitlab.io/download/>
 
 ## Use Makefile to create trips and routes
 
@@ -15,7 +38,7 @@ For RL, switch to branch RL_1
 2. Create trips
 
     ```shell
-    make trips
+    make car_trips
     ```
 
 3. Run simulation in sumo-gui
