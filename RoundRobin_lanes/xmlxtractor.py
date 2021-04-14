@@ -64,28 +64,17 @@ dsd_0 = []
 for i in range(1, len(lane_data)):
     dat = lane_data[i].find("lane", {'id' : '-gneE3_0'})
     if dat:
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
         dsd_0.append(float(dat.get("queueing_length")))
-=======
-        dsd_0.append(float(dat.get("queueing_time")))
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
     else:
         dsd_0.append(0.0)
 
 ticks = [_ for _ in range(1, len(lane_data))]
 
 plt.plot(ticks, dsd_0)
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
 plt.title("FC1 N->S QL Data")
 plt.xlabel("Timestep")
 plt.ylabel("Queueing Data")
 plt.savefig('./plots/fc1_ntos_qd.png')
-=======
-plt.title("FC1 N->S QT Data")
-plt.xlabel("Timestep")
-plt.ylabel("Queueing Time")
-plt.savefig('./plots/fc1_ntos_qt.png')
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
 plt.close()
 
 
@@ -94,28 +83,17 @@ dsd_1 = []
 for i in range(1, len(lane_data)):
     dat = lane_data[i].find("lane", {'id' : '-gneE1_0'})
     if dat:
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
         dsd_1.append(float(dat.get("queueing_length")))
-=======
-        dsd_1.append(float(dat.get("queueing_time")))
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
     else:
         dsd_1.append(0.0)
 
 ticks = [_ for _ in range(1, len(lane_data))]
 
 plt.plot(ticks, dsd_1)
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
 plt.title("FC1 W->E QL Data")
 plt.xlabel("Timestep")
 plt.ylabel("Queueing Data")
 plt.savefig('./plots/fc1_wtoe_qd.png')
-=======
-plt.title("FC1 W->E QT Data")
-plt.xlabel("Timestep")
-plt.ylabel("Queueing Time")
-plt.savefig('./plots/fc1_wtoe_qt.png')
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
 plt.close()
 
 
@@ -124,28 +102,17 @@ dsd_2 = []
 for i in range(1, len(lane_data)):
     dat = lane_data[i].find("lane", {'id' : '-gneE5_0'})
     if dat:
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
         dsd_2.append(float(dat.get("queueing_length")))
-=======
-        dsd_2.append(float(dat.get("queueing_time")))
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
     else:
         dsd_2.append(0.0)
 
 ticks = [_ for _ in range(1, len(lane_data))]
 
 plt.plot(ticks, dsd_2)
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
 plt.title("FC1 S->N QL Data")
 plt.xlabel("Timestep")
 plt.ylabel("Queueing Data")
 plt.savefig('./plots/fc1_ston_qd.png')
-=======
-plt.title("FC1 S->N QT Data")
-plt.xlabel("Timestep")
-plt.ylabel("Queueing Time")
-plt.savefig('./plots/fc1_ston_qt.png')
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
 plt.close()
 
 dsd_3 = []
@@ -153,26 +120,15 @@ dsd_3 = []
 for i in range(1, len(lane_data)):
     dat = lane_data[i].find("lane", {'id' : 'gneE0_0'})
     if dat:
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
         dsd_3.append(float(dat.get("queueing_length")))
-=======
-        dsd_3.append(float(dat.get("queueing_time")))
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
     else:
         dsd_3.append(0.0)
 
 ticks = [_ for _ in range(1, len(lane_data))]
 
 plt.plot(ticks, dsd_3)
-<<<<<<< HEAD:OSMSims/OSMSimpleMap/xmlxtractor.py
 plt.title("FC1 E->W QL Data")
 plt.xlabel("Timestep")
 plt.ylabel("Queueing Data")
 plt.savefig('./plots/fc1_etow_qd.png')
-=======
-plt.title("FC1 E->W QT Data")
-plt.xlabel("Timestep")
-plt.ylabel("Queueing Time")
-plt.savefig('./plots/fc1_etow_qt.png')
->>>>>>> 4764eca382cad425bf13cfbce8dc462154312d14:DQN_RL/xmlxtractor.py
 plt.close()
