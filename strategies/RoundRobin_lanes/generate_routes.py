@@ -3,16 +3,28 @@
 import numpy as np
 import math
 
+UNIFORM_TRAFFIC = 0
+NS_TRAFFIC = 1
+EW_TRAFFIC = 2
+
+
 class TrafficGenerator:
     def __init__(self, max_steps, n_cars_generated):
         self._n_cars_generated = n_cars_generated  # how many cars per episode
         self._max_steps = max_steps
 
-    def generate_routefile(self, seed, uniform=True):
+    def generate_routefile(self, seed):
         """
         Generation of the route of every car for one episode
+        uniform u = indicates flow of traffic
+        0: uniform traffic scenario
+        1: NS traffic 90%
+        2: EW traffic 90%
         """
         np.random.seed(seed)  # make tests reproducible
+
+        # use seed for uniformity     
+        uniform = seed % 3
 
         # the generation of cars is distributed according to a weibull distribution
         timings = np.random.weibull(2, self._n_cars_generated)
@@ -33,7 +45,6 @@ class TrafficGenerator:
         with open("routes.rou.xml", "w") as routes:
             print("""<routes>
             <vType accel="1.0" decel="4.5" id="standard_car" length="5.0" minGap="2.5" maxSpeed="25" sigma="0.5" />
-
             <route id="W_N" edges="W2T T2N"/>
             <route id="W_E" edges="W2T T2E"/>
             <route id="W_S" edges="W2T T2S"/>
@@ -49,8 +60,10 @@ class TrafficGenerator:
 
             for car_counter, step in enumerate(car_gen_steps):
                 straight_or_turn = np.random.uniform()  # samples from uniform dist [0, 1)
-                if straight_or_turn < 0.75:  # choose direction: straight or turn - 75% of times the car goes straight
-                    if uniform:
+                if straight_or_turn < 0.75:  
+                    # choose direction: straight or turn - 75% of times the car goes straight
+                    # if uniform == NS or EW, 90% of the time the  car is generated at NS or EW respenctively
+                    if uniform == UNIFORM_TRAFFIC:
                         route_straight = np.random.randint(1, 5)  # choose a random source & destination
                         if route_straight == 1:
                             print('    <vehicle id="W_E_%i" type="standard_car" route="W_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
@@ -61,10 +74,12 @@ class TrafficGenerator:
                         else:
                             print('    <vehicle id="S_N_%i" type="standard_car" route="S_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                     else:
+                        # NS_TRAFFIC or EW_TRAFFIC - not uniform
                         ns_or_ew = np.random.uniform()
                         route_straight = np.random.randint(1, 3)
-                        # 90% of the time NS
-                        if ns_or_ew < 0.9:
+
+                        # 90% NS if NS_TRAFFIC, 10% NS if EW_TRAFFIC
+                        if ns_or_ew < 0.9 and uniform == NS_TRAFFIC or ns_or_ew >= 0.9 and uniform == EW_TRAFFIC:
                             if route_straight == 1:
                                 print('    <vehicle id="N_S_%i" type="standard_car" route="N_S" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                             else:
@@ -74,9 +89,10 @@ class TrafficGenerator:
                                 print('    <vehicle id="W_E_%i" type="standard_car" route="W_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                             else:
                                 print('    <vehicle id="E_W_%i" type="standard_car" route="E_W" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
-
+                                                
                 else:  # car that turn -25% of the time the car turns
-                    if uniform:
+                    # uniform traffic
+                    if uniform == UNIFORM_TRAFFIC:
                         route_turn = np.random.randint(1, 9)  # choose random source source & destination
                         if route_turn == 1:
                             print('    <vehicle id="W_N_%i" type="standard_car" route="W_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
@@ -95,11 +111,11 @@ class TrafficGenerator:
                         elif route_turn == 8:
                             print('    <vehicle id="S_E_%i" type="standard_car" route="S_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                     else:
+                        # weighted traffic
                         ns_or_ew = np.random.uniform()
                         route_turn = np.random.randint(1, 5)
-
-                        # 90% of the time NS
-                        if ns_or_ew < 0.9:
+                        # 90% NS if NS_TRAFFIC, 10% NS if EW_TRAFFIC
+                        if ns_or_ew < 0.9 and uniform == NS_TRAFFIC or ns_or_ew >= 0.9 and uniform == EW_TRAFFIC:
                             if route_turn == 1:
                                 print('    <vehicle id="N_W_%i" type="standard_car" route="N_W" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                             elif route_turn == 2:
@@ -108,7 +124,6 @@ class TrafficGenerator:
                                 print('    <vehicle id="S_W_%i" type="standard_car" route="S_W" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                             else:
                                 print('    <vehicle id="S_E_%i" type="standard_car" route="S_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
-                    
                         else:
                             if route_turn == 1:
                                 print('    <vehicle id="W_N_%i" type="standard_car" route="W_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
@@ -118,6 +133,5 @@ class TrafficGenerator:
                                 print('    <vehicle id="E_N_%i" type="standard_car" route="E_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                             else:
                                 print('    <vehicle id="E_S_%i" type="standard_car" route="E_S" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
-                            
 
             print("</routes>", file=routes)

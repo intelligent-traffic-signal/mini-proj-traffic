@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
     config = import_test_configuration(config_file='testing_settings.ini')
     sumo_cmd = set_sumo(config['gui'], config['sumocfg_file_name'], config['max_steps'], config['dumps'], config['add_file_name'], config['queue_file_name'])
-    model_path, plot_path = set_test_path(config['models_path_name'], config['model_to_test'])
+    model_path, plot_path = set_test_path(config['models_path_name'], config['model_to_test'], config['episode_seed'])
+
 
     Model = TestModel(
         input_dim=config['num_states'],

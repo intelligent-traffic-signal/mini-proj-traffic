@@ -3,8 +3,10 @@ import os
 
 class Visualization:
     def __init__(self, path, dpi):
-            self._path = path
-            self._dpi = dpi
+        self._path = path
+        self._dpi = dpi
+        if not os.path.exists(self._path):
+            os.makedirs(self._path)
 
 
     def save_data_and_plot(self, data, filename, xlabel, ylabel):

@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
+import os
 
 """
 AVAILABLE PARAMETERS
@@ -36,6 +37,8 @@ AVAILABLE PARAMETERS
     laneChangedTo : The number of vehicles that changed to this lane.
 """
 
+
+
 def getTrafData(filename, identifier, identifier_id, parameter):
     # NOTE: Although './trafficinfo_detailed.xml' has been used, in case of macroscopic parameters, change file to './trafficinfo.xml'
     with open(filename, 'r') as traf:
@@ -52,6 +55,9 @@ def getTrafData(filename, identifier, identifier_id, parameter):
 
     return desired_data
 
+if not os.path.exists('plots'):
+    os.makedirs('plots')
+
 with open("queuedata.xml", 'r') as qd:
     data = qd.read()
 
@@ -62,7 +68,7 @@ lane_data = queue_data.find_all('lanes')
 dsd_0 = []
 
 for i in range(1, len(lane_data)):
-    dat = lane_data[i].find("lane", {'id' : '-gneE3_0'})
+    dat = lane_data[i].find("lane", {'id' : 'N2T_0'})
     if dat:
         dsd_0.append(float(dat.get("queueing_time")))
     else:
@@ -81,7 +87,7 @@ plt.close()
 dsd_1 = []
 
 for i in range(1, len(lane_data)):
-    dat = lane_data[i].find("lane", {'id' : '-gneE1_0'})
+    dat = lane_data[i].find("lane", {'id' : 'W2T_0'})
     if dat:
         dsd_1.append(float(dat.get("queueing_time")))
     else:
@@ -100,7 +106,7 @@ plt.close()
 dsd_2 = []
 
 for i in range(1, len(lane_data)):
-    dat = lane_data[i].find("lane", {'id' : '-gneE5_0'})
+    dat = lane_data[i].find("lane", {'id' : 'S2T_0'})
     if dat:
         dsd_2.append(float(dat.get("queueing_time")))
     else:
@@ -118,7 +124,7 @@ plt.close()
 dsd_3 = []
 
 for i in range(1, len(lane_data)):
-    dat = lane_data[i].find("lane", {'id' : 'gneE0_0'})
+    dat = lane_data[i].find("lane", {'id' : 'E2T_0'})
     if dat:
         dsd_3.append(float(dat.get("queueing_time")))
     else:
