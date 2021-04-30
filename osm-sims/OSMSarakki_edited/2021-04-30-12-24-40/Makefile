@@ -1,12 +1,12 @@
-SIM_TIME=50
+SIM_TIME=5400
 
-PASS_PARAMS=-e $(SIM_TIME) -l -p 1 --vehicle-class passenger --trip-attributes="color=\"255,255,255\""
-BUS_PARAMS=-e $(SIM_TIME) -l -p 30 --vehicle-class bus --trip-attributes="accel=\"20.8\""
-TRUCK_PARAMS=-e $(SIM_TIME) -l -p 15 --vehicle-class truck --trip-attributes="color=\"179,253,183\""
-DELIVERY_PARAMS=-e $(SIM_TIME) -l -p 30 --vehicle-class delivery --trip-attributes="color=\"115,211,230\""
+PASS_PARAMS=-e $(SIM_TIME) -l -p 5 --vehicle-class passenger --trip-attributes="color=\"255,255,255\""
+BUS_PARAMS=-e $(SIM_TIME) -l -p 50 --vehicle-class bus --trip-attributes="accel=\"20.8\""
+TRUCK_PARAMS=-e $(SIM_TIME) -l -p 25 --vehicle-class truck --trip-attributes="color=\"179,253,183\""
+DELIVERY_PARAMS=-e $(SIM_TIME) -l -p 40 --vehicle-class delivery --trip-attributes="color=\"115,211,230\""
 
 # REPLACE WITH MAP NAME
-MAP_NAME=simpleMap
+MAP_NAME=osm
 
 all: osm trips
 
