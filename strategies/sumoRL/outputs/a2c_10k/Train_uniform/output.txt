@@ -1,0 +1,1709 @@
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+/Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/__init__.py:33: UserWarning: stable-baselines is in maintenance mode, please use [Stable-Baselines3 (SB3)](https://github.com/DLR-RM/stable-baselines3) for an up-to-date version. You can find a [migration guide](https://stable-baselines3.readthedocs.io/en/master/guide/migration.html) in SB3 documentation.
+  "stable-baselines is in maintenance mode, please use [Stable-Baselines3 (SB3)](https://github.com/DLR-RM/stable-baselines3) for an up-to-date version. You can find a [migration guide](https://stable-baselines3.readthedocs.io/en/master/guide/migration.html) in SB3 documentation."
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+/Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/__init__.py:33: UserWarning: stable-baselines is in maintenance mode, please use [Stable-Baselines3 (SB3)](https://github.com/DLR-RM/stable-baselines3) for an up-to-date version. You can find a [migration guide](https://stable-baselines3.readthedocs.io/en/master/guide/migration.html) in SB3 documentation.
+  "stable-baselines is in maintenance mode, please use [Stable-Baselines3 (SB3)](https://github.com/DLR-RM/stable-baselines3) for an up-to-date version. You can find a [migration guide](https://stable-baselines3.readthedocs.io/en/master/guide/migration.html) in SB3 documentation."
+ Retrying in 1 seconds
+/Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/gym/logger.py:30: UserWarning: WARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 0 ACT 0 BUF 0)                      
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/tf_util.py:191: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/tf_util.py:200: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/policies.py:116: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/input.py:25: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/policies.py:561: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:332: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/tf_layers.py:123: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/distributions.py:326: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/distributions.py:327: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py:160: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/tf_util.py:449: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/common/tf_util.py:449: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/tensorflow_core/python/ops/clip_ops.py:301: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py:184: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py:194: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+WARNING:tensorflow:From /Users/vish/College/Semester 4/Mini Project/SUMOTutorials/sumoRL-2/env3.7/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py:196: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -829     |
+| fps                | 3        |
+| nupdates           | 1        |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 5        |
+| value_loss         | 0.000442 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.00142  |
+| fps                | 31       |
+| nupdates           | 10       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 50       |
+| value_loss         | 1.18e+04 |
+---------------------------------
+---------------------------------
+| explained_variance | 3.58e-06 |
+| fps                | 39       |
+| nupdates           | 20       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 100      |
+| value_loss         | 2.92e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.57e-05 |
+| fps                | 33       |
+| nupdates           | 30       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 150      |
+| value_loss         | 3.35e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.15e-05 |
+| fps                | 31       |
+| nupdates           | 40       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 200      |
+| value_loss         | 4.41e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.8e-05  |
+| fps                | 29       |
+| nupdates           | 50       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 250      |
+| value_loss         | 5.58e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.78e-05 |
+| fps                | 28       |
+| nupdates           | 60       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 300      |
+| value_loss         | 5.41e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.79e-07 |
+| fps                | 28       |
+| nupdates           | 70       |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 350      |
+| value_loss         | 3.63e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -5.96e-07 |
+| fps                | 28        |
+| nupdates           | 80        |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 400       |
+| value_loss         | 5.33e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -3.15e-05 |
+| fps                | 27        |
+| nupdates           | 90        |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 450       |
+| value_loss         | 3.84e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.68e-05 |
+| fps                | 28       |
+| nupdates           | 100      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 500      |
+| value_loss         | 9.15e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.00071  |
+| fps                | 30       |
+| nupdates           | 110      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 550      |
+| value_loss         | 9.26e+04 |
+---------------------------------
+----------------------------------
+| explained_variance | -4.95e+04 |
+| fps                | 32        |
+| nupdates           | 120       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 600       |
+| value_loss         | 0.0119    |
+----------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 56ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 3 ACT 2 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 11 ACT 6 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 12 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 15 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 73 ACT 31 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 104 ACT 46 BUF 0)        Step #700.00 (1ms ~= 1000.00*RT, ~63000.00UPS, TraCI: 9ms, vehicles TOT 140 ACT Step #800.00 (1ms ~= 1000.00*RT, ~80000.00UPS, TraCI: 13ms, vehicles TOT 174 ACTStep #900.00 (1ms ~= 1000.00*RT, ~87000.00UPS, TraCI: 28ms, vehicles TOT 202 ACTStep #1000.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 235 ACT 105 BUF 0)     Step #1100.00 (1ms ~= 1000.00*RT, ~108000.00UPS, TraCI: 16ms, vehicles TOT 254 AStep #1200.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 272 ACT 106 BUF 0)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 33ms, vehicles TOT 300 ACT 116 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 319 ACT 116 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 335 ACT 115 BUF 0)     Step #1600.00 (1ms ~= 1000.00*RT, ~109000.00UPS, TraCI: 13ms, vehicles TOT 352 AStep #1700.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 371 ACT 114 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 33ms, vehicles TOT 390 ACT 114 BUF 0)     Step #1900.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 14ms, vehicles TOT 407 AStep #2000.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 424 ACT 112 BUF 0)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 441 ACT 115 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 455 ACT 106 BUF 0)     Step #2300.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 469 ACT 103 BUF 0)     Step #2400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 490 ACT 104 BUF 0)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 29ms, vehicles TOT 501 ACT 97 BUF 0)      Step #2600.00 (1ms ~= 1000.00*RT, ~104000.00UPS, TraCI: 14ms, vehicles TOT 525 AStep #2700.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 541 ACT 104 BUF 0)     Step #2800.00 (1ms ~= 1000.00*RT, ~104000.00UPS, TraCI: 14ms, vehicles TOT 556 AStep #2900.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 567 ACT 100 BUF 0)     Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 28ms, vehicles TOT 579 ACT 96 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 590 ACT 92 BUF 0)      Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 600 ACT 87 BUF 0)      Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 612 ACT 82 BUF 0)      Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 620 ACT 74 BUF 0)      Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 628 ACT 66 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 634 ACT 52 BUF 0)      Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 636 ACT 37 BUF 0)      Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 639 ACT 31 BUF 0)      Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 642 ACT 19 BUF 0)      Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 644 ACT 8 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 645 ACT 3 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 645 ACT 1 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 645 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 645 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | 0.00449  |
+| fps                | 34       |
+| nupdates           | 130      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 650      |
+| value_loss         | 526      |
+---------------------------------
+----------------------------------
+| explained_variance | -2.54e+03 |
+| fps                | 36        |
+| nupdates           | 140       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 700       |
+| value_loss         | 0.00339   |
+----------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 646 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 646 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 647 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 647 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 648 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 648 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 648 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 648 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 649 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 649 ACT 0 BUF 0)        Step #5402.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 649 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+----------------------------------
+| explained_variance | -3.58e+03 |
+| fps                | 36        |
+| nupdates           | 150       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 750       |
+| value_loss         | 0.0073    |
+----------------------------------
+---------------------------------
+| explained_variance | 0.00036  |
+| fps                | 38       |
+| nupdates           | 160      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 800      |
+| value_loss         | 4.34e+03 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000168 |
+| fps                | 38        |
+| nupdates           | 170       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 850       |
+| value_loss         | 4.88e+06  |
+----------------------------------
+---------------------------------
+| explained_variance | 6.14e-06 |
+| fps                | 37       |
+| nupdates           | 180      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 900      |
+| value_loss         | 3.56e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 3.11e-05 |
+| fps                | 36       |
+| nupdates           | 190      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 950      |
+| value_loss         | 4.32e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -3.17e-05 |
+| fps                | 36        |
+| nupdates           | 200       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1000      |
+| value_loss         | 6.88e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 6.08e-06 |
+| fps                | 35       |
+| nupdates           | 210      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1050     |
+| value_loss         | 8e+07    |
+---------------------------------
+---------------------------------
+| explained_variance | 1.45e-05 |
+| fps                | 34       |
+| nupdates           | 220      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1100     |
+| value_loss         | 5.7e+07  |
+---------------------------------
+---------------------------------
+| explained_variance | 1.42e-05 |
+| fps                | 34       |
+| nupdates           | 230      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1150     |
+| value_loss         | 4.11e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -2.74e-06 |
+| fps                | 34        |
+| nupdates           | 240       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1200      |
+| value_loss         | 1.67e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 4.23e-06 |
+| fps                | 34       |
+| nupdates           | 250      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1250     |
+| value_loss         | 9.15e+06 |
+---------------------------------
+----------------------------------
+| explained_variance | -5.78e-05 |
+| fps                | 35        |
+| nupdates           | 260       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1300      |
+| value_loss         | 6.28e+04  |
+----------------------------------
+---------------------------------
+| explained_variance | -301     |
+| fps                | 36       |
+| nupdates           | 270      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1350     |
+| value_loss         | 0.0121   |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 11 ACT 7 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 14 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 15 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 29 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 104 ACT 47 BUF 0)        Step #700.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 140 ACT 66 BUF 0)        Step #800.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 175 ACT 84 BUF 0)       Step #900.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 208 ACT 101 BUF 0)      Step #1000.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 238 ACT 112 BUF 1)     Step #1100.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 14ms, vehicles TOT 257 AStep #1200.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 275 ACT 113 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 30ms, vehicles TOT 300 ACT 116 BUF 0)     Step #1400.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 14ms, vehicles TOT 317 AStep #1500.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 331 ACT 111 BUF 0)     Step #1600.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 351 ACT 115 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 370 ACT 115 BUF 0)     Step #1800.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 15ms, vehicles TOT 386 AStep #1900.00 (1ms ~= 1000.00*RT, ~115000.00UPS, TraCI: 14ms, vehicles TOT 402 AStep #2000.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 418 ACT 113 BUF 0)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 438 ACT 116 BUF 0)     Step #2200.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 14ms, vehicles TOT 451 AStep #2300.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 465 ACT 112 BUF 0)     Step #2400.00 (0ms ?*RT. ?UPS, TraCI: 33ms, vehicles TOT 480 ACT 108 BUF 1)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 28ms, vehicles TOT 493 ACT 102 BUF 0)     Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 31ms, vehicles TOT 513 ACT 104 BUF 0)     Step #2700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 527 ACT 103 BUF 0)     Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 538 ACT 95 BUF 0)      Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 27ms, vehicles TOT 551 ACT 88 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 24ms, vehicles TOT 563 ACT 85 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 575 ACT 80 BUF 0)      Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 20ms, vehicles TOT 585 ACT 69 BUF 0)      Step #3300.00 (1ms ~= 1000.00*RT, ~68000.00UPS, TraCI: 8ms, vehicles TOT 597 ACTStep #3400.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 605 ACT 59 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 613 ACT 55 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 619 ACT 47 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 621 ACT 32 BUF 0)       Step #3800.00 (1ms ~= 1000.00*RT, ~21000.00UPS, TraCI: 3ms, vehicles TOT 624 ACTStep #3900.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 627 ACT 14 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 629 ACT 6 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | 0.0309   |
+| fps                | 37       |
+| nupdates           | 280      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1400     |
+| value_loss         | 1.5      |
+---------------------------------
+---------------------------------
+| explained_variance | -580     |
+| fps                | 38       |
+| nupdates           | 290      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1450     |
+| value_loss         | 0.00387  |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 631 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 632 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 633 ACT 1 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 633 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 633 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 634 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5407.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 634 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -13.7    |
+| fps                | 38       |
+| nupdates           | 300      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1500     |
+| value_loss         | 0.0241   |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000395 |
+| fps                | 39        |
+| nupdates           | 310       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1550      |
+| value_loss         | 6.9e+03   |
+----------------------------------
+----------------------------------
+| explained_variance | -7.34e-05 |
+| fps                | 39        |
+| nupdates           | 320       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1600      |
+| value_loss         | 3.31e+06  |
+----------------------------------
+---------------------------------
+| explained_variance | 7.17e-05 |
+| fps                | 39       |
+| nupdates           | 330      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1650     |
+| value_loss         | 2.98e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | -3e-05   |
+| fps                | 38       |
+| nupdates           | 340      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1700     |
+| value_loss         | 4.42e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 8.76e-06 |
+| fps                | 38       |
+| nupdates           | 350      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 1750     |
+| value_loss         | 7.54e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -7.51e-06 |
+| fps                | 37        |
+| nupdates           | 360       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1800      |
+| value_loss         | 6.21e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -2.72e-05 |
+| fps                | 37        |
+| nupdates           | 370       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1850      |
+| value_loss         | 5.82e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -4.82e-05 |
+| fps                | 36        |
+| nupdates           | 380       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1900      |
+| value_loss         | 4.37e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -1.43e-06 |
+| fps                | 36        |
+| nupdates           | 390       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 1950      |
+| value_loss         | 3.18e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 2.74e-05 |
+| fps                | 36       |
+| nupdates           | 400      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2000     |
+| value_loss         | 2.76e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.0379  |
+| fps                | 37       |
+| nupdates           | 410      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2050     |
+| value_loss         | 20.7     |
+---------------------------------
+---------------------------------
+| explained_variance | -139     |
+| fps                | 38       |
+| nupdates           | 420      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2100     |
+| value_loss         | 0.0122   |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 7 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 13 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 43 ACT 17 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 32 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 104 ACT 44 BUF 0)       Step #700.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 140 ACT 64 BUF 0)        Step #800.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 175 ACT 84 BUF 0)       Step #900.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 12ms, vehicles TOT 211 ACStep #1000.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 241 ACT 113 BUF 1)     Step #1100.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 14ms, vehicles TOT 264 AStep #1200.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 13ms, vehicles TOT 277 AStep #1300.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 301 ACT 113 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 322 ACT 117 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 336 ACT 105 BUF 0)     Step #1600.00 (1ms ~= 1000.00*RT, ~115000.00UPS, TraCI: 14ms, vehicles TOT 359 AStep #1700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 374 ACT 118 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 386 ACT 115 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 402 ACT 111 BUF 0)     Step #2000.00 (1ms ~= 1000.00*RT, ~108000.00UPS, TraCI: 13ms, vehicles TOT 423 AStep #2100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 447 ACT 115 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 460 ACT 112 BUF 0)     Step #2300.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 13ms, vehicles TOT 476 AStep #2400.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 30ms, vehicles TOT 490 AStep #2500.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 501 ACT 105 BUF 0)     Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 521 ACT 110 BUF 0)     Step #2700.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 533 ACT 106 BUF 0)     Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 547 ACT 102 BUF 0)     Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 559 ACT 95 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 23ms, vehicles TOT 569 ACT 81 BUF 0)      Step #3100.00 (1ms ~= 1000.00*RT, ~71000.00UPS, TraCI: 8ms, vehicles TOT 576 ACTStep #3200.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 584 ACT 62 BUF 0)       Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 596 ACT 62 BUF 0)       Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 604 ACT 54 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 612 ACT 51 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 618 ACT 42 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 620 ACT 25 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 623 ACT 15 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 626 ACT 6 BUF 0)        Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 628 ACT 2 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 629 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 629 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 629 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 629 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | 0.00182  |
+| fps                | 38       |
+| nupdates           | 430      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2150     |
+| value_loss         | 818      |
+---------------------------------
+---------------------------------
+| explained_variance | -123     |
+| fps                | 39       |
+| nupdates           | 440      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2200     |
+| value_loss         | 0.0109   |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 631 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 0 BUF 0)        Step #5402.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 633 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -44.1    |
+| fps                | 39       |
+| nupdates           | 450      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2250     |
+| value_loss         | 0.0148   |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000366 |
+| fps                | 40       |
+| nupdates           | 460      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2300     |
+| value_loss         | 1.27e+05 |
+---------------------------------
+----------------------------------
+| explained_variance | -2.72e-05 |
+| fps                | 40        |
+| nupdates           | 470       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 2350      |
+| value_loss         | 6.1e+06   |
+----------------------------------
+---------------------------------
+| explained_variance | 4.43e-05 |
+| fps                | 39       |
+| nupdates           | 480      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2400     |
+| value_loss         | 4.74e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.14e-05 |
+| fps                | 39       |
+| nupdates           | 490      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2450     |
+| value_loss         | 7.84e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.91e-06 |
+| fps                | 38       |
+| nupdates           | 500      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2500     |
+| value_loss         | 5.78e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.07e-06 |
+| fps                | 38       |
+| nupdates           | 510      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2550     |
+| value_loss         | 3.21e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -3.22e-05 |
+| fps                | 38        |
+| nupdates           | 520       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 2600      |
+| value_loss         | 5.17e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -2.15e-05 |
+| fps                | 37        |
+| nupdates           | 530       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 2650      |
+| value_loss         | 3.75e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 4.33e-05 |
+| fps                | 37       |
+| nupdates           | 540      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2700     |
+| value_loss         | 1.35e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000151 |
+| fps                | 38        |
+| nupdates           | 550       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 2750      |
+| value_loss         | 3.76e+06  |
+----------------------------------
+---------------------------------
+| explained_variance | -0.00123 |
+| fps                | 38       |
+| nupdates           | 560      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2800     |
+| value_loss         | 5.91e+04 |
+---------------------------------
+---------------------------------
+| explained_variance | -3.81    |
+| fps                | 39       |
+| nupdates           | 570      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2850     |
+| value_loss         | 0.00174  |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 8 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 16 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 43 ACT 22 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 73 ACT 40 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 104 ACT 55 BUF 0)        Step #700.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 140 ACT 73 BUF 0)        Step #800.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 172 ACT 85 BUF 0)       Step #900.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 206 ACT 104 BUF 0)      Step #1000.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 15ms, vehicles TOT 235 AStep #1100.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 14ms, vehicles TOT 252 AStep #1200.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 268 ACT 114 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 288 ACT 118 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 306 ACT 117 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 321 ACT 115 BUF 0)     Step #1600.00 (1ms ~= 1000.00*RT, ~117000.00UPS, TraCI: 14ms, vehicles TOT 337 AStep #1700.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 354 ACT 119 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 367 ACT 112 BUF 0)     Step #1900.00 (1ms ~= 1000.00*RT, ~110000.00UPS, TraCI: 15ms, vehicles TOT 383 AStep #2000.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 407 ACT 113 BUF 1)     Step #2100.00 (1ms ~= 1000.00*RT, ~110000.00UPS, TraCI: 13ms, vehicles TOT 422 AStep #2200.00 (0ms ?*RT. ?UPS, TraCI: 29ms, vehicles TOT 439 ACT 108 BUF 0)     Step #2300.00 (1ms ~= 1000.00*RT, ~105000.00UPS, TraCI: 13ms, vehicles TOT 456 AStep #2400.00 (1ms ~= 1000.00*RT, ~111000.00UPS, TraCI: 29ms, vehicles TOT 478 AStep #2500.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 487 ACT 105 BUF 0)     Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 508 ACT 111 BUF 0)     Step #2700.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 523 ACT 110 BUF 0)     Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 536 ACT 107 BUF 0)     Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 546 ACT 96 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 555 ACT 89 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 567 ACT 80 BUF 0)       Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 577 ACT 73 BUF 0)      Step #3300.00 (1ms ~= 1000.00*RT, ~65000.00UPS, TraCI: 9ms, vehicles TOT 589 ACTStep #3400.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 597 ACT 54 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 605 ACT 45 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 611 ACT 31 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 613 ACT 22 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 616 ACT 14 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 619 ACT 10 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 621 ACT 6 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 622 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 622 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 622 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 622 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | 0.00585  |
+| fps                | 39       |
+| nupdates           | 580      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2900     |
+| value_loss         | 16.4     |
+---------------------------------
+---------------------------------
+| explained_variance | -7.55    |
+| fps                | 40       |
+| nupdates           | 590      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 2950     |
+| value_loss         | 0.0056   |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 623 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 623 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 624 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 624 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 626 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 626 ACT 0 BUF 0)        Step #5408.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 626 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | 0.408    |
+| fps                | 40       |
+| nupdates           | 600      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3000     |
+| value_loss         | 15.1     |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000265 |
+| fps                | 40        |
+| nupdates           | 610       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 3050      |
+| value_loss         | 8.71e+04  |
+----------------------------------
+----------------------------------
+| explained_variance | -0.000143 |
+| fps                | 40        |
+| nupdates           | 620       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 3100      |
+| value_loss         | 6.48e+06  |
+----------------------------------
+----------------------------------
+| explained_variance | -1.25e-05 |
+| fps                | 40        |
+| nupdates           | 630       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 3150      |
+| value_loss         | 3.22e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.51e-05 |
+| fps                | 40       |
+| nupdates           | 640      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 3200     |
+| value_loss         | 5.74e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -1.67e-05 |
+| fps                | 39        |
+| nupdates           | 650       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 3250      |
+| value_loss         | 7.09e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -5.84e-06 |
+| fps                | 39        |
+| nupdates           | 660       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 3300      |
+| value_loss         | 5.3e+07   |
+----------------------------------
+---------------------------------
+| explained_variance | 2.71e-05 |
+| fps                | 38       |
+| nupdates           | 670      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3350     |
+| value_loss         | 5.05e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -1.87e-05 |
+| fps                | 38        |
+| nupdates           | 680       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 3400      |
+| value_loss         | 5.64e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 5.78e-05 |
+| fps                | 38       |
+| nupdates           | 690      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3450     |
+| value_loss         | 1.84e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000257 |
+| fps                | 38       |
+| nupdates           | 700      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3500     |
+| value_loss         | 9.5e+06  |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000446 |
+| fps                | 38       |
+| nupdates           | 710      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3550     |
+| value_loss         | 6.58e+05 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.348    |
+| fps                | 39       |
+| nupdates           | 720      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3600     |
+| value_loss         | 0.0124   |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (1ms ~= 1000.00*RT, ~9000.00UPS, TraCI: 1ms, vehicles TOT 11 ACT 9 Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 14 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 16 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 29 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 104 ACT 45 BUF 0)        Step #700.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 140 ACT 61 BUF 0)        Step #800.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 172 ACT 76 BUF 0)       Step #900.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 202 ACT 87 BUF 0)       Step #1000.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 235 ACT 97 BUF 0)      Step #1100.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 260 ACT 108 BUF 0)     Step #1200.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 13ms, vehicles TOT 284 AStep #1300.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 15ms, vehicles TOT 305 AStep #1400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 322 ACT 117 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 336 ACT 116 BUF 0)     Step #1600.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 352 ACT 115 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 371 ACT 116 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 387 ACT 116 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 402 ACT 114 BUF 1)     Step #2000.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 14ms, vehicles TOT 419 AStep #2100.00 (1ms ~= 1000.00*RT, ~117000.00UPS, TraCI: 13ms, vehicles TOT 435 AStep #2200.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 449 ACT 112 BUF 0)     Step #2300.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 463 ACT 106 BUF 0)     Step #2400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 484 ACT 114 BUF 0)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 495 ACT 107 BUF 0)     Step #2600.00 (1ms ~= 1000.00*RT, ~108000.00UPS, TraCI: 13ms, vehicles TOT 517 AStep #2700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 535 ACT 112 BUF 0)     Step #2800.00 (1ms ~= 1000.00*RT, ~106000.00UPS, TraCI: 12ms, vehicles TOT 550 AStep #2900.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 562 ACT 106 BUF 0)     Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 573 ACT 102 BUF 0)     Step #3100.00 (1ms ~= 1000.00*RT, ~92000.00UPS, TraCI: 10ms, vehicles TOT 581 ACStep #3200.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 591 ACT 83 BUF 0)      Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 22ms, vehicles TOT 603 ACT 74 BUF 0)      Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 611 ACT 59 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 619 ACT 53 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 625 ACT 49 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 627 ACT 39 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 630 ACT 25 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 633 ACT 21 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 635 ACT 12 BUF 0)       Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 636 ACT 7 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 636 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 636 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 636 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -0.00609 |
+| fps                | 39       |
+| nupdates           | 730      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3650     |
+| value_loss         | 93.6     |
+---------------------------------
+---------------------------------
+| explained_variance | 0.686    |
+| fps                | 40       |
+| nupdates           | 740      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3700     |
+| value_loss         | 0.0079   |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 637 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 637 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 638 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 638 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 639 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 639 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 639 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 639 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 640 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 640 ACT 0 BUF 0)        Step #5402.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 640 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | 0.477    |
+| fps                | 40       |
+| nupdates           | 750      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3750     |
+| value_loss         | 0.0019   |
+---------------------------------
+---------------------------------
+| explained_variance | -0.00195 |
+| fps                | 40       |
+| nupdates           | 760      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 3800     |
+| value_loss         | 3.26e+04 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000346 |
+| fps                | 40        |
+| nupdates           | 770       |
+| policy_entropy     | 1.39      |
+| total_timesteps    | 3850      |
+| value_loss         | 6.71e+06  |
+----------------------------------
+----------------------------------
+| explained_variance | -0.000106 |
+| fps                | 40        |
+| nupdates           | 780       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 3900      |
+| value_loss         | 2.3e+07   |
+----------------------------------
+----------------------------------
+| explained_variance | -2.09e-05 |
+| fps                | 39        |
+| nupdates           | 790       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 3950      |
+| value_loss         | 5.69e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 3.22e-05 |
+| fps                | 39       |
+| nupdates           | 800      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4000     |
+| value_loss         | 6.07e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 6.68e-06 |
+| fps                | 39       |
+| nupdates           | 810      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4050     |
+| value_loss         | 3.5e+07  |
+---------------------------------
+----------------------------------
+| explained_variance | -8.46e-06 |
+| fps                | 38        |
+| nupdates           | 820       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 4100      |
+| value_loss         | 5.83e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -2.75e-05 |
+| fps                | 38        |
+| nupdates           | 830       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 4150      |
+| value_loss         | 5.47e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.97e-05 |
+| fps                | 38       |
+| nupdates           | 840      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 4200     |
+| value_loss         | 3.29e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000255 |
+| fps                | 38       |
+| nupdates           | 850      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 4250     |
+| value_loss         | 1.89e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 8.58e-06 |
+| fps                | 38       |
+| nupdates           | 860      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 4300     |
+| value_loss         | 3.91e+05 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.939   |
+| fps                | 39       |
+| nupdates           | 870      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4350     |
+| value_loss         | 0.122    |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (1ms ~= 1000.00*RT, ~3000.00UPS, TraCI: 0ms, vehicles TOT 3 ACT 3 BStep #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 5 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 26 ACT 10 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 14 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 32 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 104 ACT 49 BUF 0)       Step #700.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 140 ACT 65 BUF 0)        Step #800.00 (1ms ~= 1000.00*RT, ~79000.00UPS, TraCI: 9ms, vehicles TOT 174 ACT Step #900.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 203 ACT 85 BUF 0)       Step #1000.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 13ms, vehicles TOT 235 AStep #1100.00 (1ms ~= 1000.00*RT, ~111000.00UPS, TraCI: 26ms, vehicles TOT 265 AStep #1200.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 286 ACT 119 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 20ms, vehicles TOT 301 ACT 118 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 316 ACT 115 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 37ms, vehicles TOT 332 ACT 115 BUF 0)     Step #1600.00 (1ms ~= 1000.00*RT, ~117000.00UPS, TraCI: 16ms, vehicles TOT 350 AStep #1700.00 (1ms ~= 1000.00*RT, ~115000.00UPS, TraCI: 14ms, vehicles TOT 363 AStep #1800.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 16ms, vehicles TOT 379 AStep #1900.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 396 ACT 111 BUF 1)     Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 417 ACT 112 BUF 1)     Step #2100.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 16ms, vehicles TOT 438 AStep #2200.00 (0ms ?*RT. ?UPS, TraCI: 19ms, vehicles TOT 452 ACT 108 BUF 0)     Step #2300.00 (1ms ~= 1000.00*RT, ~104000.00UPS, TraCI: 15ms, vehicles TOT 469 AStep #2400.00 (1ms ~= 1000.00*RT, ~105000.00UPS, TraCI: 13ms, vehicles TOT 488 AStep #2500.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 494 ACT 96 BUF 0)      Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 514 ACT 104 BUF 0)     Step #2700.00 (1ms ~= 1000.00*RT, ~99000.00UPS, TraCI: 11ms, vehicles TOT 527 ACStep #2800.00 (1ms ~= 1000.00*RT, ~101000.00UPS, TraCI: 12ms, vehicles TOT 544 AStep #2900.00 (1ms ~= 1000.00*RT, ~97000.00UPS, TraCI: 26ms, vehicles TOT 557 ACStep #3000.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 569 ACT 94 BUF 0)      Step #3100.00 (1ms ~= 1000.00*RT, ~83000.00UPS, TraCI: 25ms, vehicles TOT 578 ACStep #3200.00 (1ms ~= 1000.00*RT, ~76000.00UPS, TraCI: 11ms, vehicles TOT 588 ACStep #3300.00 (0ms ?*RT. ?UPS, TraCI: 31ms, vehicles TOT 600 ACT 68 BUF 0)      Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 608 ACT 61 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 616 ACT 54 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 622 ACT 42 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 624 ACT 33 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 627 ACT 31 BUF 0)      Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 630 ACT 24 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 632 ACT 12 BUF 0)       Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 5 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 1 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 633 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -1.22    |
+| fps                | 39       |
+| nupdates           | 880      |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 4400     |
+| value_loss         | 0.0319   |
+---------------------------------
+---------------------------------
+| explained_variance | 0.464    |
+| fps                | 39       |
+| nupdates           | 890      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4450     |
+| value_loss         | 0.0121   |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 636 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 636 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 636 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 636 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 637 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 637 ACT 0 BUF 0)        Step #5404.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 637 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -0.683   |
+| fps                | 39       |
+| nupdates           | 900      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4500     |
+| value_loss         | 78.7     |
+---------------------------------
+---------------------------------
+| explained_variance | -0.00657 |
+| fps                | 40       |
+| nupdates           | 910      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4550     |
+| value_loss         | 2.83e+03 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000353 |
+| fps                | 40        |
+| nupdates           | 920       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 4600      |
+| value_loss         | 4.74e+06  |
+----------------------------------
+----------------------------------
+| explained_variance | -1.67e-06 |
+| fps                | 39        |
+| nupdates           | 930       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 4650      |
+| value_loss         | 4.24e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 4.52e-05 |
+| fps                | 39       |
+| nupdates           | 940      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4700     |
+| value_loss         | 7.21e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 6.5e-06  |
+| fps                | 39       |
+| nupdates           | 950      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4750     |
+| value_loss         | 8.79e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.35e-05 |
+| fps                | 38       |
+| nupdates           | 960      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4800     |
+| value_loss         | 6.5e+07  |
+---------------------------------
+----------------------------------
+| explained_variance | -1.91e-06 |
+| fps                | 38        |
+| nupdates           | 970       |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 4850      |
+| value_loss         | 6.04e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.25e-05 |
+| fps                | 38       |
+| nupdates           | 980      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4900     |
+| value_loss         | 4.32e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 5.51e-05 |
+| fps                | 38       |
+| nupdates           | 990      |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 4950     |
+| value_loss         | 2.87e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 3.39e-05 |
+| fps                | 38       |
+| nupdates           | 1000     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5000     |
+| value_loss         | 5.47e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.00105 |
+| fps                | 38       |
+| nupdates           | 1010     |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 5050     |
+| value_loss         | 1.5e+05  |
+---------------------------------
+---------------------------------
+| explained_variance | -6.4     |
+| fps                | 39       |
+| nupdates           | 1020     |
+| policy_entropy     | 1.39     |
+| total_timesteps    | 5100     |
+| value_loss         | 0.816    |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 11 ACT 7 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 11 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 43 ACT 15 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 29 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 104 ACT 42 BUF 0)       Step #700.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 140 ACT 63 BUF 0)        Step #800.00 (1ms ~= 1000.00*RT, ~84000.00UPS, TraCI: 11ms, vehicles TOT 175 ACTStep #900.00 (0ms ?*RT. ?UPS, TraCI: 28ms, vehicles TOT 208 ACT 103 BUF 0)      Step #1000.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 238 ACT 114 BUF 0)     Step #1100.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 259 ACT 117 BUF 0)     Step #1200.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 275 ACT 115 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 33ms, vehicles TOT 291 ACT 114 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 308 ACT 113 BUF 1)     Step #1500.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 32ms, vehicles TOT 325 AStep #1600.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 342 ACT 117 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 358 ACT 118 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 371 ACT 114 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 391 ACT 113 BUF 0)     Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 31ms, vehicles TOT 407 ACT 115 BUF 1)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 421 ACT 113 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 31ms, vehicles TOT 439 ACT 113 BUF 0)     Step #2300.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 453 ACT 105 BUF 0)     Step #2400.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 473 ACT 108 BUF 0)     Step #2500.00 (1ms ~= 1000.00*RT, ~105000.00UPS, TraCI: 13ms, vehicles TOT 486 AStep #2600.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 511 ACT 113 BUF 0)     Step #2700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 522 ACT 110 BUF 0)     Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 537 ACT 104 BUF 0)     Step #2900.00 (1ms ~= 1000.00*RT, ~94000.00UPS, TraCI: 26ms, vehicles TOT 547 ACStep #3000.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 559 ACT 85 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 567 ACT 79 BUF 0)       Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 577 ACT 67 BUF 0)       Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 589 ACT 60 BUF 0)       Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 597 ACT 59 BUF 0)      Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 605 ACT 52 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 611 ACT 46 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 613 ACT 31 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 616 ACT 23 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 619 ACT 14 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 621 ACT 8 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 622 ACT 5 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 622 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 622 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 622 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -1.45    |
+| fps                | 39       |
+| nupdates           | 1030     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5150     |
+| value_loss         | 0.0856   |
+---------------------------------
+---------------------------------
+| explained_variance | -1.04    |
+| fps                | 39       |
+| nupdates           | 1040     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5200     |
+| value_loss         | 0.069    |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 623 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 623 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 624 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 624 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 626 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 626 ACT 0 BUF 0)        Step #5401.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 626 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | 0.807    |
+| fps                | 39       |
+| nupdates           | 1050     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5250     |
+| value_loss         | 18.4     |
+---------------------------------
+---------------------------------
+| explained_variance | 0.0125   |
+| fps                | 39       |
+| nupdates           | 1060     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5300     |
+| value_loss         | 4.78e+03 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000133 |
+| fps                | 40        |
+| nupdates           | 1070      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 5350      |
+| value_loss         | 4.23e+06  |
+----------------------------------
+----------------------------------
+| explained_variance | -4.29e-06 |
+| fps                | 39        |
+| nupdates           | 1080      |
+| policy_entropy     | 1.37      |
+| total_timesteps    | 5400      |
+| value_loss         | 3.29e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.61e-06 |
+| fps                | 39       |
+| nupdates           | 1090     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 5450     |
+| value_loss         | 7.29e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.61e-06 |
+| fps                | 39       |
+| nupdates           | 1100     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 5500     |
+| value_loss         | 6.11e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | -6.2e-06 |
+| fps                | 39       |
+| nupdates           | 1110     |
+| policy_entropy     | 1.36     |
+| total_timesteps    | 5550     |
+| value_loss         | 5.39e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -4.41e-06 |
+| fps                | 39        |
+| nupdates           | 1120      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 5600      |
+| value_loss         | 4.95e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 5.9e-06  |
+| fps                | 38       |
+| nupdates           | 1130     |
+| policy_entropy     | 1.36     |
+| total_timesteps    | 5650     |
+| value_loss         | 4.27e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.5e-05  |
+| fps                | 38       |
+| nupdates           | 1140     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 5700     |
+| value_loss         | 3.81e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000102 |
+| fps                | 38       |
+| nupdates           | 1150     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5750     |
+| value_loss         | 9.06e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.0773  |
+| fps                | 39       |
+| nupdates           | 1160     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5800     |
+| value_loss         | 832      |
+---------------------------------
+---------------------------------
+| explained_variance | -1.1     |
+| fps                | 39       |
+| nupdates           | 1170     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5850     |
+| value_loss         | 0.159    |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 2 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 11 ACT 4 BUF 0)          Step #300.00 (1ms ~= 1000.00*RT, ~14000.00UPS, TraCI: 2ms, vehicles TOT 26 ACT 1Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 17 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 31 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 104 ACT 49 BUF 0)        Step #700.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 140 ACT 68 BUF 0)       Step #800.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 171 ACT 83 BUF 0)       Step #900.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 206 ACT 98 BUF 0)       Step #1000.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 238 ACT 116 BUF 1)     Step #1100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 257 ACT 116 BUF 0)     Step #1200.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 14ms, vehicles TOT 272 AStep #1300.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 14ms, vehicles TOT 290 AStep #1400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 306 ACT 117 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 321 ACT 117 BUF 0)     Step #1600.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 337 ACT 113 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 358 ACT 117 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 372 ACT 116 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 387 ACT 113 BUF 1)     Step #2000.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 30ms, vehicles TOT 405 AStep #2100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 422 ACT 115 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 435 ACT 109 BUF 0)     Step #2300.00 (0ms ?*RT. ?UPS, TraCI: 30ms, vehicles TOT 448 ACT 104 BUF 0)     Step #2400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 472 ACT 113 BUF 0)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 483 ACT 100 BUF 0)     Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 504 ACT 105 BUF 0)     Step #2700.00 (1ms ~= 1000.00*RT, ~101000.00UPS, TraCI: 13ms, vehicles TOT 519 AStep #2800.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 535 ACT 99 BUF 0)      Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 548 ACT 94 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 559 ACT 86 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 571 ACT 80 BUF 0)      Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 580 ACT 72 BUF 0)       Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 22ms, vehicles TOT 591 ACT 67 BUF 0)      Step #3400.00 (1ms ~= 1000.00*RT, ~65000.00UPS, TraCI: 7ms, vehicles TOT 599 ACTStep #3500.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 607 ACT 55 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 613 ACT 48 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 615 ACT 41 BUF 0)       Step #3800.00 (1ms ~= 1000.00*RT, ~32000.00UPS, TraCI: 10ms, vehicles TOT 618 ACStep #3900.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 621 ACT 22 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 623 ACT 10 BUF 0)       Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 624 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 624 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 624 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 624 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -0.0343  |
+| fps                | 39       |
+| nupdates           | 1180     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5900     |
+| value_loss         | 542      |
+---------------------------------
+---------------------------------
+| explained_variance | 0.63     |
+| fps                | 39       |
+| nupdates           | 1190     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 5950     |
+| value_loss         | 0.135    |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 625 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 626 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 626 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 627 ACT 1 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 627 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 627 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 627 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 628 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 628 ACT 0 BUF 0)        Step #5401.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 628 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | 0.0147   |
+| fps                | 39       |
+| nupdates           | 1200     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6000     |
+| value_loss         | 170      |
+---------------------------------
+---------------------------------
+| explained_variance | -0.0962  |
+| fps                | 40       |
+| nupdates           | 1210     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6050     |
+| value_loss         | 9.28e+03 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000126 |
+| fps                | 40        |
+| nupdates           | 1220      |
+| policy_entropy     | 1.37      |
+| total_timesteps    | 6100      |
+| value_loss         | 1.21e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -4.89e-06 |
+| fps                | 39        |
+| nupdates           | 1230      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 6150      |
+| value_loss         | 5.13e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.73e-06 |
+| fps                | 39       |
+| nupdates           | 1240     |
+| policy_entropy     | 1.35     |
+| total_timesteps    | 6200     |
+| value_loss         | 7.08e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -1.19e-06 |
+| fps                | 39        |
+| nupdates           | 1250      |
+| policy_entropy     | 1.34      |
+| total_timesteps    | 6250      |
+| value_loss         | 7.53e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 2.62e-06 |
+| fps                | 39       |
+| nupdates           | 1260     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 6300     |
+| value_loss         | 6.23e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.97e-06 |
+| fps                | 39       |
+| nupdates           | 1270     |
+| policy_entropy     | 1.35     |
+| total_timesteps    | 6350     |
+| value_loss         | 5.54e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -2.26e-05 |
+| fps                | 39        |
+| nupdates           | 1280      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 6400      |
+| value_loss         | 5.39e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 5.01e-05 |
+| fps                | 39       |
+| nupdates           | 1290     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6450     |
+| value_loss         | 2.66e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000433 |
+| fps                | 39       |
+| nupdates           | 1300     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6500     |
+| value_loss         | 4.56e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.0923  |
+| fps                | 39       |
+| nupdates           | 1310     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6550     |
+| value_loss         | 158      |
+---------------------------------
+---------------------------------
+| explained_variance | -2.64    |
+| fps                | 39       |
+| nupdates           | 1320     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6600     |
+| value_loss         | 0.147    |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 5 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 10 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 43 ACT 13 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 73 ACT 27 BUF 0)        Step #600.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 104 ACT 44 BUF 0)       Step #700.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 140 ACT 67 BUF 0)        Step #800.00 (1ms ~= 1000.00*RT, ~80000.00UPS, TraCI: 22ms, vehicles TOT 172 ACTStep #900.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 199 ACT 93 BUF 1)       Step #1000.00 (1ms ~= 1000.00*RT, ~107000.00UPS, TraCI: 12ms, vehicles TOT 227 AStep #1100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 255 ACT 113 BUF 1)     Step #1200.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 14ms, vehicles TOT 274 AStep #1300.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 290 ACT 117 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 309 ACT 116 BUF 1)     Step #1500.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 13ms, vehicles TOT 324 AStep #1600.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 343 ACT 116 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 363 ACT 116 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 381 ACT 113 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 398 ACT 113 BUF 1)     Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 416 ACT 112 BUF 1)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 31ms, vehicles TOT 434 ACT 116 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 446 ACT 110 BUF 0)     Step #2300.00 (0ms ?*RT. ?UPS, TraCI: 29ms, vehicles TOT 461 ACT 110 BUF 0)     Step #2400.00 (1ms ~= 1000.00*RT, ~105000.00UPS, TraCI: 28ms, vehicles TOT 477 AStep #2500.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 487 ACT 95 BUF 0)      Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 509 ACT 101 BUF 0)     Step #2700.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 524 ACT 99 BUF 0)      Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 539 ACT 94 BUF 0)      Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 552 ACT 87 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 564 ACT 83 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 576 ACT 77 BUF 0)      Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 21ms, vehicles TOT 586 ACT 70 BUF 0)      Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 598 ACT 69 BUF 0)       Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 606 ACT 65 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 614 ACT 62 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 620 ACT 50 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 622 ACT 33 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 625 ACT 18 BUF 0)       Step #3900.00 (1ms ~= 1000.00*RT, ~4000.00UPS, TraCI: 1ms, vehicles TOT 628 ACT Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 630 ACT 2 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -2.1     |
+| fps                | 39       |
+| nupdates           | 1330     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6650     |
+| value_loss         | 3.16     |
+---------------------------------
+---------------------------------
+| explained_variance | -5.7     |
+| fps                | 40       |
+| nupdates           | 1340     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6700     |
+| value_loss         | 0.277    |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 633 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 634 ACT 1 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 1 BUF 0)        Step #5405.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 635 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -2.58    |
+| fps                | 40       |
+| nupdates           | 1350     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6750     |
+| value_loss         | 2.18     |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000952 |
+| fps                | 40       |
+| nupdates           | 1360     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 6800     |
+| value_loss         | 5.03e+04 |
+---------------------------------
+----------------------------------
+| explained_variance | -8.26e-05 |
+| fps                | 40        |
+| nupdates           | 1370      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 6850      |
+| value_loss         | 3.93e+06  |
+----------------------------------
+---------------------------------
+| explained_variance | 2.32e-06 |
+| fps                | 40       |
+| nupdates           | 1380     |
+| policy_entropy     | 1.33     |
+| total_timesteps    | 6900     |
+| value_loss         | 2.31e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -5.96e-07 |
+| fps                | 40        |
+| nupdates           | 1390      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 6950      |
+| value_loss         | 6.82e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -1.19e-07 |
+| fps                | 39        |
+| nupdates           | 1400      |
+| policy_entropy     | 1.34      |
+| total_timesteps    | 7000      |
+| value_loss         | 9.88e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 2.15e-06 |
+| fps                | 39       |
+| nupdates           | 1410     |
+| policy_entropy     | 1.35     |
+| total_timesteps    | 7050     |
+| value_loss         | 7e+07    |
+---------------------------------
+---------------------------------
+| explained_variance | 2.15e-06 |
+| fps                | 39       |
+| nupdates           | 1420     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 7100     |
+| value_loss         | 8.54e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -1.76e-05 |
+| fps                | 39        |
+| nupdates           | 1430      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 7150      |
+| value_loss         | 6.54e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 4.65e-06 |
+| fps                | 39       |
+| nupdates           | 1440     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7200     |
+| value_loss         | 3.02e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000136 |
+| fps                | 39       |
+| nupdates           | 1450     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7250     |
+| value_loss         | 3.97e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.00743 |
+| fps                | 39       |
+| nupdates           | 1460     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7300     |
+| value_loss         | 3.56e+04 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.227   |
+| fps                | 39       |
+| nupdates           | 1470     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7350     |
+| value_loss         | 0.0423   |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 3 ACT 2 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 6 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 11 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 15 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 73 ACT 32 BUF 0)        Step #600.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 104 ACT 46 BUF 0)       Step #700.00 (0ms ?*RT. ?UPS, TraCI: 20ms, vehicles TOT 140 ACT 69 BUF 0)       Step #800.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 175 ACT 81 BUF 0)        Step #900.00 (1ms ~= 1000.00*RT, ~95000.00UPS, TraCI: 11ms, vehicles TOT 208 ACTStep #1000.00 (1ms ~= 1000.00*RT, ~108000.00UPS, TraCI: 28ms, vehicles TOT 237 AStep #1100.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 13ms, vehicles TOT 264 AStep #1200.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 285 ACT 108 BUF 0)     Step #1300.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 15ms, vehicles TOT 309 AStep #1400.00 (0ms ?*RT. ?UPS, TraCI: 31ms, vehicles TOT 329 ACT 117 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 33ms, vehicles TOT 346 ACT 113 BUF 0)     Step #1600.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 367 ACT 117 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 381 ACT 116 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 396 ACT 115 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 408 ACT 112 BUF 1)     Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 429 ACT 115 BUF 1)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 30ms, vehicles TOT 444 ACT 113 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 457 ACT 109 BUF 0)     Step #2300.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 474 ACT 109 BUF 0)     Step #2400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 489 ACT 104 BUF 0)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 498 ACT 92 BUF 0)      Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 517 ACT 89 BUF 0)      Step #2700.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 528 ACT 84 BUF 0)      Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 540 ACT 80 BUF 0)      Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 553 ACT 75 BUF 0)      Step #3000.00 (1ms ~= 1000.00*RT, ~72000.00UPS, TraCI: 10ms, vehicles TOT 565 ACStep #3100.00 (1ms ~= 1000.00*RT, ~70000.00UPS, TraCI: 9ms, vehicles TOT 577 ACTStep #3200.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 587 ACT 66 BUF 0)       Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 598 ACT 66 BUF 0)       Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 606 ACT 65 BUF 0)      Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 614 ACT 58 BUF 0)      Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 620 ACT 47 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 622 ACT 34 BUF 0)      Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 625 ACT 20 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 628 ACT 10 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 630 ACT 3 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 631 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 631 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -0.603   |
+| fps                | 40       |
+| nupdates           | 1480     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7400     |
+| value_loss         | 6.54     |
+---------------------------------
+---------------------------------
+| explained_variance | -1.31    |
+| fps                | 40       |
+| nupdates           | 1490     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7450     |
+| value_loss         | 0.0173   |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 633 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 1 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 1 BUF 0)        Step #5401.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 635 ACT 1 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -0.0832  |
+| fps                | 40       |
+| nupdates           | 1500     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7500     |
+| value_loss         | 1.91e+03 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.00039 |
+| fps                | 40       |
+| nupdates           | 1510     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7550     |
+| value_loss         | 4.51e+04 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000109 |
+| fps                | 40        |
+| nupdates           | 1520      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 7600      |
+| value_loss         | 2.94e+06  |
+----------------------------------
+----------------------------------
+| explained_variance | -7.15e-07 |
+| fps                | 40        |
+| nupdates           | 1530      |
+| policy_entropy     | 1.37      |
+| total_timesteps    | 7650      |
+| value_loss         | 3.47e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 6.56e-07 |
+| fps                | 40       |
+| nupdates           | 1540     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 7700     |
+| value_loss         | 5.29e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -9.54e-07 |
+| fps                | 40        |
+| nupdates           | 1550      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 7750      |
+| value_loss         | 5.64e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 8.94e-07 |
+| fps                | 40       |
+| nupdates           | 1560     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7800     |
+| value_loss         | 5.53e+07 |
+---------------------------------
+----------------------------------
+| explained_variance | -2.38e-07 |
+| fps                | 39        |
+| nupdates           | 1570      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 7850      |
+| value_loss         | 7.07e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 1.07e-06 |
+| fps                | 39       |
+| nupdates           | 1580     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7900     |
+| value_loss         | 6.36e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 4.35e-06 |
+| fps                | 39       |
+| nupdates           | 1590     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 7950     |
+| value_loss         | 4.51e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.08e-05 |
+| fps                | 39       |
+| nupdates           | 1600     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8000     |
+| value_loss         | 9.51e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | -0.02    |
+| fps                | 39       |
+| nupdates           | 1610     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8050     |
+| value_loss         | 9.4e+04  |
+---------------------------------
+---------------------------------
+| explained_variance | 0.0913   |
+| fps                | 39       |
+| nupdates           | 1620     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8100     |
+| value_loss         | 0.316    |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 0 ACT 0 BUF 0)             Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 2 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 7 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 26 ACT 12 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 43 ACT 17 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 73 ACT 36 BUF 0)         Step #600.00 (1ms ~= 1000.00*RT, ~51000.00UPS, TraCI: 5ms, vehicles TOT 104 ACT Step #700.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 140 ACT 66 BUF 0)        Step #800.00 (1ms ~= 1000.00*RT, ~79000.00UPS, TraCI: 11ms, vehicles TOT 173 ACTStep #900.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 205 ACT 95 BUF 0)       Step #1000.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 241 ACT 115 BUF 1)     Step #1100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 260 ACT 117 BUF 0)     Step #1200.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 277 ACT 119 BUF 0)     Step #1300.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 13ms, vehicles TOT 295 AStep #1400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 317 ACT 117 BUF 1)     Step #1500.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 15ms, vehicles TOT 332 AStep #1600.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 14ms, vehicles TOT 349 AStep #1700.00 (1ms ~= 1000.00*RT, ~110000.00UPS, TraCI: 14ms, vehicles TOT 368 AStep #1800.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 392 ACT 109 BUF 0)     Step #1900.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 14ms, vehicles TOT 410 AStep #2000.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 431 ACT 113 BUF 0)     Step #2100.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 13ms, vehicles TOT 453 AStep #2200.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 468 ACT 111 BUF 0)     Step #2300.00 (1ms ~= 1000.00*RT, ~111000.00UPS, TraCI: 13ms, vehicles TOT 483 AStep #2400.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 501 ACT 112 BUF 1)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 513 ACT 109 BUF 0)     Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 30ms, vehicles TOT 535 ACT 114 BUF 0)     Step #2700.00 (1ms ~= 1000.00*RT, ~110000.00UPS, TraCI: 13ms, vehicles TOT 549 AStep #2800.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 563 ACT 109 BUF 0)     Step #2900.00 (1ms ~= 1000.00*RT, ~101000.00UPS, TraCI: 27ms, vehicles TOT 575 AStep #3000.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 585 ACT 95 BUF 0)      Step #3100.00 (1ms ~= 1000.00*RT, ~91000.00UPS, TraCI: 11ms, vehicles TOT 597 ACStep #3200.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 606 ACT 87 BUF 0)      Step #3300.00 (1ms ~= 1000.00*RT, ~78000.00UPS, TraCI: 9ms, vehicles TOT 618 ACTStep #3400.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 626 ACT 67 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 634 ACT 59 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 640 ACT 48 BUF 0)      Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 642 ACT 28 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 645 ACT 16 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 648 ACT 13 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 650 ACT 5 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 651 ACT 2 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 651 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 651 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 651 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -0.431   |
+| fps                | 40       |
+| nupdates           | 1630     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8150     |
+| value_loss         | 0.0562   |
+---------------------------------
+---------------------------------
+| explained_variance | -8.15    |
+| fps                | 40       |
+| nupdates           | 1640     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8200     |
+| value_loss         | 0.389    |
+---------------------------------
+---------------------------------
+| explained_variance | -20      |
+| fps                | 40       |
+| nupdates           | 1650     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8250     |
+| value_loss         | 0.0949   |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 652 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 652 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 653 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 653 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 654 ACT 0 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 654 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 654 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 654 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 655 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 655 ACT 0 BUF 0)        Step #5403.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 655 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -0.0461  |
+| fps                | 40       |
+| nupdates           | 1660     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8300     |
+| value_loss         | 4.32e+04 |
+---------------------------------
+---------------------------------
+| explained_variance | -1.8e-05 |
+| fps                | 40       |
+| nupdates           | 1670     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8350     |
+| value_loss         | 5.04e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.98e-07 |
+| fps                | 40       |
+| nupdates           | 1680     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8400     |
+| value_loss         | 2.04e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 2.38e-07 |
+| fps                | 40       |
+| nupdates           | 1690     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8450     |
+| value_loss         | 5.37e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0        |
+| fps                | 40       |
+| nupdates           | 1700     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 8500     |
+| value_loss         | 5.93e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 7.75e-07 |
+| fps                | 40       |
+| nupdates           | 1710     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 8550     |
+| value_loss         | 5.22e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0        |
+| fps                | 39       |
+| nupdates           | 1720     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 8600     |
+| value_loss         | 4.8e+07  |
+---------------------------------
+---------------------------------
+| explained_variance | 1.61e-06 |
+| fps                | 39       |
+| nupdates           | 1730     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8650     |
+| value_loss         | 5.04e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 3.81e-06 |
+| fps                | 39       |
+| nupdates           | 1740     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8700     |
+| value_loss         | 2.22e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.000463 |
+| fps                | 39       |
+| nupdates           | 1750     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8750     |
+| value_loss         | 2.3e+06  |
+---------------------------------
+---------------------------------
+| explained_variance | 0.00371  |
+| fps                | 40       |
+| nupdates           | 1760     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8800     |
+| value_loss         | 4.03e+05 |
+---------------------------------
+---------------------------------
+| explained_variance | -14.5    |
+| fps                | 40       |
+| nupdates           | 1770     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 8850     |
+| value_loss         | 2.3      |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 3 ACT 3 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 11 ACT 6 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 26 ACT 15 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 43 ACT 20 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 33 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 104 ACT 41 BUF 0)        Step #700.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 140 ACT 62 BUF 0)       Step #800.00 (0ms ?*RT. ?UPS, TraCI: 24ms, vehicles TOT 174 ACT 78 BUF 0)       Step #900.00 (0ms ?*RT. ?UPS, TraCI: 29ms, vehicles TOT 205 ACT 93 BUF 0)       Step #1000.00 (1ms ~= 1000.00*RT, ~106000.00UPS, TraCI: 12ms, vehicles TOT 234 AStep #1100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 255 ACT 106 BUF 0)     Step #1200.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 277 ACT 113 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 295 ACT 118 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 310 ACT 114 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 329 ACT 115 BUF 0)     Step #1600.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 345 ACT 115 BUF 0)     Step #1700.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 364 ACT 116 BUF 0)     Step #1800.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 379 ACT 114 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 392 ACT 110 BUF 1)     Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 32ms, vehicles TOT 414 ACT 114 BUF 0)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 433 ACT 107 BUF 0)     Step #2200.00 (1ms ~= 1000.00*RT, ~109000.00UPS, TraCI: 13ms, vehicles TOT 451 AStep #2300.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 465 ACT 107 BUF 0)     Step #2400.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 12ms, vehicles TOT 486 AStep #2500.00 (1ms ~= 1000.00*RT, ~100000.00UPS, TraCI: 12ms, vehicles TOT 494 AStep #2600.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 11ms, vehicles TOT 515 ACStep #2700.00 (0ms ?*RT. ?UPS, TraCI: 24ms, vehicles TOT 527 ACT 92 BUF 0)      Step #2800.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 540 ACT 83 BUF 0)      Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 22ms, vehicles TOT 553 ACT 79 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 565 ACT 74 BUF 0)       Step #3100.00 (1ms ~= 1000.00*RT, ~63000.00UPS, TraCI: 9ms, vehicles TOT 577 ACTStep #3200.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 587 ACT 57 BUF 0)       Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 599 ACT 57 BUF 0)       Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 607 ACT 49 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 615 ACT 42 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 621 ACT 32 BUF 0)       Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 623 ACT 22 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 626 ACT 14 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 629 ACT 14 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 631 ACT 8 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 3 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 632 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -0.675   |
+| fps                | 40       |
+| nupdates           | 1780     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 8900     |
+| value_loss         | 0.855    |
+---------------------------------
+---------------------------------
+| explained_variance | -3.16    |
+| fps                | 40       |
+| nupdates           | 1790     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 8950     |
+| value_loss         | 0.32     |
+---------------------------------
+---------------------------------
+| explained_variance | -6.97    |
+| fps                | 40       |
+| nupdates           | 1800     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9000     |
+| value_loss         | 0.417    |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 633 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 634 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 634 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 635 ACT 1 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 635 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 636 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 636 ACT 0 BUF 0)        Step #5404.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 636 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -0.0372  |
+| fps                | 40       |
+| nupdates           | 1810     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9050     |
+| value_loss         | 1.61e+04 |
+---------------------------------
+----------------------------------
+| explained_variance | -7.31e-05 |
+| fps                | 40        |
+| nupdates           | 1820      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 9100      |
+| value_loss         | 1.72e+06  |
+----------------------------------
+----------------------------------
+| explained_variance | -5.96e-07 |
+| fps                | 40        |
+| nupdates           | 1830      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 9150      |
+| value_loss         | 1.67e+07  |
+----------------------------------
+---------------------------------
+| explained_variance | 0        |
+| fps                | 40       |
+| nupdates           | 1840     |
+| policy_entropy     | 1.36     |
+| total_timesteps    | 9200     |
+| value_loss         | 4.6e+07  |
+---------------------------------
+---------------------------------
+| explained_variance | 0        |
+| fps                | 40       |
+| nupdates           | 1850     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9250     |
+| value_loss         | 7.44e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0        |
+| fps                | 40       |
+| nupdates           | 1860     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9300     |
+| value_loss         | 6.17e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.19e-07 |
+| fps                | 40       |
+| nupdates           | 1870     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9350     |
+| value_loss         | 4.71e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 0        |
+| fps                | 40       |
+| nupdates           | 1880     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9400     |
+| value_loss         | 4.19e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 7.15e-07 |
+| fps                | 40       |
+| nupdates           | 1890     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9450     |
+| value_loss         | 1.67e+07 |
+---------------------------------
+---------------------------------
+| explained_variance | 1.22e-05 |
+| fps                | 40       |
+| nupdates           | 1900     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 9500     |
+| value_loss         | 4.88e+06 |
+---------------------------------
+---------------------------------
+| explained_variance | 0.00225  |
+| fps                | 40       |
+| nupdates           | 1910     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 9550     |
+| value_loss         | 3.9e+05  |
+---------------------------------
+---------------------------------
+| explained_variance | -10.3    |
+| fps                | 40       |
+| nupdates           | 1920     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 9600     |
+| value_loss         | 3.11     |
+---------------------------------
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3 ACT 2 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 11 ACT 7 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 26 ACT 10 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 15 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 73 ACT 29 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 104 ACT 45 BUF 0)        Step #700.00 (0ms ?*RT. ?UPS, TraCI: 17ms, vehicles TOT 140 ACT 58 BUF 0)       Step #800.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 175 ACT 78 BUF 0)       Step #900.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 207 ACT 92 BUF 0)       Step #1000.00 (1ms ~= 1000.00*RT, ~100000.00UPS, TraCI: 27ms, vehicles TOT 236 AStep #1100.00 (1ms ~= 1000.00*RT, ~109000.00UPS, TraCI: 13ms, vehicles TOT 264 AStep #1200.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 289 ACT 113 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 309 ACT 116 BUF 0)     Step #1400.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 14ms, vehicles TOT 324 AStep #1500.00 (0ms ?*RT. ?UPS, TraCI: 19ms, vehicles TOT 342 ACT 115 BUF 0)     Step #1600.00 (0ms ?*RT. ?UPS, TraCI: 20ms, vehicles TOT 358 ACT 117 BUF 0)     Step #1700.00 (1ms ~= 1000.00*RT, ~119000.00UPS, TraCI: 14ms, vehicles TOT 375 AStep #1800.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 388 ACT 114 BUF 0)     Step #1900.00 (0ms ?*RT. ?UPS, TraCI: 28ms, vehicles TOT 406 ACT 111 BUF 1)     Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 425 ACT 106 BUF 0)     Step #2100.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 448 ACT 114 BUF 0)     Step #2200.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 464 ACT 115 BUF 0)     Step #2300.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 15ms, vehicles TOT 478 AStep #2400.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 492 ACT 110 BUF 0)     Step #2500.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 500 ACT 97 BUF 0)      Step #2600.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 524 ACT 107 BUF 0)     Step #2700.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 13ms, vehicles TOT 536 ACStep #2800.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 554 ACT 98 BUF 0)      Step #2900.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 567 ACT 95 BUF 0)      Step #3000.00 (0ms ?*RT. ?UPS, TraCI: 11ms, vehicles TOT 579 ACT 91 BUF 0)      Step #3100.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 591 ACT 81 BUF 0)      Step #3200.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 601 ACT 74 BUF 0)       Step #3300.00 (0ms ?*RT. ?UPS, TraCI: 9ms, vehicles TOT 613 ACT 69 BUF 0)       Step #3400.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 621 ACT 62 BUF 0)       Step #3500.00 (0ms ?*RT. ?UPS, TraCI: 7ms, vehicles TOT 629 ACT 51 BUF 0)       Step #3600.00 (0ms ?*RT. ?UPS, TraCI: 13ms, vehicles TOT 635 ACT 41 BUF 0)      Step #3700.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 637 ACT 25 BUF 0)       Step #3800.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 640 ACT 12 BUF 0)       Step #3900.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 643 ACT 10 BUF 0)       Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 645 ACT 2 BUF 0)        Step #4100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 646 ACT 1 BUF 0)        Step #4200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 646 ACT 1 BUF 0)        Step #4300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 646 ACT 0 BUF 0)        Step #4400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 646 ACT 0 BUF 0)        S---------------------------------
+| explained_variance | -1.75    |
+| fps                | 40       |
+| nupdates           | 1930     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9650     |
+| value_loss         | 1.32     |
+---------------------------------
+---------------------------------
+| explained_variance | -0.608   |
+| fps                | 40       |
+| nupdates           | 1940     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 9700     |
+| value_loss         | 263      |
+---------------------------------
+---------------------------------
+| explained_variance | -38.4    |
+| fps                | 40       |
+| nupdates           | 1950     |
+| policy_entropy     | 1.37     |
+| total_timesteps    | 9750     |
+| value_loss         | 2.38     |
+---------------------------------
+tep #4500.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 647 ACT 1 BUF 0)         Step #4600.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 647 ACT 0 BUF 0)        Step #4700.00 (0ms ?*RT. ?UPS, TraCI: 4ms, vehicles TOT 648 ACT 1 BUF 0)        Step #4800.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 648 ACT 0 BUF 0)        Step #4900.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 649 ACT 1 BUF 0)        Step #5000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 649 ACT 0 BUF 0)        Step #5100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 649 ACT 0 BUF 0)        Step #5200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 649 ACT 0 BUF 0)        Step #5300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 650 ACT 1 BUF 0)        Step #5400.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 650 ACT 0 BUF 0)        Step #5401.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 650 ACT 0 BUF 0)                  
+ Retrying in 1 seconds
+---------------------------------
+| explained_variance | -0.0428  |
+| fps                | 40       |
+| nupdates           | 1960     |
+| policy_entropy     | 1.38     |
+| total_timesteps    | 9800     |
+| value_loss         | 1.39e+04 |
+---------------------------------
+----------------------------------
+| explained_variance | -0.000572 |
+| fps                | 40        |
+| nupdates           | 1970      |
+| policy_entropy     | 1.38      |
+| total_timesteps    | 9850      |
+| value_loss         | 7.25e+05  |
+----------------------------------
+----------------------------------
+| explained_variance | -2.38e-07 |
+| fps                | 40        |
+| nupdates           | 1980      |
+| policy_entropy     | 1.37      |
+| total_timesteps    | 9900      |
+| value_loss         | 1.67e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -2.38e-07 |
+| fps                | 40        |
+| nupdates           | 1990      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 9950      |
+| value_loss         | 4.57e+07  |
+----------------------------------
+----------------------------------
+| explained_variance | -1.19e-07 |
+| fps                | 40        |
+| nupdates           | 2000      |
+| policy_entropy     | 1.36      |
+| total_timesteps    | 10000     |
+| value_loss         | 7.5e+07   |
+----------------------------------
+Training has Ended!
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 10ms, vehicles TOT 0 ACT 0 BUF 0)            Step #100.00 (0ms ?*RT. ?UPS, TraCI: 6ms, vehicles TOT 3 ACT 2 BUF 0)           Step #200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 11 ACT 6 BUF 0)          Step #300.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 26 ACT 13 BUF 0)         Step #400.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 43 ACT 17 BUF 0)         Step #500.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 73 ACT 35 BUF 0)         Step #600.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 104 ACT 47 BUF 0)       Step #700.00 (1ms ~= 1000.00*RT, ~66000.00UPS, TraCI: 7ms, vehicles TOT 140 ACT Step #800.00 (1ms ~= 1000.00*RT, ~86000.00UPS, TraCI: 11ms, vehicles TOT 175 ACTStep #900.00 (1ms ~= 1000.00*RT, ~99000.00UPS, TraCI: 13ms, vehicles TOT 209 ACTStep #1000.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 238 ACT 113 BUF 1)     Step #1100.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 257 ACT 114 BUF 1)     Step #1200.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 279 ACT 118 BUF 1)     Step #1300.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 297 ACT 115 BUF 0)     Step #1400.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 313 ACT 117 BUF 1)     Step #1500.00 (0ms ?*RT. ?UPS, TraCI: 14ms, vehicles TOT 326 ACT 115 BUF 0)     Step #1600.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 14ms, vehicles TOT 345 AError: tcpip::Socket::recvAndCheck @ recv: peer shutdown
+Quitting (on error).

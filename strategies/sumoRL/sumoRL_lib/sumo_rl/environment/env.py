@@ -115,7 +115,7 @@ class SumoEnvironment(MultiAgentEnv):
                 self._sumo_step()
 
                 for ts in self.ts_ids:
-                    self.traffic_signals[ts].update()
+                    self.traffic_signals[ts].update() #Ts.update increases time_since_last_change by 1
                     if self.traffic_signals[ts].time_to_act:
                         time_to_act = True
 
@@ -172,7 +172,8 @@ class SumoEnvironment(MultiAgentEnv):
         return {
             'step_time': self.sim_step,
             'reward': self.traffic_signals[self.ts_ids[0]].last_reward,
-            'total_stopped': sum(self.traffic_signals[ts].get_total_queued() for ts in self.ts_ids),
+            # 'total_stopped': sum(self.traffic_signals[ts].get_total_queued() for ts in self.ts_ids),
+            'total_stopped': self._get_queue_length(),
             'total_wait_time': sum(sum(self.traffic_signals[ts].get_waiting_time_per_lane()) for ts in self.ts_ids)
         }
 
@@ -184,7 +185,17 @@ class SumoEnvironment(MultiAgentEnv):
             df = pd.DataFrame(self.metrics)
             df.to_csv(out_csv_name + '_run{}'.format(run) + '.csv', index=False)
 
-
+    def _get_queue_length(self):
+        """
+        Retrieve the number of cars with speed = 0 in every incoming lane
+        """
+        halt_N = traci.edge.getLastStepHaltingNumber("N2T")
+        halt_S = traci.edge.getLastStepHaltingNumber("S2T")
+        halt_E = traci.edge.getLastStepHaltingNumber("E2T")
+        halt_W = traci.edge.getLastStepHaltingNumber("W2T")
+        queue_length = halt_N + halt_S + halt_E + halt_W
+        return queue_length
+    
     # Below functions are for discrete state space
 
     def encode(self, state, ts_id):

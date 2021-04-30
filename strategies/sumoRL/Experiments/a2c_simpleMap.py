@@ -12,6 +12,7 @@ import traci
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import SubprocVecEnv
 from stable_baselines import A2C
+import time
 
 
 if __name__ == '__main__':
@@ -19,28 +20,33 @@ if __name__ == '__main__':
     #write_route_file('nets/2way-single-intersection/single-intersection-gen.rou.xml', 400000, 100000)
 
     # multiprocess environment
-    n_cpu = 1
+    n_cpu = 4
     env = SubprocVecEnv([lambda: SumoEnvironment(net_file='network/simpleMap.net.xml',
-                                        route_file='network/final_routes.rou.xml',
-                                        out_csv_name='outputs/Results 5400 seconds/a2c_vidali_ncpu=1/train',
+                                        route_file='network/train/uniform.rou.xml',
+                                        out_csv_name='outputs/a2c_ncpu=4/Train_25k/uniform2',
                                         single_agent=True,
                                         use_gui=False,
                                         num_seconds=5400,
                                         min_green=5,
+                                        delta_time=5,
+                                        yellow_time=3,
                                         max_depart_delay=0) for _ in range(n_cpu)])
 
     model = A2C(MlpPolicy, env, verbose=1, learning_rate=0.001, lr_schedule='constant')
-    model.learn(total_timesteps=5400)
-    model.save("models/a2csimpleMapVidali")
+    start = time.time()
+    model.learn(total_timesteps=30000)
+    end = time.time()
+    model.save("models/a2c_ncpu=4_uniform_25k_new")
     print('Training has Ended!')
+    print('TIME TAKEN IS:', end-start)
 
-    del model
+    # del model
 
-    print('Testing has begun!')
+    # print('Testing has begun!')
 
-    model = A2C.load("models/a2csimpleMapVidali", env = env, policy = MlpPolicy)
-    obs = env.reset()
-    for i in range(5400):
-        action, _states = model.predict(obs)
-        obs, rewards, dones, info = env.step(action)
-        #print(i, rewards, dones, info)
+    # model = A2C.load("models/a2csimpleMapVidali", env = env, policy = MlpPolicy)
+    # obs = env.reset()
+    # for i in range(5400):
+    #     action, _states = model.predict(obs)
+    #     obs, rewards, dones, info = env.step(action)
+    #     #print(i, rewards, dones, info)
