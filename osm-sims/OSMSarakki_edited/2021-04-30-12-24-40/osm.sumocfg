@@ -10,7 +10,7 @@
         <route-files value="network/test/uniform.rou.xml"/>
         <!-- additional-files value="osm.poly.xml"/ -->
         <gui-settings-file value="gui-settings.cfg"/>
-        <scale value="2.5"/>
+        <scale value="1.5"/>
         <additional-files value="additional.xml"/>
     </input>
 

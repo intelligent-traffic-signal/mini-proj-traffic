@@ -2,5 +2,7 @@
 	<input>
 		<net-file value="simpleMap.net.xml" />
 		<route-files value="routes.rou.xml" />
+		<gui-settings-file value="gui-settings.cfg"/>
+        <scale value="1"/>
     </input>
 </configuration>

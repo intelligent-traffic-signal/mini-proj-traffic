@@ -15,11 +15,11 @@ import traci  # noqa
 
 
 MAX_STEPS = 5400
-SEED = 10000
+SEED = 10001
 NO_CARS = 1000
 UNIFORM = (SEED % 3) == 0
-MIN_TIME = 5
-MAX_TIME = 31
+MIN_TIME = 3
+MAX_TIME = 51
 
 # Generate route file
 TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)
@@ -35,14 +35,14 @@ else:
 class TrafficAgent:
     """Defines individual traffic signal behaviour."""
 
-    def __init__(self, lane, ogLane, gss, yss):
+    def __init__(self, lane_a, lane_b, gss, yss):
         self._strategySet = list(range(MIN_TIME, MAX_TIME)) # Action space defined as discrete time intervals; base idea can be tweaked. 
         self._strategyCount = len(self._strategySet)
 
         self._probabilitySet = [1 / self._strategyCount for i in range(self._strategyCount)]
         
-        self._lane = lane
-        self._prevLane = ogLane
+        self._lane_a = lane_a
+        self._lane_b = lane_b
 
         self._greenSignalString = gss
         self._yellowSignalString = yss
@@ -50,18 +50,19 @@ class TrafficAgent:
     def updateProbabilitySet(self, prevLane):
         """Defines feedback mechanism. Probability space updated according to backlog in lane."""
         
-        queueLength = traci.lane.getLastStepVehicleNumber(self._lane)
-        # vehicleLength = traci.lane.getLastStepLength(self._lane)
+        queueLength_a = traci.lane.getLastStepHaltingNumber(self._lane_a)
+        vehicleLength_a = traci.lane.getLastStepLength(self._lane_a)
 
-        print("NO VEHICLES: ", queueLength)
+        queueLength_b = traci.lane.getLastStepHaltingNumber(self._lane_b)
+        vehicleLength_b = traci.lane.getLastStepLength(self._lane_b)
 
-        queueLength = queueLength * 7
-        # avgSpeed = 5 # traci.lane.getLastStepMeanSpeed(self._prevLane) 
+        queueLength = max(queueLength_a * vehicleLength_a, queueLength_b * vehicleLength_b)
+        avgSpeed = 22.5
 
         print("QUEUE LENGTH : ", queueLength)
-        # print("AVG SPEED : ", avgSpeed)
+        print("AVG SPEED : ", avgSpeed)
 
-        rewardSet = [abs(queueLength - self._strategySet[i]) for i in range(self._strategyCount)]
+        rewardSet = [abs(queueLength - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
         print(rewardSet)
 
         reward = min(rewardSet)
@@ -79,16 +80,16 @@ class TrafficAgent:
     def getYellowSignalString(self):
         return self._yellowSignalString
 
-lane0 = TrafficAgent('E2T_0', 'T2S_0', 'rrrGGgrrrrrr', 'rrryyyrrrrrr')   # east to west
-lane1 = TrafficAgent('N2T_0', 'T2E_0', 'rrrrrrGGgrrr', 'rrrrrryyyrrr')   # north to south
-lane2 = TrafficAgent('W2T_0', 'T2N_0', 'rrrrrrrrrGGg', 'rrrrrrrrryyy')   # west to east
-lane3 = TrafficAgent('S2T_0', 'T2W_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')   # south to north
+lane0 = TrafficAgent('S2T_0', 'S2T_1', 'GGGgrrrrrrrrrrrrrr', 'yyyyrrrrrrrrrrrrrr')
+lane1 = TrafficAgent('E2T_0', 'E2T_1', 'rrrrGGGggrrrrrrrrr', 'rrrryyyyyrrrrrrrrr')
+lane2 = TrafficAgent('N2T_0', 'N2T_1', 'rrrrrrrrrGGGgrrrrr', 'rrrrrrrrryyyyrrrrr')
+lane3 = TrafficAgent('W2T_0', 'W2T_1', 'rrrrrrrrrrrrrGGGgg', 'rrrrrrrrrrrrryyyyy')
 
-lanes = [lane3, lane0, lane1, lane2]
+lanes = [lane0, lane1, lane2, lane3]
 laneIndex = 0
 
 sumoBinary = checkBinary('sumo-gui')
-sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml', '--queue-output', 'queuedata.xml']
+sumoCmd = [sumoBinary, '-c', 'osm.sumocfg', '--queue-output', 'queuedata.xml', '--log', 'LOGFILE']
 
 def collect_waiting_times(waiting_times):
     """
@@ -152,8 +153,8 @@ while step < MAX_STEPS:
         print('DEADLINE : ', deadline)
 
         signalString = nextSignal.getGreenSignalString()
-        traci.trafficlight.setRedYellowGreenState("t0", signalString)
-        traci.trafficlight.setPhaseDuration("t0", signalDuration - 3)
+        traci.trafficlight.setRedYellowGreenState("T", signalString)
+        traci.trafficlight.setPhaseDuration("T", signalDuration - 3)
         print(signalString)
         
         changeState = False # prevent calls to setRedYellowGreenState
@@ -161,8 +162,8 @@ while step < MAX_STEPS:
     elif (cycle == deadline - 3):
         # set yellow phase for three steps before deadline
         signalString = nextSignal.getYellowSignalString()
-        traci.trafficlight.setRedYellowGreenState("t0", signalString)
-        traci.trafficlight.setPhaseDuration("t0", 3)
+        traci.trafficlight.setRedYellowGreenState("T", signalString)
+        traci.trafficlight.setPhaseDuration("T", 3)
         print(signalString)
     
     elif (cycle == deadline - 1):
