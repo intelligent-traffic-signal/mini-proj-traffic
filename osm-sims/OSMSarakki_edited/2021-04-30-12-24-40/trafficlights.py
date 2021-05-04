@@ -26,11 +26,11 @@ TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)
 TrafficGen.generate_routefile(seed=SEED)
 
 if (SEED % 3) == 0:
-    visualizer = Visualization('./macro_plots_uniform', dpi=96)
+    visualizer = Visualization('./macro_plots_uniform_rr', dpi=96)
 elif (SEED % 3) == 1:
-    visualizer = Visualization('./macro_plots_ns', dpi=96)
+    visualizer = Visualization('./macro_plots_ns_rr', dpi=96)
 else:
-    visualizer = Visualization('./macro_plots_ew', dpi=96)
+    visualizer = Visualization('./macro_plots_ew_rr', dpi=96)
 
 class TrafficAgent:
     """Defines individual traffic signal behaviour."""
@@ -51,18 +51,16 @@ class TrafficAgent:
         """Defines feedback mechanism. Probability space updated according to backlog in lane."""
         
         queueLength_a = traci.lane.getLastStepHaltingNumber(self._lane_a)
-        vehicleLength_a = traci.lane.getLastStepLength(self._lane_a)
+        # vehicleLength_a = traci.lane.getLastStepLength(self._lane_a)
 
         queueLength_b = traci.lane.getLastStepHaltingNumber(self._lane_b)
-        vehicleLength_b = traci.lane.getLastStepLength(self._lane_b)
+        # vehicleLength_b = traci.lane.getLastStepLength(self._lane_b)
 
-        queueLength = max(queueLength_a * vehicleLength_a, queueLength_b * vehicleLength_b)
-        avgSpeed = 22.5
+        queueLength = max(queueLength_a * 7, queueLength_b * 7)
 
         print("QUEUE LENGTH : ", queueLength)
-        print("AVG SPEED : ", avgSpeed)
 
-        rewardSet = [abs(queueLength - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
+        rewardSet = [abs(queueLength - self._strategySet[i]) for i in range(self._strategyCount)]
         print(rewardSet)
 
         reward = min(rewardSet)
@@ -143,6 +141,7 @@ while step < MAX_STEPS:
 
     rewards.append(reward)
 
+    """
     if changeState:
         # Defines behaviour whenever signals have to be changed.
         signalDuration = nextSignal.getSignalLength()
@@ -176,10 +175,11 @@ while step < MAX_STEPS:
         nextSignal = lanes[laneIndex]
     
     cycle += 1
-    step += 1
     old_total_wait = current_total_wait
 
     #END OF SECTION FOR CONTROLLING TRAFFIIC SIGNAL WITH TRACI
+    """
+    step += 1
 
     
 
