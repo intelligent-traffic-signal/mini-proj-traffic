@@ -15,7 +15,7 @@ import traci  # noqa
 
 
 MAX_STEPS = 5400
-SEED = 10001
+SEED = 10002
 NO_CARS = 1000
 UNIFORM = (SEED % 3) == 0
 MIN_TIME = 3
@@ -51,18 +51,16 @@ class TrafficAgent:
         """Defines feedback mechanism. Probability space updated according to backlog in lane."""
         
         queueLength_a = traci.lane.getLastStepHaltingNumber(self._lane_a)
-        vehicleLength_a = traci.lane.getLastStepLength(self._lane_a)
+        # vehicleLength_a = traci.lane.getLastStepLength(self._lane_a)
 
         queueLength_b = traci.lane.getLastStepHaltingNumber(self._lane_b)
-        vehicleLength_b = traci.lane.getLastStepLength(self._lane_b)
+        # vehicleLength_b = traci.lane.getLastStepLength(self._lane_b)
 
-        queueLength = max(queueLength_a * vehicleLength_a, queueLength_b * vehicleLength_b)
-        avgSpeed = 22.5
+        queueLength = max(queueLength_a * 7, queueLength_b * 7)
 
         print("QUEUE LENGTH : ", queueLength)
-        print("AVG SPEED : ", avgSpeed)
 
-        rewardSet = [abs(queueLength - avgSpeed * self._strategySet[i]) for i in range(self._strategyCount)]
+        rewardSet = [abs(queueLength - self._strategySet[i]) for i in range(self._strategyCount)]
         print(rewardSet)
 
         reward = min(rewardSet)
