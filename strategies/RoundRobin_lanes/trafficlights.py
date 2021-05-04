@@ -20,7 +20,7 @@ sumoBinary = checkBinary('sumo-gui')
 sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg']
 
 MAX_STEPS = 5400
-SEED = 10001
+SEED = 10000
 NO_CARS = 1000
 
 TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)

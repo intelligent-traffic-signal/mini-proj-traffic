@@ -4,5 +4,7 @@
 		<route-files value="routes.rou.xml" />
 		<!-- <additional-files value="add_macro.xml" />
 		<queue-output value="queuedata.xml" /> -->
+		<gui-settings-file value="gui-settings.cfg"/>
+        <scale value="1"/>
     </input>
 </configuration>
