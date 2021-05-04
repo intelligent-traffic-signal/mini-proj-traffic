@@ -1,6 +1,6 @@
-***Starting server on port 62162 ***
-Loading net-file from 'osm.net.xml' ... done (14ms).
-Loading additional-files from 'additional.xml' ... done (131ms).
+***Starting server on port 62996 ***
+Loading net-file from 'osm.net.xml' ... done (11ms).
+Loading additional-files from 'additional.xml' ... done (80ms).
 Loading done.
 Simulation started with time: 0.00
 Warning: Vehicle 'E_W_1' is inserted in emergency situation.
@@ -8,24 +8,21 @@ Warning: Vehicle 'N_W_5.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_7.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_11.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_15.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_9.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=288.00.
+Warning: Vehicle 'S_N_9.1' performs emergency stop at the end of lane 'S2T_1' because of a red traffic light (decel=-25.00, offset=14.29), time=288.00.
 Warning: Vehicle 'N_S_19.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_21.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_25.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_18' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=352.00.
+Warning: Vehicle 'N_E_18' performs emergency stop at the end of lane 'N2T_0' because of a red traffic light (decel=-10.72, offset=1.72), time=352.00.
 Warning: Vehicle 'E_S_33.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_35.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_44' is inserted in emergency situation.
 Warning: Vehicle 'N_S_47.1' is inserted in emergency situation.
 Warning: Vehicle 'E_S_57' is inserted in emergency situation.
-Warning: Vehicle 'N_S_37.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=430.00.
-Warning: Vehicle 'N_S_37.1' performs emergency stop at the end of lane 'N2T_0' because of a red traffic light (decel=-22.32, offset=5.76), time=430.00.
 Warning: Vehicle 'N_S_62' is inserted in emergency situation.
 Warning: Vehicle 'S_N_63.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_49.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=460.00.
-Warning: Vehicle 'S_N_49' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=460.00.
-Warning: Vehicle 'S_N_49' performs emergency stop at the end of lane 'S2T_0' because of a red traffic light (decel=-15.05, offset=3.39), time=461.00.
 Warning: Vehicle 'W_E_71.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_63.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=495.00.
-Warning: Vehicle 'S_N_63.1' performs emergency stop at the end of lane 'S2T_1' because of a red traffic light (decel=-15.27, offset=5.18), time=496.00.
 Warning: Vehicle 'N_S_75.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_77.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_86' is inserted in emergency situation.
@@ -36,7 +33,6 @@ Warning: Vehicle 'N_S_103.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_113.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_119.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_121.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_107.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=649.00.
 Warning: Vehicle 'E_W_124' is inserted in emergency situation.
 Warning: Vehicle 'S_N_125.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_129.1' is inserted in emergency situation.
@@ -51,129 +47,133 @@ Warning: Vehicle 'S_N_171' is inserted in emergency situation.
 Warning: Vehicle 'W_E_173' is inserted in emergency situation.
 Warning: Vehicle 'W_S_174' is inserted in emergency situation.
 Warning: Vehicle 'S_N_175.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_155' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=783.00.
 Warning: Vehicle 'E_W_181' is inserted in emergency situation.
+Warning: Vehicle 'E_W_181.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_187.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_166' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=807.00.
-Warning: Vehicle 'W_E_166' performs emergency stop at the end of lane 'W2T_1' because of a red traffic light (decel=-24.56, offset=1.01), time=807.00.
-Warning: Vehicle 'W_E_199.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_202' is inserted in emergency situation.
-Warning: Vehicle 'S_N_203.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_200' is inserted in emergency situation.
+Warning: Vehicle 'E_W_205.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_223.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_229.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_233.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_241' is inserted in emergency situation.
 Warning: Vehicle 'S_N_243' is inserted in emergency situation.
-Warning: Vehicle 'S_N_243.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_242' is inserted in emergency situation.
-Warning: Vehicle 'W_E_245.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_253.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_243.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_245' is inserted in emergency situation.
+Warning: Vehicle 'W_E_254' is inserted in emergency situation.
 Warning: Vehicle 'S_E_255.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_257.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_261' is inserted in emergency situation.
 Warning: Vehicle 'S_N_262' is inserted in emergency situation.
-Warning: Vehicle 'W_S_265.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_263.1' is inserted in emergency situation.
+Warning: Vehicle 'S_W_267.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_269' is inserted in emergency situation.
-Warning: Vehicle 'S_N_269.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_272' is inserted in emergency situation.
-Warning: Vehicle 'S_N_273' is inserted in emergency situation.
+Warning: Vehicle 'N_S_271.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_273.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_274' is inserted in emergency situation.
 Warning: Vehicle 'E_N_276' is inserted in emergency situation.
-Warning: Vehicle 'E_S_279.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_291' is inserted in emergency situation.
+Warning: Vehicle 'N_S_278' is inserted in emergency situation.
+Warning: Vehicle 'N_S_278' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1028.00.
+Warning: Vehicle 'W_E_277.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_281.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_291.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_293.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_293' is inserted in emergency situation.
+Warning: Vehicle 'S_N_295' is inserted in emergency situation.
 Warning: Vehicle 'S_N_295.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_295.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1058.00.
-Warning: Vehicle 'W_E_297.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_296' is inserted in emergency situation.
+Warning: Vehicle 'E_W_299' is inserted in emergency situation.
 Warning: Vehicle 'E_W_301' is inserted in emergency situation.
-Warning: Vehicle 'E_W_301.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_310' is inserted in emergency situation.
-Warning: Vehicle 'S_E_313.1' is inserted in emergency situation.
-Warning: Vehicle 'E_W_315.1' is inserted in emergency situation.
-Warning: Vehicle 'E_N_317.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_314' is inserted in emergency situation.
 Warning: Vehicle 'S_E_319.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_320' is inserted in emergency situation.
 Warning: Vehicle 'E_W_321.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_325' is inserted in emergency situation.
+Warning: Vehicle 'S_N_323.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_325.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_329' is inserted in emergency situation.
-Warning: Vehicle 'E_W_329.1' is inserted in emergency situation.
 Warning: Vehicle 'S_E_331.1' is inserted in emergency situation.
 Warning: Vehicle 'S_W_333' is inserted in emergency situation.
-Warning: Vehicle 'S_N_335.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_339.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_341.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_343.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_345.1' is inserted in emergency situation.
-Warning: Vehicle 'W_N_347' is inserted in emergency situation.
-Warning: Vehicle 'N_S_353.1' is inserted in emergency situation.
+Warning: Vehicle 'S_W_333.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_335' is inserted in emergency situation.
+Warning: Vehicle 'E_W_337.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_338' is inserted in emergency situation.
+Warning: Vehicle 'S_N_341' is inserted in emergency situation.
 Warning: Vehicle 'N_S_354' is inserted in emergency situation.
-Warning: Vehicle 'S_N_363.1' is inserted in emergency situation.
-Warning: Vehicle 'S_W_366' is inserted in emergency situation.
+Warning: Vehicle 'W_E_355.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_357' is inserted in emergency situation.
+Warning: Vehicle 'N_E_357.1' is inserted in emergency situation.
+Warning: Vehicle 'N_W_359.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_364' is inserted in emergency situation.
+Warning: Vehicle 'W_E_365.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_368' is inserted in emergency situation.
-Warning: Vehicle 'W_E_375.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_374' is inserted in emergency situation.
 Warning: Vehicle 'N_S_377' is inserted in emergency situation.
-Warning: Vehicle 'E_W_389' is inserted in emergency situation.
+Warning: Vehicle 'N_E_387' is inserted in emergency situation.
+Warning: Vehicle 'E_W_389.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_393.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_401' is inserted in emergency situation.
 Warning: Vehicle 'N_S_409' is inserted in emergency situation.
-Warning: Vehicle 'N_S_411.1' is inserted in emergency situation.
-Warning: Vehicle 'E_S_413.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_415.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_417.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_422' is inserted in emergency situation.
-Warning: Vehicle 'N_S_423.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_437.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_439.1' is inserted in emergency situation.
-Warning: Vehicle 'N_E_443.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_427.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_435.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_440' is inserted in emergency situation.
+Warning: Vehicle 'E_W_441.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_443' is inserted in emergency situation.
 Warning: Vehicle 'N_S_444' is inserted in emergency situation.
-Warning: Vehicle 'N_E_447' is inserted in emergency situation.
-Warning: Vehicle 'S_N_451.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_454' is inserted in emergency situation.
-Warning: Vehicle 'W_S_455.1' is inserted in emergency situation.
-Warning: Vehicle 'W_S_456' is inserted in emergency situation.
-Warning: Vehicle 'E_W_459.1' is inserted in emergency situation.
+Warning: Vehicle 'N_E_447.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_457.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_459' is inserted in emergency situation.
 Warning: Vehicle 'E_W_461.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_469.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_467.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_471.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_472' is inserted in emergency situation.
-Warning: Vehicle 'E_W_477.1' is inserted in emergency situation.
-Warning: Vehicle 'E_W_478' is inserted in emergency situation.
-Warning: Vehicle 'E_W_479' is inserted in emergency situation.
-Warning: Vehicle 'E_W_479' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1452.00.
-Warning: Vehicle 'E_N_481' is inserted in emergency situation.
-Warning: Vehicle 'E_N_481.1' is inserted in emergency situation.
-Warning: Vehicle 'E_W_482' is inserted in emergency situation.
-Warning: Vehicle 'W_E_484' is inserted in emergency situation.
-Warning: Vehicle 'W_S_487.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_493.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_479.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_483.1' is inserted in emergency situation.
+Warning: Vehicle 'E_N_485.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_491.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_493' is inserted in emergency situation.
 Warning: Vehicle 'E_W_500' is inserted in emergency situation.
 Warning: Vehicle 'E_N_501.1' is inserted in emergency situation.
 Warning: Vehicle 'E_N_501' is inserted in emergency situation.
+Warning: Vehicle 'S_N_503.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_506' is inserted in emergency situation.
-Warning: Vehicle 'N_S_515' is inserted in emergency situation.
-Warning: Vehicle 'N_S_515.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_519.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_522' is inserted in emergency situation.
-Warning: Vehicle 'N_S_535' is inserted in emergency situation.
+Warning: Vehicle 'E_S_527.1' is inserted in emergency situation.
 Warning: Vehicle 'N_W_536' is inserted in emergency situation.
-Warning: Vehicle 'N_S_539' is inserted in emergency situation.
+Warning: Vehicle 'N_S_535.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_539.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_539.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1597.00.
+Warning: Vehicle 'N_S_541' is inserted in emergency situation.
 Warning: Vehicle 'N_S_542' is inserted in emergency situation.
 Warning: Vehicle 'S_N_543.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_545' is inserted in emergency situation.
 Warning: Vehicle 'S_N_547.1' is inserted in emergency situation.
-Warning: Vehicle 'N_W_549.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_551.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_553.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_558' is inserted in emergency situation.
-Warning: Vehicle 'N_S_563.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_567.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_569.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_575' is inserted in emergency situation.
 Warning: Vehicle 'S_N_581' is inserted in emergency situation.
-Warning: Vehicle 'S_N_582' is inserted in emergency situation.
 Warning: Vehicle 'W_S_583.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_593' is inserted in emergency situation.
-Warning: Vehicle 'N_S_599.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_601.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_607.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_589.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_591.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_593.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_602' is inserted in emergency situation.
+Warning: Vehicle 'N_S_611.1' is inserted in emergency situation.
 Warning: Vehicle 'W_N_613.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_615.1' is inserted in emergency situation.
+Warning: Vehicle 'W_E_617' is inserted in emergency situation.
 Warning: Vehicle 'N_W_619.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_621.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_622' is inserted in emergency situation.
-Warning: Vehicle 'E_W_623.1' is inserted in emergency situation.
 Warning: Vehicle 'E_N_625' is inserted in emergency situation.
+Warning: Vehicle 'E_W_623.1' is inserted in emergency situation.
 Warning: Vehicle 'E_N_625.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_627' is inserted in emergency situation.
-Warning: Vehicle 'W_N_630' is inserted in emergency situation.
-Warning: Vehicle 'N_S_631.1' is inserted in emergency situation.
+Warning: Vehicle 'E_W_627.1' is inserted in emergency situation.
+Warning: Vehicle 'W_N_629.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_636' is inserted in emergency situation.
 Warning: Vehicle 'W_E_649.1' is inserted in emergency situation.
 Warning: Vehicle 'N_E_651.1' is inserted in emergency situation.
@@ -219,63 +219,43 @@ Warning: Vehicle 'E_W_823.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_831.1' is inserted in emergency situation.
 Warning: Vehicle 'E_N_839' is inserted in emergency situation.
 Warning: Vehicle 'E_S_840' is inserted in emergency situation.
-Warning: Vehicle 'S_E_849.1' is inserted in emergency situation.
-Warning: Vehicle 'E_W_853.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_861' is inserted in emergency situation.
-Warning: Vehicle 'N_S_863' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2621.00.
-Warning: Vehicle 'N_S_863' performs emergency stop at the end of lane 'N2T_1' because of a red traffic light (decel=-15.99, offset=3.42), time=2621.00.
-Warning: Vehicle 'N_S_863.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2621.00.
+Warning: Vehicle 'S_N_861.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_863.1' is inserted in emergency situation.
+Warning: Vehicle 'S_W_865.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_867.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_873.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_881.1' is inserted in emergency situation.
-Warning: Vehicle 'E_W_885.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_875.1' is inserted in emergency situation.
+Warning: Vehicle 'S_N_882' is inserted in emergency situation.
 Warning: Vehicle 'E_N_887.1' is inserted in emergency situation.
 Warning: Vehicle 'E_N_889' is inserted in emergency situation.
-Warning: Vehicle 'W_E_891.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_899.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2835.00.
-Warning: Vehicle 'S_N_899.1' performs emergency stop at the end of lane 'S2T_1' because of a red traffic light (decel=-13.59, offset=2.82), time=2836.00.
+Warning: Vehicle 'E_N_889.1' is inserted in emergency situation.
+Warning: Vehicle 'S_W_901.1' is inserted in emergency situation.
+Warning: Vehicle 'N_S_905.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_907.1' is inserted in emergency situation.
-Warning: Vehicle 'S_W_901' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2859.00.
-Warning: Vehicle 'S_W_901' performs emergency stop at the end of lane 'S2T_0' because of a red traffic light (decel=-14.49, offset=2.96), time=2859.00.
 Warning: Vehicle 'N_E_909.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_923.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_918' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2971.00.
 Warning: Vehicle 'S_E_931.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_933.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_937.1' is inserted in emergency situation.
-Warning: Vehicle 'N_S_933' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3053.00.
-Warning: Vehicle 'N_S_933' performs emergency stop at the end of lane 'N2T_0' because of a red traffic light (decel=-15.63, offset=0.49), time=3054.00.
-Warning: Vehicle 'N_S_933.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3065.00.
-Warning: Vehicle 'S_N_945.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3179.00.
 Warning: Vehicle 'E_W_949.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_951.1' is inserted in emergency situation.
 Warning: Vehicle 'E_W_955.1' is inserted in emergency situation.
-Warning: Vehicle 'S_N_959' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3407.00.
-Warning: Vehicle 'S_N_959' performs emergency stop at the end of lane 'S2T_0' because of a red traffic light (decel=-15.10, offset=6.00), time=3408.00.
 Warning: Vehicle 'E_W_961.1' is inserted in emergency situation.
 Warning: Vehicle 'N_S_963.1' is inserted in emergency situation.
 Warning: Vehicle 'S_N_965.1' is inserted in emergency situation.
-Warning: Vehicle 'W_E_962' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3464.00.
-Warning: Vehicle 'W_E_962' performs emergency stop at the end of lane 'W2T_0' because of a red traffic light (decel=-24.79, offset=12.41), time=3464.00.
-Warning: Vehicle 'N_S_963' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3473.00.
-Warning: Vehicle 'N_S_963' performs emergency stop at the end of lane 'N2T_0' because of a red traffic light (decel=-15.90, offset=4.57), time=3474.00.
 Warning: Vehicle 'N_E_977.1' is inserted in emergency situation.
 Warning: Vehicle 'W_E_979.1' is inserted in emergency situation.
-Warning: Vehicle 'N_E_977' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3773.00.
 Warning: Vehicle 'S_W_983.1' is inserted in emergency situation.
 Warning: Vehicle 'E_S_986' is inserted in emergency situation.
-Warning: Vehicle 'E_W_991' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4106.00.
-Warning: Vehicle 'E_W_991' performs emergency stop at the end of lane 'E2T_0' because of a red traffic light (decel=-14.60, offset=1.82), time=4106.00.
 Warning: Vehicle 'S_E_999.1' is inserted in emergency situation.
 Simulation ended at time: 5400.00
 Reason: TraCI requested termination.
 Performance: 
- Duration: 777.38s
- Real time factor: 6.94644
- UPS: 353.245594
+ Duration: 1101.07s
+ Real time factor: 4.90432
+ UPS: 250.042913
 Vehicles: 
  Inserted: 1501
  Running: 0
  Waiting: 0
-Emergency Stops: 12
+Emergency Stops: 2
 

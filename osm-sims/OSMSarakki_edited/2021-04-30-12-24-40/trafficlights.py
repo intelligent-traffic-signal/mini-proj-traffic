@@ -15,7 +15,7 @@ import traci  # noqa
 
 
 MAX_STEPS = 5400
-SEED = 10002
+SEED = 10001
 NO_CARS = 1000
 UNIFORM = (SEED % 3) == 0
 MIN_TIME = 3
@@ -26,11 +26,11 @@ TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)
 TrafficGen.generate_routefile(seed=SEED)
 
 if (SEED % 3) == 0:
-    visualizer = Visualization('./macro_plots_uniform', dpi=96)
+    visualizer = Visualization('./macro_plots_uniform_rr', dpi=96)
 elif (SEED % 3) == 1:
-    visualizer = Visualization('./macro_plots_ns', dpi=96)
+    visualizer = Visualization('./macro_plots_ns_rr', dpi=96)
 else:
-    visualizer = Visualization('./macro_plots_ew', dpi=96)
+    visualizer = Visualization('./macro_plots_ew_rr', dpi=96)
 
 class TrafficAgent:
     """Defines individual traffic signal behaviour."""
@@ -141,6 +141,7 @@ while step < MAX_STEPS:
 
     rewards.append(reward)
 
+    """
     if changeState:
         # Defines behaviour whenever signals have to be changed.
         signalDuration = nextSignal.getSignalLength()
@@ -174,10 +175,11 @@ while step < MAX_STEPS:
         nextSignal = lanes[laneIndex]
     
     cycle += 1
-    step += 1
     old_total_wait = current_total_wait
 
     #END OF SECTION FOR CONTROLLING TRAFFIIC SIGNAL WITH TRACI
+    """
+    step += 1
 
     
 
