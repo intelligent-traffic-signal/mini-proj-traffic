@@ -20,10 +20,10 @@ if __name__ == '__main__':
     #write_route_file('nets/2way-single-intersection/single-intersection-gen.rou.xml', 400000, 100000)
 
     # multiprocess environment
-    n_cpu = 4
+    n_cpu = 1
     env = SubprocVecEnv([lambda: SumoEnvironment(net_file='network/simpleMap.net.xml',
-                                        route_file='network/train/uniform.rou.xml',
-                                        out_csv_name='outputs/a2c_ncpu=4/Train_25k/uniform2',
+                                        route_file='network/train/ns_loaded.rou.xml',
+                                        out_csv_name='outputs/a2c_22.5k/Train_ns/ns_loaded',
                                         single_agent=True,
                                         use_gui=False,
                                         num_seconds=5400,
@@ -34,9 +34,9 @@ if __name__ == '__main__':
 
     model = A2C(MlpPolicy, env, verbose=1, learning_rate=0.001, lr_schedule='constant')
     start = time.time()
-    model.learn(total_timesteps=30000)
+    model.learn(total_timesteps=22500)
     end = time.time()
-    model.save("models/a2c_ncpu=4_uniform_25k_new")
+    model.save("models/a2c_nsloaded_22.5k")
     print('Training has Ended!')
     print('TIME TAKEN IS:', end-start)
 

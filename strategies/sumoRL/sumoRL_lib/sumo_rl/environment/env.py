@@ -172,8 +172,8 @@ class SumoEnvironment(MultiAgentEnv):
         return {
             'step_time': self.sim_step,
             'reward': self.traffic_signals[self.ts_ids[0]].last_reward,
-            # 'total_stopped': sum(self.traffic_signals[ts].get_total_queued() for ts in self.ts_ids),
-            'total_stopped': self._get_queue_length(),
+            'total_stopped': sum(self.traffic_signals[ts].get_total_queued() for ts in self.ts_ids),
+            #'total_stopped': self._get_queue_length(),
             'total_wait_time': sum(sum(self.traffic_signals[ts].get_waiting_time_per_lane()) for ts in self.ts_ids)
         }
 

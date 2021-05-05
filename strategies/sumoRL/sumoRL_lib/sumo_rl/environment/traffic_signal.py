@@ -97,8 +97,9 @@ class TrafficSignal:
         return observation
             
     def compute_reward(self):
-        self.last_reward = self._andrea_reward() #picking which reward function to call
+        #self.last_reward = self._andrea_reward() #picking which reward function to call
         # self.last_reward = self._waiting_time_reward()
+        self.last_reward = self._andrea_reward2()
         return self.last_reward
     
     def _pressure_reward(self):
@@ -118,6 +119,12 @@ class TrafficSignal:
         current_total_wait = self._collect_waiting_times()
         reward = 0.9*self.old_total_wait - current_total_wait
         self.old_total_wait = current_total_wait
+        return reward
+    
+    def _andrea_reward2(self):
+        ts_wait = sum(self.get_waiting_time_per_lane()) 
+        reward = 0.9*self.last_measure - ts_wait
+        self.last_measure = ts_wait
         return reward
 
     def _waiting_time_reward(self):
@@ -140,7 +147,7 @@ class TrafficSignal:
         reward = -ts_wait
         self.last_measure = ts_wait
         return reward
-
+    
     def get_waiting_time_per_lane(self):
         wait_time_per_lane = []
         for lane in self.lanes:
