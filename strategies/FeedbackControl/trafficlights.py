@@ -20,6 +20,7 @@ NO_CARS = 1000
 UNIFORM = (SEED % 3) == 0
 MIN_TIME = 5
 MAX_TIME = 31
+GUI = False
 
 # Generate route file
 TrafficGen = TrafficGenerator(MAX_STEPS, NO_CARS)
@@ -87,7 +88,11 @@ lane3 = TrafficAgent('S2T_0', 'T2W_0', 'GGgrrrrrrrrr', 'yyyrrrrrrrrr')   # south
 lanes = [lane3, lane0, lane1, lane2]
 laneIndex = 0
 
-sumoBinary = checkBinary('sumo-gui')
+if GUI == False:
+    sumoBinary = checkBinary('sumo')
+else:
+    sumoBinary = checkBinary('sumo-gui')
+
 sumoCmd = [sumoBinary, '-c', 'simpleMap.sumocfg', '--additional-files', 'add_macro.xml', '--queue-output', 'queuedata.xml']
 
 def collect_waiting_times(waiting_times):
@@ -184,7 +189,7 @@ while step < MAX_STEPS:
 
 # PLOT FILES
 visualizer.save_data_and_plot(data=rewards, filename='reward', xlabel='Action step', ylabel='Reward')
-visualizer.save_data_and_plot(data=queue_lengths, filename='queue', xlabel='Step', ylabel='Queue length (vehicles)')
+visualizer.save_data_and_plot(data=queue_lengths, filename='queue', xlabel='Timestep', ylabel='Queue length (vehicles)')
 
 
 traci.close()

@@ -16,7 +16,8 @@ class Visualization:
         min_val = min(data)
         max_val = max(data)
 
-        plt.rcParams.update({'font.size': 24})  # set bigger font size
+        # Set general font size
+        plt.rcParams.update({'font.size': 42})  # set bigger font size
 
         plt.plot(data)
         plt.ylabel(ylabel)
@@ -26,7 +27,7 @@ class Visualization:
         fig = plt.gcf()
         fig.set_size_inches(20, 11.25)
 
-        fig.savefig(os.path.join(self._path, 'plot_'+filename+'.png'), dpi=self._dpi)
+        fig.savefig(os.path.join(self._path, 'plot_'+filename+'.eps'), format='eps')
         plt.close("all")
 
         with open(os.path.join(self._path, 'plot_'+filename + '_data.txt'), "w") as file:
