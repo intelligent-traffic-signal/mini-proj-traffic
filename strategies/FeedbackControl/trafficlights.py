@@ -15,7 +15,7 @@ import traci  # noqa
 
 
 MAX_STEPS = 5400
-SEED = 10000
+SEED = 10003
 NO_CARS = 1000
 UNIFORM = (SEED % 3) == 0
 MIN_TIME = 5
